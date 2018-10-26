@@ -5,7 +5,7 @@
 /* FONT EFFECT OPTIONS - neon, stonewash, 3d-float */
 
 * {
-  background-color: ghostwhite;
+  /* background-color: ghostwhite; */
   font-family: 'PT Sans', sans-serif;
 }
 
@@ -29,6 +29,26 @@ h1 {
 }
 
 /*  NAVIGATION  */
+.container {
+  background-color: var(--deep-purple);
+  display: flex;
+  height: 42px;
+  margin-left: -10px;
+  width: 100%;
+}
+.ctr-links {
+
+}
+.left-links {
+  align-self: baseline;
+}
+.right-links {
+  align-self: baseline;
+}
+.spc-links {
+  margin: auto;
+}
+
 
 
 /*  COLORS  */
@@ -38,6 +58,12 @@ h1 {
 .purple {
   color: var(--deep-purple);
 }
+.white {
+  color: white;
+}
+.ghostwhite {
+  color: ghostwhite;
+}
 
 /*  COLOR FILL  */
 .fill-blue {
@@ -45,6 +71,20 @@ h1 {
 }
 .fill-green {
   background-color: mediumaquamarine;
+}
+.fill-purple {
+  background-color: var(--deep-purple);
+}
+
+/*  FONT SIZE  */
+.f15 {
+  font-size: 1.5rem;
+}
+.f16 {
+  font-size: 1.6rem;
+}
+.f2 {
+  font-size: 2rem;
 }
 
 /*  INPUT FIELDS  */
@@ -57,4 +97,10 @@ h1 {
 }
 .width180 {
   width: 180px;
+}
+
+/*  TEXT DECORATION  */
+.none {
+  text-decoration: none;
+  list-style-type: none;
 }
