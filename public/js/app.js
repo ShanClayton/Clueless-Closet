@@ -1,7 +1,10 @@
 const app = angular.module('ClosetApp', []);
 
 app.controller('MyController', ['$http', function($http){
-
+  // this.includePath = 'partials/nav.html';
+  //
+  // this.changePath = (path) => {
+  //  this.includePath = 'partials/' + path + '.html';
 }])
 
 app.controller('AuthController', ['$http', function($http){

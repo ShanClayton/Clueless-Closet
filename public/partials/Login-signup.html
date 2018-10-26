@@ -1,21 +1,31 @@
 <div class="Authorization" ng-controller="AuthController as auth">
-  <h1>Auth App</h1>
-<h2>Create User</h2>
+  <div class="font-effect-3d-float">
+      <h1>Clueless Closet</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Sign Up</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </nav>
+<h2 class="purple">Create User</h2>
 <form ng-submit="auth.createUser()">
-  <input type="text" placeholder="Username" ng-model="auth.username" />
-  <input type="password" placeholder="Password" ng-model="auth.password" />
-  <input type="submit" value="Create User">
+  <input class="input-field width180 height30" type="text" placeholder="username" ng-model="auth.username" />
+  <input class="input-field width180 height30" type="password" placeholder="password" ng-model="auth.password" />
+  <input class="fill-green" type="submit" value="Create User">
 </form><br>
 <br>
-<h2>Log In</h2>
+<h2 class="purple">Log In</h2>
 <form ng-submit="auth.logIn()">
-  <input type="text" placeholder="username" ng-model="auth.username" />
-  <input type="password" placeholder="password" ng-model="auth.password" />
-  <input type="submit" value="Log In">
+    <input class="input-field width180 height30" type="text" placeholder="username" ng-model="auth.username" />
+    <input class="input-field width180 height30" type="password" placeholder="password" ng-model="auth.password" />
+    <input class="fill-blue" type="submit" value="Log In">
 </form><br>
 <br>
 <br>
-<h2>Go to "the app"</h2>
+<h2 class="purple">Go to "the app"</h2>
 <a href="#" ng-click="auth.goApp()">Click here</a>
 <br>
 <br>
