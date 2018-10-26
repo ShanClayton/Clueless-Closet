@@ -1,26 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&effect=3d-float');
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=PT+Mono');
+/* @import url('https://fonts.googleapis.com/css?family=PT+Sans'); */
 /*
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400'); */
 /* FONT EFFECT OPTIONS - neon, stonewash, 3d-float */
 
 * {
-  /* background-color: ghostwhite; */
-  font-family: 'PT Sans', sans-serif;
+  background-color: ghostwhite;
+  font-family: 'PT Mono', monospace;
 }
 
 
 /*  VARIABLES  */
 :root {
-  --neon-pink: #e514aa;
-  --deep-pink: #e4346e;
-  --deep-purple: #641ba0;
   --blue: #54bcdc;
+  --babyblue: #a2cffe;
+  --charcoal: #36454f;
+  --rustyrose: #c28285;
 }
 
 /*  HEADERS  */
 h1 {
-  color: var(--neon-pink);
+  color: black;
   font-family: "Permanent Marker", sans-serif;
   font-size: 3rem;
   margin: 0;
@@ -30,11 +31,11 @@ h1 {
 
 /*  NAVIGATION  */
 .container {
-  background-color: var(--deep-purple);
+  /* background-color: var(--deep-purple);
   display: flex;
   height: 42px;
   margin-left: -10px;
-  width: 100%;
+  width: 100%; */
 }
 .ctr-links {
 
@@ -52,29 +53,50 @@ h1 {
 
 
 /*  COLORS  */
-.blue {
+/* .blue {
   color: var(--blue);
+}*/
+.babyblue {
+  color: var(--babyblue);
 }
-.purple {
-  color: var(--deep-purple);
+.black {
+  color: black;
 }
-.white {
-  color: white;
+.charcoal {
+  color: var(--charcoal);
+}
+.dimgrey {
+  color: dimgrey;
+}
+.gainsboro {
+  color: gainsboro;
 }
 .ghostwhite {
   color: ghostwhite;
 }
+.lightgrey {
+  color: lightgrey;
+}
+.lightslategrey {
+  color: lightslategrey;
+}
+.mediumaquamarine {
+  color: mediumaquamarine;
+}
+.rustyrose {
+  color: var(--rustyrose);
+}
+.white {
+  color: white;
+}
 
 /*  COLOR FILL  */
-.fill-blue {
+/* .fill-blue {
   background-color: var(--blue);
 }
 .fill-green {
   background-color: mediumaquamarine;
-}
-.fill-purple {
-  background-color: var(--deep-purple);
-}
+}*/
 
 /*  FONT SIZE  */
 .f15 {
