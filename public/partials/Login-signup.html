@@ -1,0 +1,25 @@
+<div class="Authorization" ng-controller="AuthController as auth">
+  <h1>Auth App</h1>
+<h2>Create User</h2>
+<form ng-submit="auth.createUser()">
+  <input type="text" placeholder="Username" ng-model="auth.username" />
+  <input type="password" placeholder="Password" ng-model="auth.password" />
+  <input type="submit" value="Create User">
+</form><br>
+<br>
+<h2>Log In</h2>
+<form ng-submit="auth.logIn()">
+  <input type="text" placeholder="username" ng-model="auth.username" />
+  <input type="password" placeholder="password" ng-model="auth.password" />
+  <input type="submit" value="Log In">
+</form><br>
+<br>
+<br>
+<h2>Go to "the app"</h2>
+<a href="#" ng-click="auth.goApp()">Click here</a>
+<br>
+<br>
+<div ng-if="auth.loggedInUsername">
+  Welcome, {{auth.loggedInUsername}}
+</div>
+</div>
