@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&effect=3d-float');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+/*
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400'); */
+/* FONT EFFECT OPTIONS - neon, stonewash, 3d-float */
+
+* {
+  background-color: ghostwhite;
+  font-family: 'PT Sans', sans-serif;
+}
+
+
+/*  VARIABLES  */
+:root {
+  --neon-pink: #e514aa;
+  --deep-pink: #e4346e;
+  --deep-purple: #641ba0;
+  --blue: #54bcdc;
+}
+
+/*  HEADERS  */
+h1 {
+  color: var(--neon-pink);
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/*  NAVIGATION  */
+
+
+/*  COLORS  */
+.blue {
+  color: var(--blue);
+}
+.purple {
+  color: var(--deep-purple);
+}
+
+/*  COLOR FILL  */
+.fill-blue {
+  background-color: var(--blue);
+}
+.fill-green {
+  background-color: mediumaquamarine;
+}
+
+/*  INPUT FIELDS  */
+.input-field {
+  border: 1.5px solid var(--blue);
+  font-size: 17px;
+}
+.height30 {
+  height: 30px;
+}
+.width180 {
+  width: 180px;
+}
