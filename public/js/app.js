@@ -6,6 +6,7 @@ app.controller('MyController', ['$http', function($http){
 
   this.changeInclude = (path) => {
     this.includePath = 'partials/'+ path +'.html';
+    console.log(this.changeInclude);
   };
 
     const controller = this;
