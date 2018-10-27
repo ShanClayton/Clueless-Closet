@@ -9,7 +9,7 @@ router.get('/', (req, res)=>{
 })
 
 
-router.post('/', (req, res)=>{
+router.post('/new', (req, res)=>{
   Outfits.create(req.body, (err, createdOutfit)=>{
     res.json(createdOutfit)
   })
