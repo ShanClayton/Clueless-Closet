@@ -1,0 +1,8 @@
+<div class="Authorization">
+<h2 class="purple">Create User</h2>
+<form ng-submit="ctrl.createUser()">
+  <input class="input-field width180 height30" type="text" placeholder="username" ng-model="ctrl.username" />
+  <input class="input-field width180 height30" type="password" placeholder="password" ng-model="ctrl.password" />
+  <input class="fill-green" type="submit" value="Create User">
+  <button ng-click="ctrl.changeInclude('login')">Already a mamber?<br> Log In</button>
+</form><br>
