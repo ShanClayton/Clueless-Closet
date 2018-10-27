@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&effect=3d-float');
+@import url('https://fonts.googleapis.com/css?family=PT+Mono');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200&effect=3d-float');
+/* @import url('https://fonts.googleapis.com/css?family=PT+Sans'); */
+/*
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400'); */
+/* FONT EFFECT OPTIONS - neon, stonewash, 3d-float */
+
+* {
+  background-color: ghostwhite;
+  font-family: 'PT Mono', monospace;
+}
+
+
+/*  VARIABLES  */
+:root {
+  --blue: #54bcdc;
+  --babyblue: #a2cffe;
+  --charcoal: #36454f;
+  --rustyrose: #c28285;
+}
+
+/*  HEADERS  */
+h1 {
+  color: black;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/*  NAVIGATION  */
+.container {
+  /* background-color: var(--deep-purple);
+  display: flex;
+  height: 42px;
+  margin-left: -10px;
+  width: 100%; */
+}
+.ctr-links {
+
+}
+.left-links {
+  align-self: baseline;
+}
+.right-links {
+  align-self: baseline;
+}
+.spc-links {
+  margin: auto;
+}
+
+
+
+/*  COLORS  */
+/* .blue {
+  color: var(--blue);
+}*/
+.babyblue {
+  color: var(--babyblue);
+}
+.black {
+  color: black;
+}
+.charcoal {
+  color: var(--charcoal);
+}
+.dimgrey {
+  color: dimgrey;
+}
+.gainsboro {
+  color: gainsboro;
+}
+.ghostwhite {
+  color: ghostwhite;
+}
+.lightgrey {
+  color: lightgrey;
+}
+.lightslategrey {
+  color: lightslategrey;
+}
+.mediumaquamarine {
+  color: mediumaquamarine;
+}
+.rustyrose {
+  color: var(--rustyrose);
+}
+.white {
+  color: black;
+}
+
+/*  COLOR FILL  */
+/* .fill-blue {
+  background-color: var(--blue);
+}
+.fill-green {
+  background-color: mediumaquamarine;
+}*/
+
+/*  FONT SIZE  */
+.f15 {
+  font-size: 1.5rem;
+}
+.f16 {
+  font-size: 1.2rem;
+}
+.f2 {
+  font-size: 2rem;
+}
+
+/*  INPUT FIELDS  */
+.input-field {
+  border: 1.5px solid var(--blue);
+  font-size: 17px;
+}
+.height30 {
+  height: 30px;
+}
+.width180 {
+  width: 180px;
+}
+
+/* MODALS */
+/* create the modal foundation as a class */
+.modal {
+  background-color: rgba(0,0,0,0.4);
+  /* test flexbox properties */
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* set modal height to cover 80% of viewport */
+  height: 80%;
+  margin-top: 45px;
+  overflow: auto;
+  position: fixed;
+  /* set modal width to cover 60% of viewport */
+  width: 60%;
+  /* z-index: 1; */
+  /* height: 100%;
+  width: 100%; */
+}
+
+/* create sidebar foundation as a class  */
+.sidebar {
+  /* ensure straight edges when sidebar image meets registration form */
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  /* round the container edges */
+  border-radius: 20px;
+  /* initial test */
+  color: white;
+  /* make height 100% of its parent container */
+  height: 100vw;
+  /* show only one iteration of the image */
+  repeat: no-repeat;
+  /* ensure image covers the set span */
+  size: cover;
+  /* make width 40% of its parent container */
+  width: 40vw;
+  /* test flexbox properties */
+  display: flex;
+  flex-direction: column;
+}
+
+/* create registration form foundation as a class */
+.registration {
+  /* round the container edges */
+  border-radius: 20px;
+  /* initial test */
+  color: black;
+  /* make height 100% of its parent container  */
+  height: 100vw;
+  /* ensure form covers set span */
+  size: cover;
+  /* make width remaining 60% of parent container */
+  width: 60vw;
+  /* test flexbox properties */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* create the login sidebar as a class */
+.sidebar-login {
+  /* background: url('assets/login-clothing.jpg'); */
+  flex: 2 2 auto;
+}
+
+/* create the login registration form as a class */
+.sidebar-registration {
+  /* background: url('/assets/signup-clothing.jpg'); */
+  flex: 3 3 auto;
+}
+
+/*  TEXT DECORATION  */
+.none {
+  text-decoration: none;
+  list-style-type: none;
+}
