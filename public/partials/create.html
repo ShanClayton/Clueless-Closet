@@ -1,0 +1,35 @@
+<div class="create">
+  <h3>Create a New Look</h3>
+  <div class="outer">
+    <form ng-submit="ctrl.newOutfit()">
+      <h4>Outer Wear</h4>
+      <img src="{{this.image}}" alt="">
+      <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
+      <input type="submit" value="Create New look" /><br>
+    </form><br>
+  </div>
+  <div class="upper">
+      <img src="{{this.image}}" alt="">
+    <form ng-submit="ctrl.newOutfit()">
+      <h4>Upper Half</h4>
+      <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
+      <input type="submit" value="Create New look" /><br>
+    </form><br>
+  </div>
+  <div class="lower">
+      <img src="{{this.image}}" alt="">
+    <form ng-submit="ctrl.newOutfit()">
+      <h4>Lower Half</h4>
+      <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
+      <input type="submit" value="Create New look" /><br>
+    </form><br>
+  </div>
+  <div class="shoes">
+      <img src="{{this.image}}" alt="">
+    <form ng-submit="ctrl.newOutfit()">
+      <h4>Shoes</h4>
+      <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
+      <input type="submit" value="Create New look" /><br>
+    </form><br>
+  </div>
+</div>
