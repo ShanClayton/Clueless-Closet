@@ -1,0 +1,16 @@
+<div class="outer">
+  <form ng-submit="ctrl.newOutfit()">
+    <h4 ng-model="ctrl.category">OuterWear</h4>
+    <img src="{{ctrl.image}}" alt="">
+    <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
+    <div class="dropdown">
+      <select name="outwear-type">
+        <option value="type">Type</option>
+        <option value="coat">Coat</option>
+        <option value="jacket">Jacket</option>
+        <option value="sweaters">Sweaters</option>
+      </select>
+    </div>
+    <input type="submit" value="Create New look" /><br>
+  </form><br>
+</div>
