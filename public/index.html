@@ -11,6 +11,7 @@
     <div class="font-effect-3d-float">
         <h1>Clueless Closet</h1>
     </div>
+
       <div class="headerimg">
         <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bea145e75de8fd2251f2b6480bad06a2&auto=format&fit=crop&w=700&q=60" style="width: 100%; height:350px; object-fit: cover;" alt="clothing rack" />
       </div>
@@ -25,34 +26,9 @@
         <div><img src="https://images.unsplash.com/photo-1516763296043-f676c1105999?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4217dd257e2020fa0fd82af67a35e4ad&auto=format&fit=crop&w=700&q=60" class="bottom" alt="womens clothing layout two" /></div>
       </div>
   <nav ng-include="'partials/nav.html'">
+
+  <nav ng-include="ctrl.includePath">
+
  </nav>
- <div class="create">
-      <h3>Create a New Look</h3>
-      <form ng-submit="ctrl.newOutfit()">
-        <h4>Outter Wear</h4>
-        <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
-        <input type="submit" value="Create New look" /><br>
-      </form><br>
-      <form ng-submit="ctrl.newOutfit()">
-        <h4>Upper Half</h4>
-        <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
-        <input type="submit" value="Create New look" /><br>
-      </form><br>
-      <form ng-submit="ctrl.newOutfit()">
-        <h4>Lower Half</h4>
-        <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
-        <input type="submit" value="Create New look" /><br>
-      </form><br>
-      <form ng-submit="ctrl.newOutfit()">
-        <h4>Shoes</h4>
-        <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
-        <input type="submit" value="Create New look" /><br>
-      </form><br>
-    </div>
-    <div class="show">
-      <ul>
-        <li ng-repeat="outfit in ctrl.outfits"><img src="{{outfit.image}}" alt=""> </li>
-      </ul>
-    </div>
   </body>
 </html>
