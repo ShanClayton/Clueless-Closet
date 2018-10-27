@@ -3,6 +3,16 @@
   <form ng-submit="ctrl.newOutfit()">
     <h4>Shoes</h4>
     <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
+    <div class="dropdown">
+      <select name="shoes-type">
+        <option value="boots">Boots</option>
+        <option value="dress">Dress Shoes</option>
+        <option value="flats">Flats</option>
+        <option value="heels">Heels</option>
+        <option value="sneakers">Sneakers</option>
+        <option value="sports">Sports</option>
+      </select>
+    </div>
     <input type="submit" value="Create New look" /><br>
   </form><br>
 </div>
