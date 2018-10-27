@@ -2,10 +2,11 @@ const app = angular.module('ClosetApp', []);
 
 app.controller('MyController', ['$http', function($http){
 
-  this.includePath = 'partials/show.html';
+  this.includePath = 'partials/nav.html';
 
   this.changeInclude = (path) => {
     this.includePath = 'partials/'+ path +'.html';
+    console.log(this.changeInclude);
   };
 
     const controller = this;
@@ -13,11 +14,12 @@ app.controller('MyController', ['$http', function($http){
     this.newOutfit = function(){
       $http({
         method: 'POST',
-        url: '/outfits',
+        url: '/outfits/new',
         data: {
           image: this.image
         }
       }).then(function(response){
+        this.image = null;
         controller.getOutfit()
       }, function(){
         console.log('error');
@@ -54,6 +56,7 @@ app.controller('MyController', ['$http', function($http){
           image: this.editedImage
         }
       }).then(function(response){
+        this.editedimage = null;
         controller.getoutfit();
         console.log(response)
       },function(){
@@ -61,10 +64,7 @@ app.controller('MyController', ['$http', function($http){
       })
     }
 
-    this.getOutfit()
-  }])
-
-app.controller('AuthController', ['$http', function($http){
+    this.getOutfit();
 
     this.createUser = function(){
     $http({

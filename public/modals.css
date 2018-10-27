@@ -1,4 +1,13 @@
 /* MODALS */
+
+/* Krystal List:
+<modal>
+<sidebar + reg>
+<form>
+add crimson for delete
+icons 40px 40px
+ */
+
 /* <modal>
 <sidebar + reg>
 <form> */
@@ -65,12 +74,19 @@
 
 /* create the login sidebar as a class */
 .sidebar-login {
+
+  /* background: url('assets/login-clothing.jpg'); */
+
   /* background: url('') */
+
   flex: 2 2 auto;
 }
 
 /* create the login registration form as a class */
 .sidebar-registration {
-  /* background: url('') */
+
+  /* background: url('/assets/signup-clothing.jpg'); */
+
+
   flex: 3 3 auto;
 }
