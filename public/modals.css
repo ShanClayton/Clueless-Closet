@@ -1,0 +1,76 @@
+/* MODALS */
+/* <modal>
+<sidebar + reg>
+<form> */
+
+/* create the modal foundation as a class */
+.modal {
+  background-color: rgba(0,0,0,0.4);
+  /* test flexbox properties */
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* set modal height to cover 80% of viewport */
+  height: 80%;
+  margin-top: 45px;
+  overflow: auto;
+  position: fixed;
+  /* set modal width to cover 60% of viewport */
+  width: 60%;
+  /* z-index: 1; */
+  /* height: 100%;
+  width: 100%; */
+}
+
+/* create sidebar foundation as a class  */
+.sidebar {
+  /* ensure straight edges when sidebar image meets registration form */
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  /* round the container edges */
+  border-radius: 20px;
+  /* initial test */
+  color: white;
+  /* make height 100% of its parent container */
+  height: 100vw;
+  /* show only one iteration of the image */
+  repeat: no-repeat;
+  /* ensure image covers the set span */
+  size: cover;
+  /* make width 40% of its parent container */
+  width: 40vw;
+  /* test flexbox properties */
+  display: flex;
+  flex-direction: column;
+}
+
+/* create registration form foundation as a class */
+.registration {
+  /* round the container edges */
+  border-radius: 20px;
+  /* initial test */
+  color: black;
+  /* make height 100% of its parent container  */
+  height: 100vw;
+  /* ensure form covers set span */
+  size: cover;
+  /* make width remaining 60% of parent container */
+  width: 60vw;
+  /* test flexbox properties */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* create the login sidebar as a class */
+.sidebar-login {
+  /* background: url('') */
+  flex: 2 2 auto;
+}
+
+/* create the login registration form as a class */
+.sidebar-registration {
+  /* background: url('') */
+  flex: 3 3 auto;
+}
