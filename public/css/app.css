@@ -57,7 +57,7 @@ h1 {
   text-align: center;
 }
 
-/* TOP HEADER IMG */
+/* IMAGES */
 .headerimg{
   /* width: 1200px;
   height: 350px; */
@@ -69,7 +69,7 @@ h1 {
   background-repeat: repeat-y;
 }
 
-/* THREE IMAGES BELOW */
+/* LANDING PAGE IMAGES */
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -77,54 +77,12 @@ h1 {
   justify-content: center;
   /* display: inline-block; */
 }
-
-/* THREE IMAGES BELOW */
 .bottom {
   height: 200px;
   width: 200px;
   border: 1px solid black;
   margin: 10px;
   padding: 5px;
-}
-
-/*  NAVIGATION  */
-a:hover {
-  color: var(--blue);
-  cursor: pointer;
-  text-decoration: none;
-}
-a.dropblue:hover {
-  background-color: white;
-  color: blue;
-}
-a.purple:hover {
-  color: var(--purple);
-}
-a.rose:hover {
-  color: var(--rustyrose);
-}
-a.rust:hover {
-  color: var(--rust);
-}
-/* .height45 {
-  height: 45px;
-} */
-.li, a {
-  /* align-content: space-evenly; */
-  /* align-items: center; */
-  font-weight: bold;
-}
-.main-nav {
-  /* background-color: var(--rustyrose); */
-  border-bottom: 2px solid var(--charcoal);
-  border-top: 2px solid var(--charcoal);
-  display: flex;
-  justify-content: space-around;
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-.navbar {
-  height: 100px;
 }
 
 /*  COLORS  */
@@ -342,6 +300,46 @@ a.rust:hover {
 .sidebar-registration {
   /* background: url('/assets/signup-clothing.jpg'); */
   flex: 3 3 auto;
+}
+
+/*  NAVIGATION  */
+a:hover {
+  color: var(--blue);
+  cursor: pointer;
+  text-decoration: none;
+}
+a.dropblue:hover {
+  background-color: white;
+  color: blue;
+}
+a.purple:hover {
+  color: var(--purple);
+}
+a.rose:hover {
+  color: var(--rustyrose);
+}
+a.rust:hover {
+  color: var(--rust);
+}
+/* .height45 {
+  height: 45px;
+} */
+.li, a {
+  /* align-content: space-evenly; */
+  /* align-items: center; */
+  font-weight: bold;
+}
+.main-nav {
+  /* background-color: var(--rustyrose); */
+  border-bottom: 2px solid var(--charcoal);
+  border-top: 2px solid var(--charcoal);
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.navbar {
+  height: 100px;
 }
 
 /*  TEXT DECORATION  */
