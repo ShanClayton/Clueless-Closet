@@ -1,8 +1,29 @@
-<div class="Authorization">
+<div class="modal-container">
+  <div class="modal">
+    <img src="/assets/signup-clothing.jpg" class="sidebar">
+      <div class="registration">
+        <a id="close-modal" href="#">
+          <img class="width30 height30 cancel pointer" src="assets/cancel.png">
+        </a>
+        <form style="text-align:center;" ng-submit="ctrl.createUser()">
+          <h2 style="text-align:center;">CREATE CLOSET</h2>
+            <input class="input-field-blue width180 height30" type="text" placeholder="username" ng-model="ctrl.username" />
+            <input class="input-field-blue width180 height30" type="password" placeholder="password" ng-model="ctrl.password" />
+            <a class="none" href="#"><input class="blue btn-login white" type="submit" value="Sign Up"></a>
+            <button class="rust-border f1 pointer" ng-click="ctrl.changeInclude('login')">Already a member?<br> Log In</button>
+        </form><br>
+        <!-- <div ng-if="ctrl.loggedInUsername">
+          Welcome, {{ctrl.loggedInUsername}}
+        </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- <div class="Authorization">
 <h2 class="purple">Create User</h2>
 <form ng-submit="ctrl.createUser()">
   <input class="input-field width180 height30" type="text" placeholder="username" ng-model="ctrl.username" />
   <input class="input-field width180 height30" type="password" placeholder="password" ng-model="ctrl.password" />
   <input class="fill-green" type="submit" value="Create User">
-  <button ng-click="ctrl.changeInclude('login')">Already a mamber?<br> Log In</button>
-</form><br>
+  <button ng-click="ctrl.changeInclude('login')">Already a member?<br> Log In</button>
+</form><br> -->
