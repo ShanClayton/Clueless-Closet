@@ -110,4 +110,11 @@ this.goApp = function(){
     })
   }
 
+this.openModal = function(){
+  //if login button is clicked
+  
+  //show modal \\ open modal function
+
+}
+
 }])
