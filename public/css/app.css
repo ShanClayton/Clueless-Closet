@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&effect=3d-float');
-@import url('https://fonts.googleapis.com/css?family=PT+Mono');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+/* @import url('https://fonts.googleapis.com/css?family=Rajdhani'); */
+/* @import url('https://fonts.googleapis.com/css?family=Kodchasan'); */
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+
+/* @import url('https://fonts.googleapis.com/css?family=PT+Mono'); */
 /* @import url('https://fonts.googleapis.com/css?family=PT+Sans'); */
 /*
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400'); */
@@ -44,8 +49,8 @@
 /*  HEADERS  */
 h1 {
   color: black;
-  font-family: 'PT Mono', monospace;
-  font-size: 2.6rem;
+  font-family: 'Courgette', cursive;
+  font-size: 3rem;
   /* margin-top: 20px; */
   padding: 0;
   text-align: center;
@@ -154,6 +159,9 @@ a:hover {
 }
 .f15 {
   font-size: 1.5rem;
+}
+.f16 {
+  font-size: 1.6rem;
 }
 .f2 {
   font-size: 2rem;
