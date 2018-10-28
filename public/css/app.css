@@ -16,12 +16,13 @@
   font-family: 'Titillium Web', sans-serif;
 }
 
-
 /*  VARIABLES  */
 :root {
   --blue: #54bcdc;
   --babyblue: #a2cffe;
   --charcoal: #36454f;
+  --purple: #9e7cc9;
+  --rust: #985e4a;
   --rustyrose: #c28285;
 }
 
@@ -92,6 +93,19 @@ a:hover {
   cursor: pointer;
   text-decoration: none;
 }
+a.dropblue:hover {
+  background-color: white;
+  color: blue;
+}
+a.purple:hover {
+  color: var(--purple);
+}
+a.rose:hover {
+  color: var(--rustyrose);
+}
+a.rust:hover {
+  color: var(--rust);
+}
 /* .height45 {
   height: 45px;
 } */
@@ -152,8 +166,25 @@ a:hover {
 .blue {
   background-color: var(--blue);
 }
+.purple {
+  background-color: var(--purple);
+}
+.rose {
+  background-color: var(--rustyrose);
+}
+.rust {
+  background-color: var(--rust);
+}
+
+/* COLOR OUTLINE */
+.rust-border {
+  border: 1.5px solid var(--rust);
+}
 
 /*  FONT SIZE  */
+.f1 {
+  font-size: 1rem;
+}
 .f14 {
   font-size: 1.4rem;
 }
@@ -170,14 +201,21 @@ a:hover {
 /* ICONS */
 .cancel {
   align-self: flex-end;
-  padding: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 /*  INPUT FIELDS  */
-.input-field {
+.input-field-blue, .input-field-rose, .input-field-rust {
   border: 1.5px solid var(--blue);
   font-size: 17px;
   margin: 3% 13%;
+}
+.input-field-rose {
+  border: 1.5px solid var(--rustyrose);
+}
+.input-field-rust {
+  border: 1.5px solid var(--rust);
 }
 .height30 {
   height: 30px;
