@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&effect=3d-float');
-@import url('https://fonts.googleapis.com/css?family=PT+Mono');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+/* @import url('https://fonts.googleapis.com/css?family=Rajdhani'); */
+/* @import url('https://fonts.googleapis.com/css?family=Kodchasan'); */
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+
+/* @import url('https://fonts.googleapis.com/css?family=PT+Mono'); */
 /* @import url('https://fonts.googleapis.com/css?family=PT+Sans'); */
 /*
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400'); */
@@ -11,12 +16,13 @@
   font-family: 'Titillium Web', sans-serif;
 }
 
-
 /*  VARIABLES  */
 :root {
   --blue: #54bcdc;
   --babyblue: #a2cffe;
   --charcoal: #36454f;
+  --purple: #9e7cc9;
+  --rust: #985e4a;
   --rustyrose: #c28285;
 }
 
@@ -44,8 +50,8 @@
 /*  HEADERS  */
 h1 {
   color: black;
-  font-family: 'PT Mono', monospace;
-  font-size: 2.6rem;
+  font-family: 'Courgette', cursive;
+  font-size: 3rem;
   /* margin-top: 20px; */
   padding: 0;
   text-align: center;
@@ -86,6 +92,19 @@ a:hover {
   color: var(--blue);
   cursor: pointer;
   text-decoration: none;
+}
+a.dropblue:hover {
+  background-color: white;
+  color: blue;
+}
+a.purple:hover {
+  color: var(--purple);
+}
+a.rose:hover {
+  color: var(--rustyrose);
+}
+a.rust:hover {
+  color: var(--rust);
 }
 /* .height45 {
   height: 45px;
@@ -147,13 +166,33 @@ a:hover {
 .blue {
   background-color: var(--blue);
 }
+.purple {
+  background-color: var(--purple);
+}
+.rose {
+  background-color: var(--rustyrose);
+}
+.rust {
+  background-color: var(--rust);
+}
+
+/* COLOR OUTLINE */
+.rust-border {
+  border: 1.5px solid var(--rust);
+}
 
 /*  FONT SIZE  */
+.f1 {
+  font-size: 1rem;
+}
 .f14 {
   font-size: 1.4rem;
 }
 .f15 {
   font-size: 1.5rem;
+}
+.f16 {
+  font-size: 1.6rem;
 }
 .f2 {
   font-size: 2rem;
@@ -162,14 +201,21 @@ a:hover {
 /* ICONS */
 .cancel {
   align-self: flex-end;
-  padding: 10px;
+  padding-top: 25px;
+  padding-right: 25px;
 }
 
 /*  INPUT FIELDS  */
-.input-field {
+.input-field-blue, .input-field-rose, .input-field-rust {
   border: 1.5px solid var(--blue);
   font-size: 17px;
   margin: 3% 13%;
+}
+.input-field-rose {
+  border: 1.5px solid var(--rustyrose);
+}
+.input-field-rust {
+  border: 1.5px solid var(--rust);
 }
 .height30 {
   height: 30px;
@@ -179,6 +225,7 @@ a:hover {
 }
 
 /* LOGIN */
+
 /* a:hover > modal-login {
   background-color: white;
   border: 2px solid var(--blue);
@@ -207,6 +254,12 @@ a:hover {
   display: flex;
   height: 100%;
   justify-content: center;
+  /* jerrica */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: auto;
   width: 100%;
 }
 /* create the modal foundation as a class */
@@ -221,9 +274,9 @@ a:hover {
   flex-direction: row;
   flex-wrap: nowrap;
   /* set modal height to cover 80% of viewport */
-  height: 75%;
+  height: 70%;
   /* this sets the margin % (of the page) from the top of the page */
-  /* margin-top: 1%; */
+  margin-top: 7%;
   /* this property prevents modal from spanning the entire page vertically */
   overflow: auto;
   position: fixed;
@@ -245,7 +298,7 @@ a:hover {
   /* make height 100% of its parent container */
   height: 50vw;
   object-fit: contain;
-  object-position: center
+  object-position: center;
   /* show only one iteration of the image */
   repeat: no-repeat;
   /* ensure image covers the set span */
@@ -267,8 +320,8 @@ a:hover {
   /* make height 100% of its parent container  */
   /* this removed the cancel button */
   /* height: 20vw; */
-  margin-top: -70px;
-  padding-left: 10px;
+  /* margin-top: -70px; */
+  /* padding-left: 10px; */
   /* ensure form covers set span */
   /* size: cover; */
   /* make width remaining 60% of parent container */

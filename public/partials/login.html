@@ -1,15 +1,16 @@
 <div class="modal-container">
   <div class="modal">
     <img src="/assets/login-clothing.jpg" class="sidebar">
-      <div class="registration">
+      <div class="registration" style="margin-top:-70px;">
         <a id="close-modal" href="#">
           <img class="width30 height30 cancel pointer" src="assets/cancel.png">
         </a>
         <form style="text-align:center;" ng-submit="ctrl.logIn()">
           <h2 style="text-align:center;">LOGIN</h2>
-            <input class="input-field width180 height30" type="text" placeholder="username" ng-model="ctrl.username" />
-            <input class="input-field width180 height30" type="password" placeholder="password" ng-model="ctrl.password" />
-            <a class="none hover-modal-login" href="#"><input class="blue btn-login white" type="submit" value="LOGIN"></a>
+            <input class="input-field-rust width180 height30" type="text" placeholder="username" ng-model="ctrl.username" />
+            <input class="input-field-rust width180 height30" type="password" placeholder="password" ng-model="ctrl.password" />
+            <a class="none" href="#"><input class="rust btn-login white" type="submit" value="LOGIN"></a>
+            <!-- <a class="none hover-modal-login" href="#"><input class="rust btn-login white" type="submit" value="LOGIN"></a> -->
         </form><br>
         <!-- <div ng-if="ctrl.loggedInUsername">
           Welcome, {{ctrl.loggedInUsername}}
