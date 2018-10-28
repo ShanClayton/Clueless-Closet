@@ -90,7 +90,7 @@ this.logIn = function(){
             password: this.password
         }
     }).then(function(response){
-      this.loggedInUser = response.data.username;
+      controller.loggedInUser = response.data.username;
       this.changeInclude("create");
         console.log(response);
     }, function(){
