@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&effect=3d-float');
 @import url('https://fonts.googleapis.com/css?family=PT+Mono');
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200&effect=3d-float');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 /* @import url('https://fonts.googleapis.com/css?family=PT+Sans'); */
 /*
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400'); */
@@ -8,7 +8,7 @@
 
 * {
   background-color: ghostwhite;
-  font-family: 'PT Mono', monospace;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 
@@ -20,28 +20,69 @@
   --rustyrose: #c28285;
 }
 
+/* ANIMATIONS */
+.pointer {
+  cursor: pointer;
+}
+
 /*  HEADERS  */
 h1 {
   color: black;
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 3rem;
-  margin: 0;
+  font-family: 'PT Mono', monospace;
+  font-size: 2.6rem;
+  /* margin-top: 20px; */
   padding: 0;
   text-align: center;
 }
 
-/*  NAVIGATION  */
-.container {
-  /* background-color: var(--deep-purple);
-  display: flex;
-  height: 42px;
-  margin-left: -10px;
-  width: 100%; */
+/* TOP HEADER IMG */
+.headerimg{
+  /* width: 1200px;
+  height: 350px; */
+  /* object-fit: */
+  /* display: flex; */
+  /* justify-content: */
+  /* margin: 0 auto; */
+  z-index: 0;
+  background-repeat: repeat-y;
 }
-.ctr-links {
 
+/* THREE IMAGES BELOW */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  /* display: inline-block; */
 }
-.left-links {
+
+/* THREE IMAGES BELOW */
+.bottom {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
+}
+/*  NAVIGATION  */
+a:hover {
+  color: var(--blue);
+  cursor: pointer;
+  text-decoration: none;
+}
+.li, a {
+  align-content: space-evenly;
+  font-weight: bold;
+}
+.main-nav {
+  align-items: space-around;
+  border-bottom: 2px solid var(--charcoal);
+  border-top: 2px solid var(--charcoal);
+  display: flex;
+  justify-content: space-around;
+  padding: .25px 25px;
+}
+/* .left-links {
   align-self: baseline;
 }
 .right-links {
@@ -49,14 +90,9 @@ h1 {
 }
 .spc-links {
   margin: auto;
-}
-
-
+} */
 
 /*  COLORS  */
-/* .blue {
-  color: var(--blue);
-}*/
 .babyblue {
   color: var(--babyblue);
 }
@@ -88,32 +124,36 @@ h1 {
   color: var(--rustyrose);
 }
 .white {
-  color: black;
+  color: white;
 }
 
 /*  COLOR FILL  */
-/* .fill-blue {
+.blue {
   background-color: var(--blue);
 }
-.fill-green {
-  background-color: mediumaquamarine;
-}*/
 
 /*  FONT SIZE  */
+.f14 {
+  font-size: 1.4rem;
+}
 .f15 {
   font-size: 1.5rem;
 }
-.f16 {
-  font-size: 1.2rem;
-}
 .f2 {
   font-size: 2rem;
+}
+
+/* ICONS */
+.cancel {
+  align-self: flex-end;
+  padding: 10px;
 }
 
 /*  INPUT FIELDS  */
 .input-field {
   border: 1.5px solid var(--blue);
   font-size: 17px;
+  margin: 3% 13%;
 }
 .height30 {
   height: 30px;
@@ -122,44 +162,90 @@ h1 {
   width: 180px;
 }
 
+/* LOGIN */
+a:hover-modal-login {
+  background-color: white;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  cursor: pointer;
+}
+.btn-login {
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  height: 45px;
+  margin: 5% 33%;
+  padding: 1px;
+  width: 80px;
+}
+.height36 {
+  height: 36px;
+}
+.padding5 {
+  padding: 5px;
+}
+.width36 {
+  width: 36px;
+}
+
 /* MODALS */
+.height30 {
+  height: 30px;
+}
+.width30 {
+  width: 30px;
+}
+.modal-container {
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
 /* create the modal foundation as a class */
 .modal {
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(248,248,254);
+  border: 2px inset grey;
   /* test flexbox properties */
-  align-items: stretch;
+  /* this property centers items within the modal */
+  align-items: center;
+  /* align-content: flex-end; */
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   /* set modal height to cover 80% of viewport */
-  height: 80%;
-  margin-top: 45px;
+  height: 75%;
+  /* this sets the margin % (of the page) from the top of the page */
+  /* margin-top: 1%; */
+  /* this property prevents modal from spanning the entire page vertically */
   overflow: auto;
   position: fixed;
   /* set modal width to cover 60% of viewport */
   width: 60%;
-  /* z-index: 1; */
-  /* height: 100%;
-  width: 100%; */
+  z-index: 1;
 }
 
 /* create sidebar foundation as a class  */
 .sidebar {
+  background-color: rgb(242,242,245);
   /* ensure straight edges when sidebar image meets registration form */
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
+  border-right: 1px solid lightgrey;
   /* round the container edges */
-  border-radius: 20px;
+  border-radius: 10px;
   /* initial test */
-  color: white;
   /* make height 100% of its parent container */
-  height: 100vw;
+  height: 50vw;
+  object-fit: contain;
+  object-position: center
   /* show only one iteration of the image */
   repeat: no-repeat;
   /* ensure image covers the set span */
-  size: cover;
+  /* size: cover; */
   /* make width 40% of its parent container */
-  width: 40vw;
+  width: 45vw;
   /* test flexbox properties */
   display: flex;
   flex-direction: column;
@@ -167,16 +253,20 @@ h1 {
 
 /* create registration form foundation as a class */
 .registration {
+  align-items: flex-end;
   /* round the container edges */
   border-radius: 20px;
   /* initial test */
   color: black;
   /* make height 100% of its parent container  */
-  height: 100vw;
+  /* this removed the cancel button */
+  /* height: 20vw; */
+  margin-top: -70px;
+  padding-left: 10px;
   /* ensure form covers set span */
-  size: cover;
+  /* size: cover; */
   /* make width remaining 60% of parent container */
-  width: 60vw;
+  width: 55vw;
   /* test flexbox properties */
   display: flex;
   flex-direction: column;
