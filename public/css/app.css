@@ -25,6 +25,22 @@
   cursor: pointer;
 }
 
+/* BUTTONS */
+/* .btn-nav {
+  margin-top: 25px;
+  height: 25px;
+} */
+.btn-login {
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  margin: 5% 33%;
+  padding: 5px;
+  width: 80px;
+}
+
 /*  HEADERS  */
 h1 {
   color: black;
@@ -64,33 +80,33 @@ h1 {
   margin: 10px;
   padding: 5px;
 }
+
 /*  NAVIGATION  */
 a:hover {
   color: var(--blue);
   cursor: pointer;
   text-decoration: none;
 }
+/* .height45 {
+  height: 45px;
+} */
 .li, a {
-  align-content: space-evenly;
+  /* align-content: space-evenly; */
+  /* align-items: center; */
   font-weight: bold;
 }
 .main-nav {
-  align-items: space-around;
+  /* background-color: var(--rustyrose); */
   border-bottom: 2px solid var(--charcoal);
   border-top: 2px solid var(--charcoal);
   display: flex;
   justify-content: space-around;
-  padding: .25px 25px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
-/* .left-links {
-  align-self: baseline;
+.navbar {
+  height: 100px;
 }
-.right-links {
-  align-self: baseline;
-}
-.spc-links {
-  margin: auto;
-} */
 
 /*  COLORS  */
 .babyblue {
@@ -163,22 +179,12 @@ a:hover {
 }
 
 /* LOGIN */
-a:hover-modal-login {
+/* a:hover > modal-login {
   background-color: white;
   border: 2px solid var(--blue);
   color: var(--blue);
   cursor: pointer;
-}
-.btn-login {
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-  height: 45px;
-  margin: 5% 33%;
-  padding: 1px;
-  width: 80px;
-}
+} */
 .height36 {
   height: 36px;
 }
@@ -206,7 +212,7 @@ a:hover-modal-login {
 /* create the modal foundation as a class */
 .modal {
   background-color: rgba(248,248,254);
-  border: 2px inset grey;
+  border: 2px inset slategrey;
   /* test flexbox properties */
   /* this property centers items within the modal */
   align-items: center;
@@ -232,7 +238,7 @@ a:hover-modal-login {
   /* ensure straight edges when sidebar image meets registration form */
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
-  border-right: 1px solid lightgrey;
+  border-right: 2px solid slategrey;
   /* round the container edges */
   border-radius: 10px;
   /* initial test */
