@@ -1,14 +1,18 @@
-<div class="modal">
-  <img src="/assets/login-clothing.jpg" class="sidebar">
-    <div class="registration">
-      <h1>Login</h1>
-      <form ng-submit="ctrl.logIn()">
-          <input class="input-field width180 height30" type="text" placeholder="username" ng-model="ctrl.username" />
-          <input class="input-field width180 height30" type="password" placeholder="password" ng-model="ctrl.password" />
-          <input class="fill-blue" type="submit" value="Log In">
-      </form><br>
-      <!-- <div ng-if="ctrl.loggedInUsername">
-        Welcome, {{ctrl.loggedInUsername}}
-      </div> -->
+<div class="modal-container">
+  <div class="modal">
+    <img src="/assets/login-clothing.jpg" class="sidebar">
+      <div class="registration">
+        <form ng-submit="ctrl.logIn()">
+          <!-- this button will close the modal -->
+          <img class="width36 height36 padding5 margintop-40" style="float:right;" src="assets/cancel.png">
+          <h1 class="h1-modal">Login</h1>
+            <input class="input-field width180 height30" type="text" placeholder="username" ng-model="ctrl.username" /><br /><br />
+            <input class="input-field width180 height30" type="password" placeholder="password" ng-model="ctrl.password" /><br /><br />
+            <input class="blue btn-login white" type="submit" value="LOGIN">
+        </form><br>
+        <!-- <div ng-if="ctrl.loggedInUsername">
+          Welcome, {{ctrl.loggedInUsername}}
+        </div> -->
+    </div>
   </div>
 </div>
