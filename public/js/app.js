@@ -135,13 +135,6 @@ this.goApp = function(){
     })
   }
 
-// this.showModal = false;
-//
-//   this.toggleModal = () => {
-//     this.showModal = !this.showModal;
-//   }
-
-
 }
 
 }])
