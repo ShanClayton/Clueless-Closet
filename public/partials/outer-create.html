@@ -2,41 +2,41 @@
   <form ng-submit="ctrl.newOutfit()">
     <h4 ng-model="ctrl.category">OuterWear</h4>
     <img src="{{ctrl.image}}" alt="">
-    <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
-    <div class="dropdown">
+    <input type="text" ng-model="ctrl.image" placeholder="Image" /><br /><br />
+    <div class="dropdown-type">
       <select name="outwear-type">
         <option value="type">Type</option>
-        <option value="coat">Coat</option>
-        <option value="jacket">Jacket</option>
-        <option value="sweater">Sweater</option>
+        <option value="coat" ng-model="ctrl.type">Coat</option>
+        <option value="jacket" ng-model="ctrl.type">Jacket</option>
+        <option value="sweater" ng-model="ctrl.type">Sweater</option>
       </select>
-    </div>
+    </div><br />
 
   <!-- Seasons Dropdown Attempt 2 - standard -->
-  <div class="dropdown">
+  <div class="dropdown-season">
     <select class="tag-seasons" name="seasons">
       <option value="season">Season</option>
-      <option value="spring">Spring</option>
-      <option value="summer">Summer</option>
+      <option ng-model="ctrl.tag" value="spring">Spring</option>
+      <option ng-model="ctrl.tag" value="summer">Summer</option>
       <option value="fall">Fall</option>
-      <option value="winter">Winter</option>
+      <option ng-model="ctrl.tag" value="winter">Winter</option>
     </select>
-  </div>
+  </div><br />
 
   <!-- Occasion Dropdown  -->
-  <div class="dropdown">
+  <div class="dropdown-occasion">
     <select class="tag-occasions" name="occasions">
       <option value="occasion">Occasion</option>
-      <option value="business-casual">Business Casual</option>
-      <option value="club">Club</option>
-      <option value="date">Date</option>
-      <option value="dinner">Dinner</option>
-      <option value="interview">Interview</option>
-      <option value="special-event">Special Event</option>
-      <option value="streetwear">StreetWear</option>
+      <option ng-model="ctrl.tag" value="business-casual">Business Casual</option>
+      <option ng-model="ctrl.tag" value="club">Club</option>
+      <option value="date" ng-model="ctrl.tag">Date</option>
+      <option value="dinner" ng-model="ctrl.tag">Dinner</option>
+      <option value="interview" ng-model="ctrl.tag">Interview</option>
+      <option value="special-event" ng-model="ctrl.tag">Special Event</option>
+      <option value="streetwear" ng-model="ctrl.tag">StreetWear</option>
     </select>
-  </div>
-  <input type="submit" value="Create New look" /><br>
+  </div><br />
+  <input ng-click="ctrl.changeInclude('show')" type="submit" value="Create New look" /><br />
 </form><br>
 
 </div>
