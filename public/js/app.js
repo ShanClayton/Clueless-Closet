@@ -135,6 +135,4 @@ this.goApp = function(){
     })
   }
 
-}
-
 }])
