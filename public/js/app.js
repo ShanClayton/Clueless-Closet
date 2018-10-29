@@ -135,14 +135,12 @@ this.goApp = function(){
     })
   }
 
-<<<<<<< HEAD
-=======
 // this.showModal = false;
 //
 //   this.toggleModal = () => {
 //     this.showModal = !this.showModal;
 //   }
->>>>>>> 5d71e08da86e9c767fefc0f4bd1b4a62791de982
+
 
 }
 
