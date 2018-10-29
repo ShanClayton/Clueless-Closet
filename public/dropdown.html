@@ -1,22 +1,84 @@
-<!-- these dropdowns will live inside the forms -->
+<!-- ATTEMPT 3 - SUBNAV WITH <UL>/<LI> -->
+<!-- navigation menu -->
+<!-- <div class="dropdown-nav">
+  <a href="#">Style Your Look</a>
+    <div class="dropdown-subnav">
+      <button class="btn-subnav">Category</button>
+      <div class="subnav-content">
+        <a href="#">Outerwear</a>
+        <a href="#">Lower Wear</a>
+        <a href="#">Upper Wear</a>
+        <a href="#">Shoes</a>
+      </div>
+    </div>
+</div> -->
+
+<!-- ATTEMPT 2 - CONVERT DROPDOWN TO <UL>/<LI> -->
+<!-- <nav>
+  <ul class="nav">
+    <li><a href="#">Category</a></li>
+      <ul>
+        <li><a href="#">Outer Wear</a></li>
+          <ul>
+            <li><a href="#">Type</a></li>
+              <ul>
+                <li><a href="#">Coat</a></li>
+                <li><a href="#">Jacket</a></li>
+                <li><a href="#">Sweater</a></li>
+              </ul>
+          </ul>
+        <li><a href="#">Lower Wear</a></li>
+        <li><a href="#">Upper Wear</a></li>
+        <li><a href="#">Shoes</a></li>
+      </ul> -->
+
+      <!-- DOES IT MATTER WHAT I NAME THE SELECT OR CLASS? -->
 <div class="dropdown">
+  Category: {{2+2}}
+  <select name="category" ng-model="ctrl.category">
+    <!-- <option value="category">Category</option> -->
+    <option value="outerwear">Outer Wear</option>
+    <option value="lowerwear">Lower Wear</option>
+    <option value="upperwear">Upper Wear</option>
+    <option value="shoes">Shoes</option>
+  </select>
+
+  <select ng-model="ctrl.type" ng-if="ctrl.category === 'outerwear'">
+    <option value="coat">Coat</option>
+    <option value="jacket" ng-model="ctrl.type">Jacket</option>
+    <option value="sweater" ng-model="ctrl.type">Sweater</option>
+  </select>
+</div>
+<!-- ATTEMPT 1 -->
+<!-- these dropdowns will live inside the forms -->
+<!-- <div class="dropdown" placeholder=Category>
   <select name="category">
     <option value="category">Category</option>
-    <option value="outerwear">Outer Wear</option>
-    <option value="lowerhalf">Lower Wear</option>
+    <option value="outerwear">Outer Wear</option> -->
+      <!-- <select name="type">
+        <select name="outwear-type"> -->
+          <!-- <option value="type">Type</option>
+          <option value="coat">Coat</option>
+          <option value="jacket">Jacket</option>
+          <option value="sweater">Sweater</option> -->
+        <!-- </select> -->
+    <!-- <option value="lowerhalf">Lower Wear</option>
     <option value="upperhalf">Upper Wear</option>
     <option value="shoes">Shoes</option>
   </select>
-</div>
+</div> -->
 
-<div class="dropdown">
+
+<!-- <div class="dropdown">
   <select name="outwear-type">
     <option value="type">Type</option>
     <option value="coat">Coat</option>
     <option value="jacket">Jacket</option>
     <option value="sweater">Sweater</option>
   </select>
-</div>
+</div> -->
+
+
 
 <!-- SEASONS TAG DROPDOWN -->
 <div class="dropdown">
@@ -29,7 +91,7 @@
   </select>
 </div>
 
-<!-- Occasion Dropdown  -->
+Occasion Dropdown 
 <div class="dropdown">
   <select class="tag-occasions" name="occasions">
     <option value="occasion">Occasion</option>
@@ -44,7 +106,7 @@
 </div>
 
 <!-- UPPERHALF DROPDOWN -->
-<div class="dropdown">
+<!-- <div class="dropdown">
   <select name="upperhalf-type">
     <option value="type">Type</option>
     <option value="casual">Casual</option>
@@ -55,7 +117,7 @@
     <option value="tee">Tee</option>
     <option value="turtleneck">Turtleneck</option>
   </select>
-</div>
+</div> -->
 <!-- Seasons Dropdown Attempt 2 - standard -->
 <!-- <div class="dropdown">
   <select class="tag-seasons" name="seasons">
@@ -68,7 +130,7 @@
 </div> -->
 
 <!-- LOWERHALF DROPDOWN -->
-<div class="dropdown">
+<!-- <div class="dropdown">
   <select name="lowerhalf-type">
     <option value="type">Type</option>
     <option value="casual">Casual</option>
@@ -79,7 +141,7 @@
     <option value="tee">Tee</option>
     <option value="turtleneck">Turtleneck</option>
   </select>
-</div>
+</div> -->
 <!-- Seasons Dropdown Attempt 2 - standard -->
 <!-- <div class="dropdown">
   <select class="tag-seasons" name="seasons">
@@ -92,7 +154,7 @@
 </div> -->
 
 <!-- SHOES DROPDOWN -->
-<div class="dropdown">
+<!-- <div class="dropdown">
   <select name="shoes-type">
     <option value="boots">Boots</option>
     <option value="dress">Dress Shoes</option>
@@ -101,7 +163,7 @@
     <option value="sneakers">Sneakers</option>
     <option value="sports">Sports</option>
   </select>
-</div>
+</div> -->
 <!-- Seasons Dropdown Attempt 2 - standard -->
 <!-- <div class="dropdown">
   <select class="tag-seasons" name="seasons">

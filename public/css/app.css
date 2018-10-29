@@ -55,6 +55,8 @@
   width: 45px;
 }
 
+
+
 /*  HEADERS  */
 h1 {
   color: black;
@@ -166,6 +168,17 @@ h1 {
 }
 
 /* DROP DOWNS */
+.dropdown-container {
+  /* background-color: lavender; */
+  border: 2px solid var(--charcoal);
+  display: flex;
+  /* i added this property below to accommodate images living to the right of the dropdowns - anyone, feel free to change this property if needed */
+  flex-direction: row;
+  height: 250px;
+  justify-content: center;
+  max-width: 350px;
+}
+
 
 /*  FONT SIZE  */
 .f1 {
@@ -385,6 +398,8 @@ a.rust:hover {
 .navbar {
   height: 100px;
 }
+
+
 
 /*  TEXT DECORATION  */
 .none {

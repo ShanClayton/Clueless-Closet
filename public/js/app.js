@@ -144,4 +144,9 @@ this.displayHide = () => {
   this.showModal = !this.showModal;
 }
 
+//notes for dropdowns + ng-if
+this.toggleOuterwear = () => {
+  
+}
+
 }])
