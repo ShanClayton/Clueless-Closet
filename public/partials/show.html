@@ -1,9 +1,9 @@
 <div class="show">
   <ul>
     <li ng-repeat="outfit in ctrl.outfits"><img src="{{outfit.image}}" alt="">
-      <!-- {{outfit.category}}
+      {{outfit.category}}
   {{outfit.type}}
-{{outfit.tag}} -->
+{{outfit.tag}}
       <div class="outfit-edit" ng-click="ctrl.indexOfEditFormToShow = $index">
         <span class="lnr lnr-magic-wand"></span>
         <div class="edit">
