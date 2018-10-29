@@ -2,7 +2,7 @@ const app = angular.module('ClosetApp', []);
 
 app.controller('MyController', ['$http', function($http){
 
-  this.includePath = 'partials/nav.html';
+  this.includePath = 'partials/main.html';
 
   this.changeInclude = (path) => {
     this.includePath = 'partials/'+ path +'.html';
@@ -16,10 +16,16 @@ app.controller('MyController', ['$http', function($http){
         method: 'POST',
         url: '/outfits/new',
         data: {
-          image: this.image
+          category: this.category,
+          type: this.type,
+          image: this.image,
+          tag: this.tag
         }
       }).then(function(response){
-        this.image = null;
+        this.image = null,
+        this.category = null,
+        this.type = null,
+        this.tag =null,
         controller.getOutfit()
       }, function(){
         console.log('error');
@@ -53,11 +59,17 @@ app.controller('MyController', ['$http', function($http){
         method: 'PUT',
         url: '/outfits/' + outfit._id,
         data: {
-          image: this.editedImage
+          category: this.editedcategory,
+          type: this.editedtype,
+          image: this.editedImage,
+          tag: this.editedtag
         }
       }).then(function(response){
-        this.editedimage = null;
-        controller.getoutfit();
+        // this.editedcategory = null,
+        // this.editedtype = null,
+        // this.editedimage = null,
+        // this.editedtag = null,
+        controller.getOutfit();
         console.log(response)
       },function(){
         console.log('error');
@@ -98,6 +110,19 @@ this.logIn = function(){
     });
 }
 
+// this.logOut = function(){
+//   $http({
+//     method: "DELETE"
+//     url: "/sessions/destroy"
+//   }).then(
+//     function(response){
+//       this.changeInclude("index")
+//     },
+//     function(error){
+//       console.log(error);
+//     });
+// }
+
 this.goApp = function(){
     const controller = this; //add this
     $http({
@@ -112,7 +137,7 @@ this.goApp = function(){
 
 this.openModal = function(){
   //if login button is clicked
-  
+
   //show modal \\ open modal function
 
 }

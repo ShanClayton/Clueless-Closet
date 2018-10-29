@@ -1,20 +1,20 @@
 <div class="shoes">
     <img src="{{ctrl.image}}" alt="">
   <form ng-submit="ctrl.newOutfit()">
-    <h4>Shoes</h4>
+    <h4 ng-model="ctrl.category">Shoes</h4>
     <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
     <div class="dropdown">
       <select name="shoes-type">
-        <option value="boots">Boots</option>
-        <option value="dress">Dress Shoes</option>
-        <option value="flats">Flats</option>
-        <option value="heels">Heels</option>
-        <option value="sandals">Sandals</option>
-        <option value="sneakers">Sneakers</option>
-        <option value="sports">Sports</option>
+        <option ng-model="ctrl.type" value="boots">Boots</option>
+        <option value="dress" ng-model="ctrl.type">Dress Shoes</option>
+        <option ng-model="ctrl.type" value="flats">Flats</option>
+        <option ng-model="ctrl.type" value="heels">Heels</option>
+        <option ng-model="ctrl.type" value="sandals">Sandals</option>
+        <option ng-model="ctrl.type" value="sneakers">Sneakers</option>
+        <option ng-model="ctrl.type" value="sports">Sports</option>
       </select>
     </div>
-    <input type="submit" value="Create New look" /><br>
+    <input ng-click="ctrl.changeInclude('show')" type="submit" value="Create New look" /><br>
   </form><br>
 
   <!-- Seasons Dropdown Attempt 2 - standard -->
