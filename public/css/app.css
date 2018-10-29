@@ -264,7 +264,7 @@ h1 {
   /* this sets the margin % (of the page) from the top of the page */
   margin-top: 7%;
   /* this property prevents modal from spanning the entire page vertically */
-  overflow: auto;
+  overflow: hidden;
   position: absolute;
   /* set modal width to cover 60% of viewport */
   width: 60%;
@@ -282,19 +282,25 @@ h1 {
   border-radius: 10px;
   /* initial test */
   /* make height 100% of its parent container */
-  height: 50vw;
+  max-height: 45vw;
   object-fit: contain;
   object-position: center;
+  /* stops scrolling */
+  /* overflow: hidden; */
   /* show only one iteration of the image */
   repeat: no-repeat;
   /* ensure image covers the set span */
   /* size: cover; */
   /* make width 40% of its parent container */
-  width: 45vw;
+  max-width: 45vw;
   /* test flexbox properties */
   display: flex;
   flex-direction: column;
 }
+/* selects all imgs with class sidebar */
+/* img.sidebar {
+  max-width: 45vw;
+} */
 
 /* create registration form foundation as a class */
 .registration {

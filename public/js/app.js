@@ -135,7 +135,7 @@ this.goApp = function(){
     })
   }
 
-this.showModal = false;
+this.showModal = true;
 
 this.displayHide = () => {
   this.showModal = !this.showModal;
