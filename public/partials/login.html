@@ -1,3 +1,39 @@
+
+<modal id="login-modal">
+  <div class="modal-container">
+    <div class="modal">
+      <img src="/assets/login-clothing.jpg" class="sidebar">
+        <div class="registration" style="margin-top:-70px;">
+          <!-- <a id="close-modal" href="/"> -->
+          <!-- options to explore:
+          1. ng-if on image tag - every combination hides the button - REVISED: may work with app.js, benefit of this over .show and .hide = ng-if removes the element from the page...
+
+          2. ng-click with hideModal button
+          3. toggle function -->
+          <!-- need button with toggle function
+          IN APP.JS:
+          this.toggleModal = () => {
+            this.showModal = !this.showModal;
+          } -->
+          <!-- <button class="cancel-modal" ng-click="ctrl.hideModal(login-modal)"> -->
+          <!-- option #1 -->
+            <img class="width30 height30 cancel pointer" src="assets/cancel.png" ng-if="ctrl.showModal(login-modal)">
+            <!-- <img class="width20 height30 cancel pointer" src="assets/cancel/png"> -->
+          <!-- </button> -->
+          option #2:
+          <button class="cancel-modal" ng-click="ctrl.toggleModal()">
+          <form style="text-align:center;" ng-submit="ctrl.logIn()">
+            <h2 style="text-align:center;">LOGIN</h2>
+              <input class="input-field-rust width180 height30" type="text" placeholder="username" ng-model="ctrl.username" />
+              <input class="input-field-rust width180 height30" type="password" placeholder="password" ng-model="ctrl.password" />
+              <a class="none" href="#"><input class="rust btn-login white" type="submit" value="LOGIN"></a>
+              <!-- <a class="none hover-modal-login" href="#"><input class="rust btn-login white" type="submit" value="LOGIN"></a> -->
+          </form><br>
+          <!-- <div ng-if="ctrl.loggedInUsername">
+            Welcome, {{ctrl.loggedInUsername}}
+          </div> -->
+      </div>
+          
 <div class="modal-container">
   <div class="modal">
     <img src="/assets/login-clothing.jpg" class="sidebar">
@@ -16,9 +52,22 @@
         <!-- <div ng-if="ctrl.loggedInUsername">
           Welcome, {{ctrl.loggedInUsername}}
         </div> -->
+
     </div>
   </div>
-</div>
+</modal>
+
+<!-- ctrl.toggleShowModal(login-modal)
+
+this.showModal() = !this.showModal()
+
+BUTTON:
+ctrl.toggleHideModal
+if(showModal === true) {
+  hideModal(modal)
+} -->
+
+
 
 <!-- <form ng-submit="ctrl.logIn()">
   <h2>Log In</h2>
