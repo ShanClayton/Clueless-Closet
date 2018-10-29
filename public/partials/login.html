@@ -9,8 +9,9 @@
           <h2 style="text-align:center;">LOGIN</h2>
             <input class="input-field-rust width180 height30" type="text" placeholder="username" ng-model="ctrl.username" />
             <input class="input-field-rust width180 height30" type="password" placeholder="password" ng-model="ctrl.password" />
-            <a class="none" href="#"><input class="rust btn-login white" type="submit" value="LOGIN"></a>
+            <a class="none" href="#"><input ng-click="ctrl.changeInclude('create')" class="rust btn-login white" type="submit" value="LOGIN"></a>
             <!-- <a class="none hover-modal-login" href="#"><input class="rust btn-login white" type="submit" value="LOGIN"></a> -->
+            <button class="rust-border f1 pointer" ng-click="ctrl.changeInclude('signup')">Not a member?<br> Sign Up Now!</button>
         </form><br>
         <!-- <div ng-if="ctrl.loggedInUsername">
           Welcome, {{ctrl.loggedInUsername}}
