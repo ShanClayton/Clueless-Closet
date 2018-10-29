@@ -1,18 +1,18 @@
 <div class="lower">
     <img src="{{ctrl.image}}" alt="">
   <form ng-submit="ctrl.newOutfit()">
-    <h4>Lower Half</h4>
+    <h4 ng-model="ctrl.category">Lower Half</h4>
     <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
     <div class="dropdown">
       <select name="lowerhalf-type">
         <option value="type">Type</option>
-        <option value="casual">Casual</option>
-        <option value="dress">Dress</option>
-        <option value="jeans">Jeans</option>
-        <option value="shorts">Shorts</option>
-        <option value="skirt">Skirt</option>
+        <option ng-model="ctrl.type" value="casual">Casual</option>
+        <option ng-model="ctrl.type" value="dress">Dress</option>
+        <option ng-model="ctrl.type" value="jeans">Jeans</option>
+        <option ng-model="ctrl.type" value="shorts">Shorts</option>
+        <option ng-model="ctrl.type" value="skirt">Skirt</option>
       </select>
     </div>
-    <input type="submit" value="Create New look" /><br>
+    <input ng-click="ctrl.changeInclude('show')" type="submit" value="Create New look" /><br>
   </form><br>
 </div>

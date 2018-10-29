@@ -1,21 +1,21 @@
 <div class="upper">
     <img src="{{ctrl.image}}" alt="">
   <form ng-submit="ctrl.newOutfit()">
-    <h4>Upper Half</h4>
+    <h4 ng-model="ctrl.category">Upper Half</h4>
     <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
     <div class="dropdown">
       <select name="upperhalf-type">
         <option value="type">Type</option>
-        <option value="casual">Casual</option>
-        <option value="dress">Dress</option>
-        <option value="button-down-shirt">Button Down Shirt</option>
-        <option value="longsleeve">Long Sleeve</option>
-        <option value="sleeveless">Sleeveless</option>
-        <option value="tee">Tee</option>
-        <option value="turtleneck">Turtleneck</option>
+        <option value="casual" ng-model="ctrl.type">Casual</option>
+        <option ng-model="ctrl.type" value="dress">Dress</option>
+        <option ng-model="ctrl.type" value="button-down-shirt" ng-model="ctrl.type">Button Down Shirt</option>
+        <option value="longsleeve" ng-model="ctrl.type">Long Sleeve</option>
+        <option value="sleeveless" ng-model="ctrl.type">Sleeveless</option>
+        <option value="tee" ng-model="ctrl.type">Tee</option>
+        <option value="turtleneck" ng-model="ctrl.type">Turtleneck</option>
       </select>
     </div>
-    <input type="submit" value="Create New look" /><br>
+    <input ng-click="ctrl.changeInclude('show')" type="submit" value="Create New look" /><br>
   </form><br>
 
 </div>
