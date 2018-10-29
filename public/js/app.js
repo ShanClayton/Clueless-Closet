@@ -135,4 +135,10 @@ this.goApp = function(){
     })
   }
 
+this.showModal = false;
+
+this.displayHide = () => {
+  this.showModal = !this.showModal;
+}
+
 }])
