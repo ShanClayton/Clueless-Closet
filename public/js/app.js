@@ -138,11 +138,10 @@ this.goApp = function(){
     })
   }
 
-this.openModal = function(){
-  //if login button is clicked
+this.showModal = false;
 
-  //show modal \\ open modal function
-
+this.displayHide = () => {
+  this.showModal = !this.showModal;
 }
 
 }])
