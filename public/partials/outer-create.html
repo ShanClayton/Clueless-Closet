@@ -3,6 +3,15 @@
     <h4 ng-model="ctrl.category">OuterWear</h4>
     <img src="{{ctrl.image}}" alt="">
 
+    <input class="rust-border img-box" type="text" ng-model="ctrl.image" placeholder="Image" /><br>
+    <div class="dropdown">
+      <select class="rust-border" name="outwear-type">
+        <option class="testing" value="type">Type</option>
+        <option value="coat" ng-model="ctrl.type">Coat</option>
+        <option value="jacket" ng-model="ctrl.type">Jacket</option>
+        <option value="sweater" ng-model="ctrl.type">Sweater</option>
+
+
     <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
     <div class="dropdown">
       <select ng-model="ctrl.type" name="outwear-type">
@@ -15,12 +24,18 @@
         <option value="coat" >Coat</option>
         <option value="jacket" >Jacket</option>
         <option value="sweater" >Sweater</option>
+
       </select>
     </div><br /> -->
 
   <!-- Seasons Dropdown Attempt 2 - standard -->
-  <!-- <div class="dropdown-season">
+
+  <div class="dropdown">
+    <select class="tag-seasons rust-border" name="seasons">
+
+  <div class="dropdown-season">
     <select class="tag-seasons" name="seasons">
+
       <option value="season">Season</option>
       <option ng-model="ctrl.tag" value="spring">Spring</option>
       <option ng-model="ctrl.tag" value="summer">Summer</option>
@@ -30,8 +45,13 @@
   </div><br /> -->
 
   <!-- Occasion Dropdown  -->
-  <!-- <div class="dropdown-occasion">
+
+  <div class="dropdown">
+    <select class="tag-occasions rust-border" name="occasions">
+
+  <div class="dropdown-occasion">
     <select class="tag-occasions" name="occasions">
+
       <option value="occasion">Occasion</option>
       <option ng-model="ctrl.tag" value="business-casual">Business Casual</option>
       <option ng-model="ctrl.tag" value="club">Club</option>
@@ -41,8 +61,13 @@
       <option value="special-event" ng-model="ctrl.tag">Special Event</option>
       <option value="streetwear" ng-model="ctrl.tag">StreetWear</option>
     </select>
-  </div><br /> -->
+
+  </div>
+  <input class="dropdown-submit" ng-click="ctrl.changeInclude('show')" type="submit" value="Create New look" /><br>
+
+  </div><br />
   <input ng-click="ctrl.changeInclude('show')" type="submit" value="Create New look" /><br />
+
 </form><br>
 
 </div>
