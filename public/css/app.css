@@ -162,6 +162,26 @@ h1 {
   border: 1.5px solid var(--rust);
 }
 
+/* DROP DOWN */
+/* .border-bkg-color {
+  background-color: var(--purple);
+} */
+.dropdown-submit {
+  background-color: var(--rust);
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 4px 2px;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+/* .img-box {
+  background-color: var(--rust);
+  color: white;
+} */
+
+
+
 /*  FONT SIZE  */
 .f1 {
   font-size: 1rem;
