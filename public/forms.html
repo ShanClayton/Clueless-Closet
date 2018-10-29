@@ -1,21 +1,27 @@
-<div class="shoes">
-    <img src="{{ctrl.image}}" alt="">
+<!-- forms button test code -->
+<!-- use a drop down list of items
+the first li is the "button" or form name
+the next li is the form -->
+<!-- <ul>
+  <li ng-click="ctrl.toggleShowForm"> -->
+
+<!-- make a button
+when the button is clicked
+the form slides down/appears -->
+<button class="form-label" ng-click="ctrl.toggleShowForm">Outerwear</button>
+<div class="outer">
   <form ng-submit="ctrl.newOutfit()">
-    <h4>Shoes</h4>
+    <h4 ng-model="ctrl.category">OuterWear</h4>
+    <img src="{{ctrl.image}}" alt="">
     <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
     <div class="dropdown">
-      <select name="shoes-type">
-        <option value="boots">Boots</option>
-        <option value="dress">Dress Shoes</option>
-        <option value="flats">Flats</option>
-        <option value="heels">Heels</option>
-        <option value="sandals">Sandals</option>
-        <option value="sneakers">Sneakers</option>
-        <option value="sports">Sports</option>
+      <select name="outwear-type">
+        <option value="type">Type</option>
+        <option value="coat">Coat</option>
+        <option value="jacket">Jacket</option>
+        <option value="sweater">Sweater</option>
       </select>
     </div>
-    <input type="submit" value="Create New look" /><br>
-  </form><br>
 
   <!-- Seasons Dropdown Attempt 2 - standard -->
   <div class="dropdown">
