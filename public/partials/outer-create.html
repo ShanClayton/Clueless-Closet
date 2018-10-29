@@ -51,7 +51,7 @@ Type:
   <!-- seasons dropdown -->
   Season:
   <div class="dropdown">
-    <select ng-model="ctrl.tags" ng-if="ctrl.type">
+    <select ng-model="ctrl.season" ng-if="ctrl.type">
       <option value="spring">Spring</option>
       <option value="summer">Summer</option>
       <option value="fall">Fall</option>
@@ -62,7 +62,7 @@ Type:
   <!-- occasion Dropdown  -->
   Occasion:
   <div class="dropdown">
-    <select ng-model="ctrl.tags" ng-if="ctrl.type">
+    <select ng-model="ctrl.occasion" ng-if="ctrl.type">
       <option value="occasion">Occasion</option>
       <option value="business-casual">Business Casual</option>
       <option value="club">Club</option>
@@ -73,7 +73,6 @@ Type:
       <option value="streetwear">StreetWear</option>
     </select>
   </div>
-
 </div>
 <!-- <div class="outer">
   <form ng-submit="ctrl.newOutfit()">
