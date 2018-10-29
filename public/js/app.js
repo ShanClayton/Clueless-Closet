@@ -141,6 +141,4 @@ this.goApp = function(){
 //     this.showModal = !this.showModal;
 //   }
 
-}
-
 }])
