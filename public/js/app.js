@@ -12,6 +12,7 @@ app.controller('MyController', ['$http', function($http){
     const controller = this;
 
     this.newOutfit = function(){
+      console.log(this.type);
       $http({
         method: 'POST',
         url: '/outfits/new',
@@ -55,14 +56,16 @@ app.controller('MyController', ['$http', function($http){
         }
 
     this.editOutfit = function(outfit){
+      console.log(this.editedImage);
       $http({
         method: 'PUT',
         url: '/outfits/' + outfit._id,
         data: {
-          category: this.editedcategory,
-          type: this.editedtype,
-          image: this.editedImage,
-          tag: this.editedtag
+          category: "hey",
+          // type: this.editedtype,
+          image: this.image,
+
+          // tag: this.editedtag
         }
       }).then(function(response){
         // this.editedcategory = null,
@@ -135,11 +138,10 @@ this.goApp = function(){
     })
   }
 
-this.openModal = function(){
-  //if login button is clicked
+this.showModal = true;
 
-  //show modal \\ open modal function
-
+this.displayHide = () => {
+  this.showModal = !this.showModal;
 }
 
 }])
