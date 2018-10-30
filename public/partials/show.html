@@ -29,15 +29,14 @@
           <h4>Season: {{outfit.season}}</h4>
           <h4>Occasion: {{outfit.occasion}}</h4>
 
-      <div class="create" ng-click="ctrl.changeInclude('create')">
-        <img class="cancel pointer" style="height: 33px; width: 33px;" ng-src="assets/hanger.png" alt="Create">
-        <img class="width30 height30 cancel pointer" ng-src="assets/edit-thin.png" alt="Edit">
-        <img class="width30 height30 cancel pointer" ng-src="assets/delete.png" alt="Delete" ng-click="ctrl.deleteOutfit(outfit)">
+      <div class="create" ">
+        <img ng-click="ctrl.changeInclude('create')" class="cancel pointer" style="height: 33px; width: 33px;" ng-src="assets/hanger.png" alt="Create">
       </div>
 
       <!-- THERE SHOULD BE A NEW DIV/BOX HERE  -->
 
       <div class="outfit-edit" ng-click="ctrl.indexOfEditFormToShow = $index">
+          <img class="width30 height30 cancel pointer" ng-src="assets/edit-thin.png" alt="Edit">
         <!-- <span class="lnr lnr-magic-wand"></span> -->
         <div class="edit">
           <form ng-if="$index === ctrl.indexOfEditFormToShow" ng-submit="ctrl.editOutfit(outfit)">
@@ -128,7 +127,10 @@
               <input type="submit" value="Edit Look">
             </div>
           </form>
+          <img class="width30 height30 cancel pointer" ng-src="assets/delete.png" alt="Delete" ng-click="ctrl.deleteOutfit(outfit)">
+
         </div>
+
         <!-- <div class="edit">
           <form ng-if="$index === ctrl.indexOfEditFormToShow" ng-submit="ctrl.editOutfit(outfit)">
             <h4>Edit Outfit</h4>
