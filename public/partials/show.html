@@ -1,6 +1,3 @@
-<nav ng-include="ctrl.changeNavPath('logout-nav')">
-
-</nav>
 <!-- THERE SHOULD BE A DIV TO HOLD THE PUSHED ITEM -->
 <!-- TEST CODE FOR SLIDEDOWN DROPDOWN MENU -->
 <!-- <dropdown placeholder="Colour..." list="colours" selected="colour" property="name"></dropdown>
@@ -22,21 +19,40 @@
 </div> -->
 
 <div class="show-container">
-  <ul>
-    <li class="none" ng-repeat="outfit in ctrl.outfits" ><img src="{{outfit.image}}" alt="{{outfit.type}}" style="height: 150px; width: 150px; border: 1px solid var(--charcoal);">
-          <h4>Category: {{outfit.category}}</h4>
-          <h4>Type: {{outfit.type}}</h4>
-          <h4>Season: {{outfit.season}}</h4>
-          <h4>Occasion: {{outfit.occasion}}</h4>
+  <div class="create">
+    <img ng-click="ctrl.changeInclude('create')" class="cancel pointer" style="height: 33px; width: 33px;" ng-src="assets/hanger.png" alt="Create">
+  <h1>Create a new look</h1>
+    <img ng-click="ctrl.changeInclude('create')" class="cancel pointer" style="height: 33px; width: 33px;" ng-src="assets/hanger.png" alt="Create">
+  </div>
+  <div class="search-box">
+    <h3>SEARCH BY CATEGORY, SEASON, OCCASION OR TYPE </h3>
+    <input type="text" ng-model="ctrl.searchQuery" placeholder="START TYPING THE CATEGORY, SEASON, OCCASION OR TYPE" />
+    <div>
+      <input type="radio" name="order" value="category" ng-model='order' id="category" />
+      <label for="category">Category</label>
+      <input type="radio" name="order" value="type" ng-model='order' id="type" />
+      <label for="type">Type</label>
+      <input type="radio" name="order" value="season" ng-model='order' id="season" />
+      <label for="season">Season</label>
+      <input type="radio" name="order" value="occasion" ng-model='order' id="occasion" />
+      <label for="occasion">Occasion</label>
 
-      <div class="create" ">
-        <img ng-click="ctrl.changeInclude('create')" class="cancel pointer" style="height: 33px; width: 33px;" ng-src="assets/hanger.png" alt="Create">
-      </div>
+    </div>
+  </div>
+
+  <ul>
+    <li class="none" ng-repeat="outfit in ctrl.outfits | orderBy: order | filter: ctrl.searchQuery"" ><img src=" {{outfit.image}}" alt=" {{outfit.type}}" style=" height: 150px; width: 150px; border: 1px solid var(--charcoal);">
+      <h4>Category: {{outfit.category}}</h4>
+      <h4>Type: {{outfit.type}}</h4>
+      <h4>Season: {{outfit.season}}</h4>
+      <h4>Occasion: {{outfit.occasion}}</h4>
+
+
 
       <!-- THERE SHOULD BE A NEW DIV/BOX HERE  -->
 
       <div class="outfit-edit" ng-click="ctrl.indexOfEditFormToShow = $index">
-          <img class="width30 height30 cancel pointer" ng-src="assets/edit-thin.png" alt="Edit">
+        <img class="width30 height30 cancel pointer" ng-src="assets/edit-thin.png" alt="Edit">
         <!-- <span class="lnr lnr-magic-wand"></span> -->
         <div class="edit">
           <form ng-if="$index === ctrl.indexOfEditFormToShow" ng-submit="ctrl.editOutfit(outfit)">
@@ -143,7 +159,7 @@
         <!-- <div class="outfit-delete" ng-click="ctrl.deleteOutfit(outfit)">
           <span class="lnr lnr-trash"></span>
         </div> -->
-    <!-- </li>
+        <!-- </li>
   </ul> -->
 
-</div>
+      </div>

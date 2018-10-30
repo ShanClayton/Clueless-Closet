@@ -1,12 +1,12 @@
-<nav ng-include="ctrl.changeNavPath('logout-nav')">
+<!-- <nav ng-include="ctrl.changeNavPath('logout-nav')">
 
-</nav>
+</nav> -->
 
 <div class="main-dropdown-container">
   <img src="/assets/orange-clothes.jpg" class="sidebar">
   <div class="dropdown-container">
 
-    <form style="margin-top: 30px; padding-left:40px; max-height:45vw; max-width: 55vw;" ng-submit="ctrl.newOutfit()">
+    <form style="margin-top: 30px; padding-left:40px; max-height:45vw; max-width: 55vw;" ng-submit="ctrl.newOutfit($event)">
     <h2 class="middletext">Create a New Look</h2>
     <div class="dropdown">
       <br />
@@ -87,7 +87,11 @@
     </div><br />
     Image:
     <input type="text" ng-model="ctrl.image" placeholder="image link"><br /><br />
+<<<<<<< HEAD
     <input class="btncreate" type="submit" value="Create a New Look" ng-click="ctrl.changeInclude('show')">
+=======
+    <input class="btn" type="submit" value="Create a New Look" >
+>>>>>>> d27e9d34f4f2635a1fa809be314be504b20aae9c
   </div>
   </form>
 </div>
