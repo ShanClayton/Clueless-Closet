@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <nav ng-include="ctrl.changeNavPath('logout-nav')">
 
 </nav>
@@ -6,6 +7,18 @@
   <h1>Create a New Look</h1>
   <div class="dropdown-container">
     <form ng-submit="ctrl.newOutfit()">
+=======
+<!-- <nav ng-include="ctrl.changeNavPath('logout-nav')">
+
+</nav> -->
+
+<div class="main-dropdown-container">
+  <img src="/assets/orange-clothes.jpg" class="sidebar">
+  <div class="dropdown-container">
+
+    <form style="margin-top: 30px; padding-left:40px; max-height:45vw; max-width: 55vw;" ng-submit="ctrl.newOutfit($event)">
+    <h2 class="middletext">Create a New Look</h2>
+>>>>>>> 7cf5b39965de8ac23107269889e430e21f99d55a
     <div class="dropdown">
       <br />
       Category:
@@ -16,7 +29,11 @@
         <option value="upperwear">Upper Wear</option>
         <option value="shoes">Shoes</option>
       </select>
+<<<<<<< HEAD
       <hr style="border: 2px solid var(--rust);">
+=======
+      <hr style="border: 1px solid var(--rustyrose);">
+>>>>>>> 7cf5b39965de8ac23107269889e430e21f99d55a
       <br />
 
       Type:
@@ -53,7 +70,11 @@
         <option value="heels">Heels</option>
         <option value="sneakers">Sneakers</option>
       </select>
+<<<<<<< HEAD
 
+=======
+        <hr style="border: 1px solid var(--rustyrose);">
+>>>>>>> 7cf5b39965de8ac23107269889e430e21f99d55a
     </div>
 
     <!-- seasons dropdown -->
@@ -65,6 +86,10 @@
         <option value="fall">Fall</option>
         <option value="winter">Winter</option>
       </select>
+<<<<<<< HEAD
+=======
+        <hr style="border: 1px solid var(--rustyrose);">
+>>>>>>> 7cf5b39965de8ac23107269889e430e21f99d55a
     </div>
 
     <!-- occasion Dropdown  -->
@@ -80,10 +105,21 @@
         <option value="special-event">Special Event</option>
         <option value="streetwear">StreetWear</option>
       </select>
+<<<<<<< HEAD
     </div><br />
     Image:
     <input type="text" ng-model="ctrl.image" placeholder="image link"><br /><br />
     <input type="submit" value="Create a New Look" ng-click="ctrl.changeInclude('show')">
+=======
+      <hr style="border: 1px solid var(--rustyrose);">
+    </div><br />
+    Image:
+    <input type="text" ng-model="ctrl.image" placeholder="image link"><br /><br />
+
+    <input class="btncreate" type="submit" value="Create a New Look" ng-click="ctrl.changeInclude('show')">
+
+
+>>>>>>> 7cf5b39965de8ac23107269889e430e21f99d55a
   </div>
   </form>
 </div>

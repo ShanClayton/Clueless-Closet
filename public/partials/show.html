@@ -1,5 +1,32 @@
-<div class="show">
+<div class="show-container">
+  <div class="create" style="text-align:center;">
+    <h2 class="middletext" style="margin-top:2%;">Create a New Look</h2>
+      <img style="margin-top:-26px;" ng-click="ctrl.changeInclude('create')" class="cancel pointer" style="height: 33px; width: 33px;" ng-src="assets/hanger.png" alt="Create">
+      <!-- <img ng-click="ctrl.changeInclude('create')" class="cancel pointer" style="height: 33px; width: 33px;" ng-src="assets/hanger.png" alt="Create"> -->
+  </div>
+
+  <div class="input-field-blue-show">
+  <div style="text-align:center;">
+    <h3 style="color:var(--charcoal);">SEARCH BY CATEGORY, SEASON, OCCASION OR TYPE </h3>
+    <input type="text" class="babyblue-border" ng-model="ctrl.searchQuery" placeholder="START TYPING THE CATEGORY, SEASON, OCCASION OR TYPE" />
+    <div>
+      <br />
+      <input type="radio" class="radio-rust" name="order" value="category" ng-model='order' id="category" />
+      <label for="category">Category</label>
+      <input type="radio" class="radio-purple" name="order" value="type" ng-model='order' id="type" />
+      <label for="type">Type</label>
+      <input type="radio" class="radio-blue" name="order" value="season" ng-model='order' id="season" />
+      <label for="season">Season</label>
+      <input type="radio" class="radio-grey" name="order" value="occasion" ng-model='order' id="occasion" />
+      <label for="occasion">Occasion</label>
+      <br>
+      <br>
+      <hr style="border-top: 1.5px solid var(--charcoal);">
+    </div>
+  </div>
+
   <ul>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <li ng-repeat="outfit in ctrl.outfits"><img src="{{outfit.image}}" alt="{{outfit.type}}">
       <h4>Category:</h4> {{outfit.category}}<br>
@@ -15,8 +42,20 @@
   {{outfit.type}}
 {{outfit.tag}}
 >>>>>>> 8f31fed76601c25cccb63b2a8173e8cd9aed357e
+=======
+    <li class="none" ng-repeat="outfit in ctrl.outfits | orderBy: order | filter: ctrl.searchQuery" ><img src=" {{outfit.image}}" alt=" {{outfit.type}}" style=" height: 150px; width: 150px; border: 1px solid var(--charcoal);">
+      <h4>Category: {{outfit.category}}</h4>
+      <h4>Type: {{outfit.type}}</h4>
+      <h4>Season: {{outfit.season}}</h4>
+      <h4>Occasion: {{outfit.occasion}}</h4>
+
+
+      <!-- THERE SHOULD BE A NEW DIV/BOX HERE  -->
+
+>>>>>>> 7cf5b39965de8ac23107269889e430e21f99d55a
       <div class="outfit-edit" ng-click="ctrl.indexOfEditFormToShow = $index">
-        <span class="lnr lnr-magic-wand"></span>
+        <img class="width30 height30 cancel pointer" ng-src="assets/edit-thin.png" alt="Edit">
+        <!-- <span class="lnr lnr-magic-wand"></span> -->
         <div class="edit">
           <form ng-if="$index === ctrl.indexOfEditFormToShow" ng-submit="ctrl.editOutfit(outfit)">
             <h4>Edit Outfit</h4>
@@ -103,6 +142,7 @@
               <!-- image input field -->
               Image:
               <input type="text" ng-model="ctrl.image" placeholder="image link">
+<<<<<<< HEAD
               <input type="submit" value="Edit Look">
             </div>
           </form>
@@ -121,5 +161,14 @@
         </div>
     </li>
   </ul>
+=======
+              <input class="inline-icons" type="submit" value="Edit Look">
+            </div>
+          </form>
+          <img class="width30 height30 cancel pointer inline-icons" ng-src="assets/delete.png" alt="Delete" ng-click="ctrl.deleteOutfit(outfit)">
+
+        </div>
+
+>>>>>>> 7cf5b39965de8ac23107269889e430e21f99d55a
 
 </div>
