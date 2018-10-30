@@ -1,20 +1,28 @@
 <modal id="signup-modal">
-  <div class="modal-container">
-    <!-- when ng-show="showModal" disappears when sign up from nav menu on landing page is clicked -->
-    <div class="modal" ng-click="showModal">
+  <div class="modal-container" ng-click="displayHide()">
+    <!-- this is the actual modal containing sidebar image and registration form -->
+    <div class="modal">
+      <!-- sidebar image (left) -->
       <img src="/assets/signup-clothing.jpg" class="sidebar">
+      <!-- registration form (right) -->
         <div class="registration" style="margin-top:-18px;">
-          <!-- <a id="close-modal" href="#"> -->
-            <!-- <button class="cancel-modal" ng-click="ctrl.hideModal(signup-modal)"> -->
-            <button class="cancel-modal" ng-click="showModal">
+          <!-- attempting to close the modal -->
+          <div class="close-modal">
+            <!-- X button that should close the modal upon click -->
+            <button class="cancel-modal" ng-click="ctrl.changeInclude('main')">
+              <!-- actual icon within the button -->
               <img class="width30 height30 cancel pointer" ng-src="assets/cancel.png">
             </button>
-          <!-- </a> -->
+          </div>
               <form style="text-align:center;" ng-submit="ctrl.createUser()">
                 <h2 style="text-align:center;">CREATE CLOSET</h2>
+                  <!-- outline input field in blue -->
                   <input class="input-field-blue width180 height30" type="text" placeholder="username" ng-model="ctrl.username" />
+                  <!-- outline in input field in blue -->
                   <input class="input-field-blue width180 height30" type="password" placeholder="password" ng-model="ctrl.password" />
-                  <a class="none" href="#"><input class="blue btn-login white" type="submit" value="Sign Up"></a>
+                  <!-- outline input field in blue and create anchor tag to direct sign up button to create page -->
+                  <a class="none" href="#"><input ng-click="ctrl.changeInclude('create')" class="blue btn-login white" type="submit" value="SIGN UP"></a>
+                  <!-- style member field with rust border -->
                   <button class="rust-border f1 pointer" ng-click="ctrl.changeInclude('login')">Already a member?<br> Log In</button>
               </form><br>
               <!-- <div ng-if="ctrl.loggedInUsername">
