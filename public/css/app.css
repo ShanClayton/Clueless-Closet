@@ -178,13 +178,24 @@ h1 {
   flex-direction: row;
   height: 450px;
   justify-content: center;
-  max-width: 600px;
+  max-width: 800px;
 }
 .main-dropdown-container {
   display: flex;
   justify-content: center;
 }
 
+.btn {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  background-color: lightslategrey;
+  color: black;
+}
+
+.btn:hover {
+  background-color: var(--rustyrose);
+  color: var(--charcoal);
+}
 
 /*  FONT SIZE  */
 .f1 {

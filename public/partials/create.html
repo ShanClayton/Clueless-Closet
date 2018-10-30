@@ -1,11 +1,13 @@
 <nav ng-include="ctrl.changeNavPath('logout-nav')">
 
 </nav>
+
 <div class="main-dropdown-container">
   <img src="/assets/orange-clothes.jpg" class="sidebar">
-  <h1>Create a New Look</h1>
   <div class="dropdown-container">
-    <form ng-submit="ctrl.newOutfit()">
+
+    <form style="margin-top: 30px; padding-left:40px; max-height:45vw; max-width: 55vw;" ng-submit="ctrl.newOutfit()">
+    <h2 class="middletext">Create a New Look</h2>
     <div class="dropdown">
       <br />
       Category:
@@ -16,7 +18,7 @@
         <option value="upperwear">Upper Wear</option>
         <option value="shoes">Shoes</option>
       </select>
-      <hr style="border: 2px solid var(--rust);">
+      <hr style="border: 1px solid var(--rustyrose);">
       <br />
 
       Type:
@@ -53,7 +55,7 @@
         <option value="heels">Heels</option>
         <option value="sneakers">Sneakers</option>
       </select>
-
+        <hr style="border: 1px solid var(--rustyrose);">
     </div>
 
     <!-- seasons dropdown -->
@@ -65,6 +67,7 @@
         <option value="fall">Fall</option>
         <option value="winter">Winter</option>
       </select>
+        <hr style="border: 1px solid var(--rustyrose);">
     </div>
 
     <!-- occasion Dropdown  -->
@@ -80,10 +83,11 @@
         <option value="special-event">Special Event</option>
         <option value="streetwear">StreetWear</option>
       </select>
+      <hr style="border: 1px solid var(--rustyrose);">
     </div><br />
     Image:
     <input type="text" ng-model="ctrl.image" placeholder="image link"><br /><br />
-    <input type="submit" value="Create a New Look" ng-click="ctrl.changeInclude('show')">
+    <input class="btn" type="submit" value="Create a New Look" ng-click="ctrl.changeInclude('show')">
   </div>
   </form>
 </div>
