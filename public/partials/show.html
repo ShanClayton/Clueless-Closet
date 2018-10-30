@@ -7,6 +7,7 @@
 {{outfit.occasion}}
       <div class="outfit-edit" ng-click="ctrl.indexOfEditFormToShow = $index">
         <span class="lnr lnr-magic-wand"></span>
+        <img class="width30 height30 cancel pointer" ng-src="assets/hanger.png">
         <div class="edit">
           <form ng-if="$index === ctrl.indexOfEditFormToShow" ng-submit="ctrl.editOutfit(outfit)">
             <h4>Edit Outfit</h4>
