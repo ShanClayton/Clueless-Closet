@@ -42,7 +42,7 @@
               <div class="dropdown">
                 <br />
                 Category:
-                <select style="border: 1.5px solid var(--rust);" name="category" ng-model="ctrl.editedCategory">
+                <select class="charcoal-border" name="category" ng-model="ctrl.editedCategory">
                   <!-- <option value="category">Category</option> -->
                   <option value="outerwear">Outer Wear</option>
                   <option value="lowerwear">Lower Wear</option>
@@ -53,7 +53,7 @@
                 <br />
 
                 Type:
-                <select style="border: 1.5px solid var(--purple);" ng-model="ctrl.editedType" ng-if="ctrl.editedCategory === 'outerwear'">
+                <select class="charcoal-border" ng-model="ctrl.editedType" ng-if="ctrl.editedCategory === 'outerwear'">
                   <option value="coat">Coat</option>
                   <option value="jacket">Jacket</option>
                   <option value="sweater">Sweater</option>
@@ -91,7 +91,7 @@
               <!-- seasons dropdown -->
               Season:
               <div class="dropdown">
-                <select class="blue-border" ng-model="ctrl.editedSeason" ng-if="ctrl.editedType">
+                <select class="charcoal-border" ng-model="ctrl.editedSeason" ng-if="ctrl.editedType">
                   <option value="spring">Spring</option>
                   <option value="summer">Summer</option>
                   <option value="fall">Fall</option>
