@@ -86,6 +86,11 @@ console.log(this.changeNavPath);
           // tag: this.editedtag
         }
       }).then(function(response){
+        controller.editedCategory = null;
+        controller.editedType = null;
+        controller.image = null;
+        controller.editedSeason = null;
+        controller.editedOccasion = null;
           // this.editOutfit.image = null;
         controller.getOutfit();
         console.log(response)
@@ -106,6 +111,8 @@ console.log(this.changeNavPath);
         }
     }).then(function(response){
         console.log(response);
+        controller.username =null,
+        controller.password = null
     }, function(){
         console.log('error');
     });
@@ -125,6 +132,8 @@ this.logIn = function(){
       controller.changeInclude("create")
       controller.changeNavPath('logout-nav')
         console.log(response);
+        controller.username = null,
+        controller.password = null
     }, function(){
         console.log('error');
     });
