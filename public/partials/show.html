@@ -1,6 +1,4 @@
-<nav ng-include="ctrl.changeNavPath('logout-nav')">
 
-</nav>
 <!-- THERE SHOULD BE A DIV TO HOLD THE PUSHED ITEM -->
 <!-- TEST CODE FOR SLIDEDOWN DROPDOWN MENU -->
 <!-- <dropdown placeholder="Colour..." list="colours" selected="colour" property="name"></dropdown>
@@ -22,6 +20,9 @@
 </div> -->
 
 <div class="show-container">
+  <div class="create">
+    <img ng-click="ctrl.changeInclude('create')" class="cancel pointer" style="height: 33px; width: 33px;" ng-src="assets/hanger.png" alt="Create">
+  </div>
   <ul>
     <li class="none" ng-repeat="outfit in ctrl.outfits" ><img src="{{outfit.image}}" alt="{{outfit.type}}" style="height: 150px; width: 150px; border: 1px solid var(--charcoal);">
           <h4>Category: {{outfit.category}}</h4>
@@ -29,9 +30,7 @@
           <h4>Season: {{outfit.season}}</h4>
           <h4>Occasion: {{outfit.occasion}}</h4>
 
-      <div class="create" ">
-        <img ng-click="ctrl.changeInclude('create')" class="cancel pointer" style="height: 33px; width: 33px;" ng-src="assets/hanger.png" alt="Create">
-      </div>
+
 
       <!-- THERE SHOULD BE A NEW DIV/BOX HERE  -->
 
