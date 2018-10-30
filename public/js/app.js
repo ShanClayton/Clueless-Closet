@@ -3,15 +3,23 @@ const app = angular.module('ClosetApp', []);
 app.controller('MyController', ['$http', function($http){
 
   this.includePath = 'partials/main.html';
+  this.navPath = 'partials/nav.html'
 
   this.changeInclude = (path) => {
     this.includePath = 'partials/'+ path +'.html';
     console.log(this.changeInclude);
   };
 
+  this.changeNavPath = (path) => {
+    this.navPath = 'partials/'+ path
++ '.html';
+console.log(this.changeNav);
+};
+
     const controller = this;
 
     this.newOutfit = function(){
+      // console.log(this.type);
       $http({
         method: 'POST',
         url: '/outfits/new',
@@ -19,14 +27,12 @@ app.controller('MyController', ['$http', function($http){
           category: this.category,
           type: this.type,
           image: this.image,
-          tag: this.tag
+          season: this.season,
+          occasion: this.occasion
         }
       }).then(function(response){
-        this.image = null,
-        this.category = null,
-        this.type = null,
-        this.tag =null,
         controller.getOutfit()
+        this.newOutfit.image = null;
       }, function(){
         console.log('error');
       })
@@ -55,20 +61,21 @@ app.controller('MyController', ['$http', function($http){
         }
 
     this.editOutfit = function(outfit){
+      console.log(this.editedImage);
       $http({
         method: 'PUT',
         url: '/outfits/' + outfit._id,
         data: {
-          category: this.editedcategory,
-          type: this.editedtype,
-          image: this.editedImage,
-          tag: this.editedtag
+          category: this.editedCategory,
+          type: this.editedType,
+          image: this.image,
+          season: this.editedSeason,
+          occasion: this.editedOccasion
+
+          // tag: this.editedtag
         }
       }).then(function(response){
-        // this.editedcategory = null,
-        // this.editedtype = null,
-        // this.editedimage = null,
-        // this.editedtag = null,
+          this.editOutfit.image = null;
         controller.getOutfit();
         console.log(response)
       },function(){
@@ -135,10 +142,13 @@ this.goApp = function(){
     })
   }
 
-// this.showModal = false;
-//
-//   this.toggleModal = () => {
-//     this.showModal = !this.showModal;
-//   }
+this.showModal = true;
+
+this.displayHide = () => {
+  this.showModal = !this.showModal;
+}
+
+//notes for dropdowns + ng-if
+this.toggleOuterwear = () => {
 
 }])

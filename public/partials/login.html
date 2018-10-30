@@ -1,20 +1,31 @@
 <modal id="login-modal">
-  <div class="modal-container">
+  <!-- this is what gives the modal the fill-screen translucent grey overlay -->
+  <div class="modal-container" ng-click="displayHide()">
+    <!-- this is the actual modal containing sidebar image and registration form -->
     <div class="modal">
+      <!-- sidebar image (left) -->
       <img src="/assets/login-clothing.jpg" class="sidebar">
+      <!-- registration form (right) -->
         <div class="registration" style="margin-top:-18px;">
-          <!-- <a id="close-modal" href="#"> -->
-            <button class="cancel-modal" ng-click="ctrl.hideModal(signup-modal)">
-              <!-- ng-click = toggle modal? -->
-              <img class="width30 height30 cancel pointer" src="assets/cancel.png">
+          <!-- attempting to close the modal -->
+          <div class="close-modal">
+            <!-- X button that should close the modal upon click -->
+            <button class="cancel-modal" ng-click="ctrl.changeInclude('main')">
+              <!-- actual icon within the button -->
+              <img class="width30 height30 cancel pointer" ng-src="assets/cancel.png">
             </button>
+          </div>
           <!-- </a> -->
-              <form style="text-align:center;" ng-submit="ctrl.createUser()">
+              <form style="text-align:center;" ng-submit="ctrl.login()">
                 <h2 style="text-align:center;">CREATE CLOSET</h2>
-                  <input class="input-field-blue width180 height30" type="text" placeholder="username" ng-model="ctrl.username" />
-                  <input class="input-field-blue width180 height30" type="password" placeholder="password" ng-model="ctrl.password" />
-                  <a class="none" href="#"><input class="blue btn-login white" type="submit" value="Sign Up"></a>
-                  <button class="rust-border f1 pointer" ng-click="ctrl.changeInclude('login')">Already a member?<br> Log In</button>
+                <!-- outline input field in rust -->
+                  <input class="input-field-rust width180 height30" type="text" placeholder="username" ng-model="ctrl.username" />
+                  <!-- outline input field in rust -->
+                  <input class="input-field-rust width180 height30" type="password" placeholder="password" ng-model="ctrl.password" />
+                  <!-- outline input field in rust and create an anchor tag to direct login button to create page -->
+                  <a class="none" href="#"><input ng-click="ctrl.changeInclude('create')" class="rust btn-login white" type="submit" value="LOGIN"></a>
+                  <!-- style member field with blue border -->
+                  <button class="blue-border f1 pointer" ng-click="ctrl.changeInclude('signup')">Not a member?<br /> Sign up?</button>
               </form><br>
               <!-- <div ng-if="ctrl.loggedInUsername">
                 Welcome, {{ctrl.loggedInUsername}}
@@ -23,3 +34,30 @@
     </div>
   </div>
 </modal>
+
+<!-- ctrl.toggleShowModal(login-modal)
+
+this.showModal() = !this.showModal()
+
+BUTTON:
+ctrl.toggleHideModal
+if(showModal === true) {
+  hideModal(modal)
+} -->
+
+
+
+
+<!-- <form ng-submit="ctrl.logIn()">
+  <h2>Log In</h2>
+    <input class="input-field width180 height30" type="text" placeholder="username" ng-model="ctrl.username" /><br />
+    <input class="input-field width180 height30" type="password" placeholder="password" ng-model="ctrl.password" /><br >
+    <input class="fill-blue" type="submit" value="Log In">
+</form><br>
+<h2>Go to "the app"</h2>
+<a href="#" ng-click="ctrl.goApp()">Click here</a>
+<br>
+<br>
+<div ng-if="ctrl.loggedInUsername">
+  Welcome, {{ctrl.loggedInUsername}}
+</div> -->
