@@ -22,21 +22,12 @@
 </div> -->
 
 <div class="show-container">
-  <!-- <ul> -->
-    <!-- <li class="none" ng-repeat="outfit in ctrl.outfits" ><img src="{{outfit.image}}" alt="{{outfit.type}}" style="height: 150px; width: 150px; border: 1px solid var(--charcoal);">
-      <div class="dropdown"> -->
-      <div class="dropdown">
-        <section ng-repeat="outfit in ctrl.outfits" ><img src="{{outfit.image}}" alt="{{outfit.type}}" style="height: 150px; width: 150px; border: 1px solid var(--charcoal);">
-          <option value="category">Category: {{outfit.category}}</option>
-          <option value="type">Type: {{outfit.type}}</option>
-          <option value="season">Season: {{outfit.season}}</option>
-          <option value="occasion">Occasion: {{outfit.occasion}}</option>
-          <!-- <h4>Category: {{outfit.category}}</h4>
+  <ul>
+    <li class="none" ng-repeat="outfit in ctrl.outfits" ><img src="{{outfit.image}}" alt="{{outfit.type}}" style="height: 150px; width: 150px; border: 1px solid var(--charcoal);">
+          <h4>Category: {{outfit.category}}</h4>
           <h4>Type: {{outfit.type}}</h4>
           <h4>Season: {{outfit.season}}</h4>
-          <h4>Occasion: {{outfit.occasion}}</h4> -->
-        </section>
-      </div>
+          <h4>Occasion: {{outfit.occasion}}</h4>
 
       <div class="create" ng-click="ctrl.changeInclude('create')">
         <img class="cancel pointer" style="height: 33px; width: 33px;" ng-src="assets/hanger.png" alt="Create">
