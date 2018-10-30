@@ -24,22 +24,19 @@
 <div class="show-container">
   <ul>
     <li class="none" ng-repeat="outfit in ctrl.outfits" ><img src="{{outfit.image}}" alt="{{outfit.type}}" style="height: 150px; width: 150px; border: 1px solid var(--charcoal);">
-      <div class="dropdown">
-        <h4>Category: {{outfit.category}}</h4>
-        <h4>Type: {{outfit.type}}</h4>
-        <h4>Season: {{outfit.season}}</h4>
-        <h4>Occasion: {{outfit.occasion}}</h4>
-      </div>
+          <h4>Category: {{outfit.category}}</h4>
+          <h4>Type: {{outfit.type}}</h4>
+          <h4>Season: {{outfit.season}}</h4>
+          <h4>Occasion: {{outfit.occasion}}</h4>
 
-      <div class="create" ng-click="ctrl.changeInclude('create')">
-        <img class="cancel pointer" style="height: 33px; width: 33px;" ng-src="assets/hanger.png" alt="Create">
-        <img class="width30 height30 cancel pointer" ng-src="assets/edit-thin.png" alt="Edit">
-        <img class="width30 height30 cancel pointer" ng-src="assets/delete.png" alt="Delete" ng-click="ctrl.deleteOutfit(outfit)">
+      <div class="create" ">
+        <img ng-click="ctrl.changeInclude('create')" class="cancel pointer" style="height: 33px; width: 33px;" ng-src="assets/hanger.png" alt="Create">
       </div>
 
       <!-- THERE SHOULD BE A NEW DIV/BOX HERE  -->
 
       <div class="outfit-edit" ng-click="ctrl.indexOfEditFormToShow = $index">
+          <img class="width30 height30 cancel pointer" ng-src="assets/edit-thin.png" alt="Edit">
         <!-- <span class="lnr lnr-magic-wand"></span> -->
         <div class="edit">
           <form ng-if="$index === ctrl.indexOfEditFormToShow" ng-submit="ctrl.editOutfit(outfit)">
@@ -130,7 +127,10 @@
               <input type="submit" value="Edit Look">
             </div>
           </form>
+          <img class="width30 height30 cancel pointer" ng-src="assets/delete.png" alt="Delete" ng-click="ctrl.deleteOutfit(outfit)">
+
         </div>
+
         <!-- <div class="edit">
           <form ng-if="$index === ctrl.indexOfEditFormToShow" ng-submit="ctrl.editOutfit(outfit)">
             <h4>Edit Outfit</h4>
@@ -143,7 +143,7 @@
         <!-- <div class="outfit-delete" ng-click="ctrl.deleteOutfit(outfit)">
           <span class="lnr lnr-trash"></span>
         </div> -->
-    </li>
-  </ul>
+    <!-- </li>
+  </ul> -->
 
 </div>
