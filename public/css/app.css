@@ -170,12 +170,13 @@ h1 {
 /* DROP DOWNS */
 .dropdown-container {
   /* this property aligns items within the box in the center */
-  align-items: center;
+  /* align-items: center; */
+  
   /* background-color: lavender; */
   /* border: 2px solid var(--charcoal); */
-  display: flex;
+  display: inline-block;
   /* i added this property below to accommodate images living to the right of the dropdowns - anyone, feel free to change this property if needed */
-  flex-direction: row;
+  /* flex-direction: row; */
   height: 450px;
   justify-content: center;
   max-width: 600px;
