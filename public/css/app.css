@@ -160,10 +160,31 @@ h1 {
 }
 
 /* COLOR OUTLINE */
+.babyblue-border {
+  border: 1.5px solid var(--babyblue);
+}
 .blue-border {
   border: 1.5px solid var(--blue);
 }
+.charcoal-border {
+  border: 1.5px solid var(--charcoal);
+}
+.grey-border {
+  border: 1.5px solid lightgrey;
+}
 .rust-border {
+  border: 1.5px solid var(--rust);
+}
+.radio-blue {
+  border: 1.5px solid var(--blue);
+}
+.radio-grey {
+  border: 1.5px solid var(--charcoal);
+}
+.radio-purple {
+  border: 1.5px solid var(--purple);
+}
+.radio-rust {
   border: 1.5px solid var(--rust);
 }
 
@@ -225,10 +246,14 @@ h1 {
   padding-right: 25px;
 }
 
-/*  INPUT FIELDS  */
+/*  xfinput FIELDS  */
 .input-field-blue, .input-field-rose, .input-field-rust {
   border: 1.5px solid var(--blue);
   font-size: 17px;
+  margin: 3% 13%;
+}
+.input-field-blue-show {
+  border: 2.5px solid var(--blue);
   margin: 3% 13%;
 }
 .input-field-rose {
