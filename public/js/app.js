@@ -24,11 +24,8 @@ app.controller('MyController', ['$http', function($http){
           occasion: this.occasion
         }
       }).then(function(response){
-        this.image = null,
-        this.category = null,
-        this.type = null,
-        this.tag =null,
         controller.getOutfit()
+        this.newOutfit.image = null;
       }, function(){
         console.log('error');
       })
@@ -71,10 +68,7 @@ app.controller('MyController', ['$http', function($http){
           // tag: this.editedtag
         }
       }).then(function(response){
-        // this.editedcategory = null,
-        // this.editedtype = null,
-        // this.editedimage = null,
-        // this.editedtag = null,
+          this.editOutfit.image = null;
         controller.getOutfit();
         console.log(response)
       },function(){
