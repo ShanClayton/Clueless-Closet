@@ -16,17 +16,19 @@
             </button>
           </div>
           <!-- </a> -->
-              <form style="text-align:center;" ng-submit="ctrl.login()">
+              <form style="text-align:center;" ng-submit="ctrl.logIn()">
                 <h2 style="text-align:center;">CREATE CLOSET</h2>
                 <!-- outline input field in rust -->
                   <input class="input-field-rust width180 height30" type="text" placeholder="username" ng-model="ctrl.username" />
                   <!-- outline input field in rust -->
                   <input class="input-field-rust width180 height30" type="password" placeholder="password" ng-model="ctrl.password" />
                   <!-- outline input field in rust and create an anchor tag to direct login button to create page -->
-                  <a class="none" href="#"><input ng-click="ctrl.changeInclude('create')" class="rust btn-login white" type="submit" value="LOGIN"></a>
+                <input  class="rust btn-login white" type="submit" value="LOGIN">
                   <!-- style member field with blue border -->
+
                   <button class="blue-border f1 pointer" style="text-align:center;" ng-click="ctrl.changeInclude('signup')">Not a member?<br /> Sign up?</button>
               </form><br>
+              <button class="blue-border f1 pointer" ng-click="ctrl.changeInclude('signup')">Not a member?<br /> Sign up?</button>
               <!-- <div ng-if="ctrl.loggedInUsername">
                 Welcome, {{ctrl.loggedInUsername}}
               </div> -->
