@@ -12,7 +12,7 @@ app.controller('MyController', ['$http', function($http){
     const controller = this;
 
     this.newOutfit = function(){
-      console.log(this.type);
+      // console.log(this.type);
       $http({
         method: 'POST',
         url: '/outfits/new',
@@ -20,7 +20,8 @@ app.controller('MyController', ['$http', function($http){
           category: this.category,
           type: this.type,
           image: this.image,
-          tag: this.tag
+          season: this.season,
+          occasion: this.occasion
         }
       }).then(function(response){
         this.image = null,
@@ -61,9 +62,11 @@ app.controller('MyController', ['$http', function($http){
         method: 'PUT',
         url: '/outfits/' + outfit._id,
         data: {
-          category: "hey",
-          // type: this.editedtype,
+          category: this.editedCategory,
+          type: this.editedType,
           image: this.image,
+          season: this.editedSeason,
+          occasion: this.editedOccasion
 
           // tag: this.editedtag
         }
@@ -146,7 +149,7 @@ this.displayHide = () => {
 
 //notes for dropdowns + ng-if
 this.toggleOuterwear = () => {
-  
+
 }
 
 }])
