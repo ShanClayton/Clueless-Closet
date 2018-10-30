@@ -299,8 +299,8 @@ h1 {
   border-right: 2px solid slategrey;
   /* round the container edges */
   border-radius: 10px;
-  max-height: 45vw;
-  object-fit: contain;
+  max-height: 50vw;
+  object-fit: fill;
   object-position: center;
   /* stops scrolling */
   /* overflow: hidden; */
@@ -309,7 +309,7 @@ h1 {
   /* ensure image covers the set span */
   /* size: cover; */
   /* make width 40% of its parent container */
-  max-width: 45vw;
+  max-width: 50vw;
   /* test flexbox properties */
   display: flex;
   flex-direction: column;
@@ -334,7 +334,7 @@ h1 {
   /* ensure form covers set span */
   /* size: cover; */
   /* make width remaining 60% of parent container */
-  width: 55vw;
+  width: 50vw;
   /* test flexbox properties */
   display: flex;
   flex-direction: column;
