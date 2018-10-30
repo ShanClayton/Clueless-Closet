@@ -1,13 +1,13 @@
 <div class="show">
   <ul>
-    <li ng-repeat="outfit in ctrl.outfits"><img src="{{outfit.image}}" alt="">
-      {{outfit.category}}
-    {{outfit.type}}
-  {{outfit.season}}
-{{outfit.occasion}}
-  <div class="create" ng-click="ctrl.changeInclude('create')">
-    <img class="width30 height30 cancel pointer" ng-src="assets/hanger.png">
-  </div>
+    <li ng-repeat="outfit in ctrl.outfits"><img src="{{outfit.image}}" alt="{{outfit.type}}">
+      <h4>Category:</h4> {{outfit.category}}<br>
+      <h4>Type:</h4> {{outfit.type}}<br>
+      <h4>Season:</h4> {{outfit.season}}<br>
+      <h4>Occasion:</h4> {{outfit.occasion}}<br>
+      <div class="create" ng-click="ctrl.changeInclude('create')">
+        <img class="width30 height30 cancel pointer" ng-src="assets/hanger.png">
+      </div>
       <div class="outfit-edit" ng-click="ctrl.indexOfEditFormToShow = $index">
         <span class="lnr lnr-magic-wand"></span>
         <div class="edit">
@@ -109,9 +109,9 @@
               <br>
             </form>
       </div> -->
-      <div class="outfit-delete" ng-click="ctrl.deleteOutfit(outfit)">
-        <span class="lnr lnr-trash"></span>
-      </div>
+        <div class="outfit-delete" ng-click="ctrl.deleteOutfit(outfit)">
+          <span class="lnr lnr-trash"></span>
+        </div>
     </li>
   </ul>
 
