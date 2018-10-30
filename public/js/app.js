@@ -1,6 +1,11 @@
 const app = angular.module('ClosetApp', []);
 
 app.controller('MyController', ['$http', function($http){
+  // this.category = null;
+  // this.type = null;
+  // this.image = null;
+  // this.season = null;
+  // this.occasion = null;
 
   this.includePath = 'partials/main.html';
   this.navPath = 'partials/nav.html'
@@ -13,13 +18,14 @@ app.controller('MyController', ['$http', function($http){
   this.changeNavPath = (path) => {
     this.navPath = 'partials/'+ path
 + '.html';
-console.log(this.changeNav);
+console.log(this.changeNavPath);
 };
 
     const controller = this;
 
-    this.newOutfit = function(){
-      // console.log(this.type);
+    this.newOutfit = function($event){
+      console.log(this.category);
+      $event.preventDefault()
       $http({
         method: 'POST',
         url: '/outfits/new',
@@ -32,7 +38,12 @@ console.log(this.changeNav);
         }
       }).then(function(response){
         controller.getOutfit()
-        this.newOutfit.image = null;
+        controller.changeInclude('show')
+        controller.category = null;
+        controller.type = null;
+        controller.image = null;
+        controller.season = null;
+        controller.occasion = null;
       }, function(){
         console.log('error');
       })
@@ -61,7 +72,7 @@ console.log(this.changeNav);
         }
 
     this.editOutfit = function(outfit){
-      console.log(this.editedImage);
+      console.log("h");
       $http({
         method: 'PUT',
         url: '/outfits/' + outfit._id,
@@ -75,7 +86,7 @@ console.log(this.changeNav);
           // tag: this.editedtag
         }
       }).then(function(response){
-          this.editOutfit.image = null;
+          // this.editOutfit.image = null;
         controller.getOutfit();
         console.log(response)
       },function(){
@@ -101,6 +112,7 @@ console.log(this.changeNav);
 }
 
 this.logIn = function(){
+  console.log("hey");
     $http({
         method:'POST',
         url: '/sessions',
@@ -110,25 +122,27 @@ this.logIn = function(){
         }
     }).then(function(response){
       controller.loggedInUser = response.data.username;
-      this.changeInclude("create");
+      controller.changeInclude("create")
+      controller.changeNavPath('logout-nav')
         console.log(response);
     }, function(){
         console.log('error');
     });
 }
 
-// this.logOut = function(){
-//   $http({
-//     method: "DELETE"
-//     url: "/sessions/destroy"
-//   }).then(
-//     function(response){
-//       this.changeInclude("index")
-//     },
-//     function(error){
-//       console.log(error);
-//     });
-// }
+this.logOut = function(){
+  $http({
+    method: "DELETE",
+    url: "/sessions"
+  }).then(
+    function(response){
+      controller.changeInclude('main')
+      controller.changeNavPath('nav')
+    },
+    function(error){
+      console.log(error);
+    });
+}
 
 this.goApp = function(){
     const controller = this; //add this
@@ -150,7 +164,7 @@ this.displayHide = () => {
 
 // NOTES FOR SHOW PAGE SCROLLING DROPDOWN
   // var app = angular.module("demo", []);
-    // 
+    //
     // app.controller("dropdownDemo", function($scope) {
     //   $scope.colours = [
     //     { name: "Red", hex: "#F21B1B" },
