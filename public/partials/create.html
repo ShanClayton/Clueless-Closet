@@ -1,5 +1,6 @@
 <div class="dropdown-container">
   <h3>Create a New Look</h3>
+  <form ng-submit="ctrl.newOutfit()">
   <div class="dropdown">
     <br />
     Category:
@@ -78,6 +79,7 @@
   <input type="text" ng-model="ctrl.image" placeholder="image link">
   <input type="submit" value="Create a New Look" ng-click="ctrl.changeInclude('show')">
 </div>
+</form>
 
 <!-- <div class="create">
   <h3>Create a New Look</h3>
