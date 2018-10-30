@@ -6,10 +6,13 @@
       <h4>Season:</h4> {{outfit.season}}<br>
       <h4>Occasion:</h4> {{outfit.occasion}}<br>
       <div class="create" ng-click="ctrl.changeInclude('create')">
-        <img class="width30 height30 cancel pointer" ng-src="assets/hanger.png">
+        <img class="cancel pointer" style="height: 32px; width: 32px;" ng-src="assets/hanger-purple-bold.png" alt="Create">
+        <img class="cancel pointer" style="height: 33px; width: 33px;" ng-src="assets/hanger.png" alt="Create">
+        <img class="width30 height30 cancel pointer" ng-src="assets/edit-thin.png" alt="Edit">
+        <img class="width30 height30 cancel pointer" ng-src="assets/delete.png" alt="Delete">
       </div>
       <div class="outfit-edit" ng-click="ctrl.indexOfEditFormToShow = $index">
-        <span class="lnr lnr-magic-wand"></span>
+        <!-- <span class="lnr lnr-magic-wand"></span> -->
         <div class="edit">
           <form ng-if="$index === ctrl.indexOfEditFormToShow" ng-submit="ctrl.editOutfit(outfit)">
             <h4>Edit Outfit</h4>
@@ -110,7 +113,7 @@
             </form>
       </div> -->
         <div class="outfit-delete" ng-click="ctrl.deleteOutfit(outfit)">
-          <span class="lnr lnr-trash"></span>
+          <!-- <span class="lnr lnr-trash"></span> -->
         </div>
     </li>
   </ul>
