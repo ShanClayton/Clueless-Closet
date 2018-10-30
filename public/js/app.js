@@ -3,11 +3,18 @@ const app = angular.module('ClosetApp', []);
 app.controller('MyController', ['$http', function($http){
 
   this.includePath = 'partials/main.html';
+  this.navPath = 'partials/nav.html'
 
   this.changeInclude = (path) => {
     this.includePath = 'partials/'+ path +'.html';
     console.log(this.changeInclude);
   };
+
+  this.changeNavPath = (path) => {
+    this.navPath = 'partials/'+ path
++ '.html';
+console.log(this.changeNav);
+};
 
     const controller = this;
 
