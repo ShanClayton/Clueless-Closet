@@ -5,7 +5,8 @@ const OutfitSchema = new mongoose.Schema({
   category: String,
   type: String,
   image: String,
-  tag:[String]
+  season:String,
+  occasion: String
 })
 
 const Outfits = mongoose.model('Outfits', OutfitSchema);

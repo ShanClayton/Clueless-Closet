@@ -1,7 +1,84 @@
-<div class="outer">
+<div class="dropdown-container">
+  <div class="dropdown">
+    <br />
+    Category:
+    <select name="category" ng-model="ctrl.category">
+      <!-- <option value="category">Category</option> -->
+      <option value="outerwear">Outer Wear</option>
+      <option value="lowerwear">Lower Wear</option>
+      <option value="upperwear">Upper Wear</option>
+      <option value="shoes">Shoes</option>
+    </select>
+    <hr>
+    <br />
+
+Type:
+    <select ng-model="ctrl.type" ng-if="ctrl.category === 'outerwear'">
+      <option value="coat">Coat</option>
+      <option value="jacket" ng-model="ctrl.type">Jacket</option>
+      <option value="sweater" ng-model="ctrl.type">Sweater</option>
+    </select>
+
+    <select ng-model="ctrl.type" ng-if="ctrl.category === 'lowerwear'">
+      <option value="casual">Casual</option>
+      <option value="dress" ng-model="ctrl.type">Dress Pants</option>
+      <option value="shorts" ng-model="ctrl.type">Shorts</option>
+      <option value="skirt" ng-model="ctrl.type">Skirt</option>
+      <option value="jeans" ng-model="ctrl.type">Jeans</option>
+    </select>
+
+    <select ng-model="ctrl.type" ng-if="ctrl.category === 'upperwear'">
+      <option value="casual">Casual</option>
+      <option value="dress">Dress</option>
+      <option value="dress-shirt">Dress Shirt</option>
+      <option value="longsleeve">Long Sleeve</option>
+      <option value="sleeveless">Sleeveless</option>
+      <option value="tee">Tee</option>
+      <option value="turtleneck">Turtleneck</option>
+    </select>
+
+    <select ng-model="ctrl.type" ng-if="ctrl.category === 'shoes'">
+      <option value="athletic">Athletic</option>
+      <option value="boots">Boots</option>
+      <option value="dress">Dress Shoes</option>
+      <option value="flats">Flats</option>
+      <option value="heels">Heels</option>
+      <option value="sneakers">Sneakers</option>
+    </select>
+
+  </div>
+
+  <!-- seasons dropdown -->
+  Season:
+  <div class="dropdown">
+    <select ng-model="ctrl.season" ng-if="ctrl.type">
+      <option value="spring">Spring</option>
+      <option value="summer">Summer</option>
+      <option value="fall">Fall</option>
+      <option value="winter">Winter</option>
+    </select>
+  </div>
+
+  <!-- occasion Dropdown  -->
+  Occasion:
+  <div class="dropdown">
+    <select ng-model="ctrl.occasion" ng-if="ctrl.type">
+      <option value="occasion">Occasion</option>
+      <option value="business-casual">Business Casual</option>
+      <option value="club">Club</option>
+      <option value="date">Date</option>
+      <option value="dinner">Dinner</option>
+      <option value="interview">Interview</option>
+      <option value="special-event">Special Event</option>
+      <option value="streetwear">StreetWear</option>
+    </select>
+  </div>
+</div>
+<!-- <div class="outer">
   <form ng-submit="ctrl.newOutfit()">
     <h4 ng-model="ctrl.category">OuterWear</h4>
     <img src="{{ctrl.image}}" alt="">
+
     <input class="rust-border img-box" type="text" ng-model="ctrl.image" placeholder="Image" /><br>
     <div class="dropdown">
       <select class="rust-border" name="outwear-type">
@@ -9,11 +86,27 @@
         <option value="coat" ng-model="ctrl.type">Coat</option>
         <option value="jacket" ng-model="ctrl.type">Jacket</option>
         <option value="sweater" ng-model="ctrl.type">Sweater</option>
+
+
+    <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
+    <div class="dropdown">
+      <select ng-model="ctrl.type" name="outwear-type">
+
+    <input type="text" ng-model="ctrl.image" placeholder="Image" /><br /><br />
+    <div class="dropdown-type">
+      <select name="outwear-type">
+
+        <option value="type">Type</option>
+        <option value="coat" >Coat</option>
+        <option value="jacket" >Jacket</option>
+        <option value="sweater" >Sweater</option>
+
       </select>
-    </div>
+    </div><br /> -->
 
   <!-- Seasons Dropdown Attempt 2 - standard -->
-  <div class="dropdown">
+
+  <!-- <div class="dropdown">
     <select class="tag-seasons rust-border" name="seasons">
       <option value="season">Season</option>
       <option ng-model="ctrl.tag" value="spring">Spring</option>
@@ -21,10 +114,11 @@
       <option value="fall">Fall</option>
       <option ng-model="ctrl.tag" value="winter">Winter</option>
     </select>
-  </div>
+  </div><br /> -->
 
   <!-- Occasion Dropdown  -->
-  <div class="dropdown">
+
+  <!-- <div class="dropdown">
     <select class="tag-occasions rust-border" name="occasions">
       <option value="occasion">Occasion</option>
       <option ng-model="ctrl.tag" value="business-casual">Business Casual</option>
@@ -35,8 +129,13 @@
       <option value="special-event" ng-model="ctrl.tag">Special Event</option>
       <option value="streetwear" ng-model="ctrl.tag">StreetWear</option>
     </select>
+
   </div>
   <input class="dropdown-submit" ng-click="ctrl.changeInclude('show')" type="submit" value="Create New look" /><br>
+
+  </div><br />
+  <input ng-click="ctrl.changeInclude('show')" type="submit" value="Create New look" /><br />
+
 </form><br>
 
-</div>
+</div> -->

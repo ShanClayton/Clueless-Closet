@@ -55,6 +55,8 @@
   width: 45px;
 }
 
+
+
 /*  HEADERS  */
 h1 {
   color: black;
@@ -158,10 +160,14 @@ h1 {
 }
 
 /* COLOR OUTLINE */
+.blue-border {
+  border: 1.5px solid var(--blue);
+}
 .rust-border {
   border: 1.5px solid var(--rust);
 }
 
+<<<<<<< HEAD
 /* DROP DOWN */
 /* .border-bkg-color {
   background-color: var(--purple);
@@ -180,6 +186,25 @@ h1 {
   color: white;
 } */
 
+=======
+/* DROP DOWNS */
+.dropdown-container {
+  /* this property aligns items within the box in the center */
+  align-items: center;
+  /* background-color: lavender; */
+  /* border: 2px solid var(--charcoal); */
+  display: flex;
+  /* i added this property below to accommodate images living to the right of the dropdowns - anyone, feel free to change this property if needed */
+  flex-direction: row;
+  height: 450px;
+  justify-content: center;
+  max-width: 600px;
+}
+.main-dropdown-container {
+  display: flex;
+  justify-content: center;
+}
+>>>>>>> eec02caa28a029e9cee2a633433c66090bd5ada1
 
 
 /*  FONT SIZE  */
@@ -256,7 +281,7 @@ h1 {
   height: 100%;
   justify-content: center;
   /* jerrica */
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
@@ -279,11 +304,11 @@ h1 {
   /* this sets the margin % (of the page) from the top of the page */
   margin-top: 7%;
   /* this property prevents modal from spanning the entire page vertically */
-  overflow: auto;
-  position: fixed;
+  overflow: hidden;
+  position: absolute;
   /* set modal width to cover 60% of viewport */
   width: 60%;
-  z-index: 1;
+  z-index: 9;
 }
 
 /* create sidebar foundation as a class  */
@@ -295,21 +320,25 @@ h1 {
   border-right: 2px solid slategrey;
   /* round the container edges */
   border-radius: 10px;
-  /* initial test */
-  /* make height 100% of its parent container */
-  height: 50vw;
+  max-height: 45vw;
   object-fit: contain;
   object-position: center;
+  /* stops scrolling */
+  /* overflow: hidden; */
   /* show only one iteration of the image */
   repeat: no-repeat;
   /* ensure image covers the set span */
   /* size: cover; */
   /* make width 40% of its parent container */
-  width: 45vw;
+  max-width: 45vw;
   /* test flexbox properties */
   display: flex;
   flex-direction: column;
 }
+/* selects all imgs with class sidebar */
+/* img.sidebar {
+  max-width: 45vw;
+} */
 
 /* create registration form foundation as a class */
 .registration {
@@ -343,6 +372,16 @@ h1 {
 .sidebar-registration {
   /* background: url('/assets/signup-clothing.jpg'); */
   flex: 3 3 auto;
+}
+
+/* create a close modal scenario */
+.close-modal {
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px;
+  position: absolute;
+  right: 5px;
+  top: 3px;
 }
 
 /*  NAVIGATION  */
@@ -384,6 +423,8 @@ a.rust:hover {
 .navbar {
   height: 100px;
 }
+
+
 
 /*  TEXT DECORATION  */
 .none {
