@@ -168,6 +168,7 @@ h1 {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* DROP DOWN */
 /* .border-bkg-color {
   background-color: var(--purple);
@@ -206,6 +207,9 @@ h1 {
 }
 
 
+=======
+/* DROP DOWNS */
+>>>>>>> 8f31fed76601c25cccb63b2a8173e8cd9aed357e
 
 /*  FONT SIZE  */
 .f1 {
@@ -320,6 +324,11 @@ h1 {
   border-right: 2px solid slategrey;
   /* round the container edges */
   border-radius: 10px;
+<<<<<<< HEAD
+=======
+  /* initial test */
+  /* make height 100% of its parent container */
+>>>>>>> 8f31fed76601c25cccb63b2a8173e8cd9aed357e
   max-height: 45vw;
   object-fit: contain;
   object-position: center;

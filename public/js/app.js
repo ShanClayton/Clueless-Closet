@@ -19,7 +19,11 @@ console.log(this.changeNav);
     const controller = this;
 
     this.newOutfit = function(){
+<<<<<<< HEAD
       // console.log(this.type);
+=======
+      console.log(this.type);
+>>>>>>> 8f31fed76601c25cccb63b2a8173e8cd9aed357e
       $http({
         method: 'POST',
         url: '/outfits/new',
@@ -66,11 +70,17 @@ console.log(this.changeNav);
         method: 'PUT',
         url: '/outfits/' + outfit._id,
         data: {
+<<<<<<< HEAD
           category: this.editedCategory,
           type: this.editedType,
           image: this.image,
           season: this.editedSeason,
           occasion: this.editedOccasion
+=======
+          category: "hey",
+          // type: this.editedtype,
+          image: this.image,
+>>>>>>> 8f31fed76601c25cccb63b2a8173e8cd9aed357e
 
           // tag: this.editedtag
         }
@@ -143,6 +153,7 @@ this.goApp = function(){
   }
 
 this.showModal = true;
+<<<<<<< HEAD
 
 this.displayHide = () => {
   this.showModal = !this.showModal;
@@ -150,7 +161,11 @@ this.displayHide = () => {
 
 //notes for dropdowns + ng-if
 this.toggleOuterwear = () => {
+=======
+>>>>>>> 8f31fed76601c25cccb63b2a8173e8cd9aed357e
 
+this.displayHide = () => {
+  this.showModal = !this.showModal;
 }
 
 }])

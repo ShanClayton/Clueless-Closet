@@ -1,16 +1,28 @@
 <modal id="signup-modal">
+<<<<<<< HEAD
   <div class="modal-container" ng-click="displayHide()">
     <!-- this is the actual modal containing sidebar image and registration form -->
     <div class="modal">
       <!-- sidebar image (left) -->
+=======
+  <div class="modal-container">
+    <!-- when ng-show="showModal" disappears when sign up from nav menu on landing page is clicked -->
+    <div class="modal" ng-click="showModal">
+>>>>>>> 8f31fed76601c25cccb63b2a8173e8cd9aed357e
       <img src="/assets/signup-clothing.jpg" class="sidebar">
       <!-- registration form (right) -->
         <div class="registration" style="margin-top:-18px;">
+<<<<<<< HEAD
           <!-- attempting to close the modal -->
           <div class="close-modal">
             <!-- X button that should close the modal upon click -->
             <button class="cancel-modal" ng-click="ctrl.changeInclude('main')">
               <!-- actual icon within the button -->
+=======
+          <!-- <a id="close-modal" href="#"> -->
+            <!-- <button class="cancel-modal" ng-click="ctrl.hideModal(signup-modal)"> -->
+            <button class="cancel-modal" ng-click="showModal">
+>>>>>>> 8f31fed76601c25cccb63b2a8173e8cd9aed357e
               <img class="width30 height30 cancel pointer" ng-src="assets/cancel.png">
             </button>
           </div>
