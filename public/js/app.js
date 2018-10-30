@@ -111,6 +111,7 @@ console.log(this.changeNavPath);
         }
     }).then(function(response){
         console.log(response);
+        controller.changeInclude('login')
         controller.username =null,
         controller.password = null
     }, function(){
