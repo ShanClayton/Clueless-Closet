@@ -205,15 +205,19 @@ h1 {
   display: flex;
   justify-content: center;
 }
-
-.btn {
+.btncreate {
+  background-color: #EBC7BD;
+  color: var(--charcoal);
+  border-radius: 10px;
+  font-size: 15px;
+  /* font-weight: bold; */
+  padding: 10px 20px;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-  background-color: lightslategrey;
-  color: black;
-}
+  width: 50%;
 
-.btn:hover {
+}
+.btncreate:hover {
   background-color: var(--rustyrose);
   color: var(--charcoal);
 }
@@ -241,8 +245,11 @@ h1 {
   padding-top: 25px;
   padding-right: 25px;
 }
+.inline-icons {
+  display: inline;
+}
 
-/*  xfinput FIELDS  */
+/*  INPUT FIELDS  */
 .input-field-blue, .input-field-rose, .input-field-rust {
   border: 1.5px solid var(--blue);
   font-size: 17px;

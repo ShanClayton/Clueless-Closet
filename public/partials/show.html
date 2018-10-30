@@ -1,23 +1,3 @@
-<!-- THERE SHOULD BE A DIV TO HOLD THE PUSHED ITEM -->
-<!-- TEST CODE FOR SLIDEDOWN DROPDOWN MENU -->
-<!-- <dropdown placeholder="Colour..." list="colours" selected="colour" property="name"></dropdown>
-
-<div class="dropdown-container" ng-class="{ show: listVisible }">
-  <div class="dropdown-display" ng-click="show();" ng-class="{ clicked: listVisible }">
-    <span ng-if="!isPlaceholder">{{display}}</span>
-    <span class="placeholder" ng-if="isPlaceholder">{{placeholder}}lt; /span>
-      <i class="fa fa-angle-down"></i>
-  </div>
-  <div class="dropdown-list">
-    <div>
-      <div ng-repeat="item in list" ng-click="select(item)" ng-class="{ selected: isSelected(item) }">
-        <span>{{property !== undefined ? item[property]: item}}</span>
-        <i class="fa fa-check"></i>
-      </div>
-    </div>
-  </div>
-</div> -->
-
 <div class="show-container">
   <div class="create" style="text-align:center;">
     <h2 class="middletext" style="margin-top:2%;">Create a New Look</h2>
@@ -41,7 +21,7 @@
       <label for="occasion">Occasion</label>
       <br>
       <br>
-      <hr style="border-top: 1.5px solid var(--charcoal);">
+      <hr style="border-top: 1.5px solid var(--babyblue);">
     </div>
   </div>
 
@@ -52,35 +32,28 @@
       <h4>Season: {{outfit.season}}</h4>
       <h4>Occasion: {{outfit.occasion}}</h4>
 
-
-      <!-- THERE SHOULD BE A NEW DIV/BOX HERE  -->
-
-      <div class="outfit-edit" ng-click="ctrl.indexOfEditFormToShow = $index">
-        <img class="width30 height30 cancel pointer" ng-src="assets/edit-thin.png" alt="Edit">
-        <!-- <span class="lnr lnr-magic-wand"></span> -->
         <div class="edit">
-          <form ng-if="$index === ctrl.indexOfEditFormToShow" ng-submit="ctrl.editOutfit(outfit)">
-            <h4>Edit Outfit</h4>
-            <!-- <img src="{{ctrl.image}}" alt=""> -->
-            <!-- <input type="text" ng-model="ctrl.image" placeholder="Image" /><br> -->
-
-            <div class="dropdown-container">
-              <h3>Edit Your Look</h3>
+          <div class="outfit-edit" ng-click="ctrl.indexOfEditFormToShow = $index">
+            <img class="width30 height30 cancel pointer" ng-src="assets/edit-thin.png" alt="Edit">
+            <div class="dropdown-container-edit" style="text-align:left;">
+          <form style="text-align:center; font-size: 1.5rem;" ng-if="$index === ctrl.indexOfEditFormToShow" ng-submit="ctrl.editOutfit(outfit)">
+              <form style="margin-top: 30px; padding-left:40px; max-height:45vw; max-width: 55vw;" ng-submit="ctrl.newOutfit($event)">
+              <h2>Edit Your Look</h2>
               <div class="dropdown">
                 <br />
                 Category:
-                <select name="category" ng-model="ctrl.editedCategory">
+                <select class="charcoal-border" name="category" ng-model="ctrl.editedCategory">
                   <!-- <option value="category">Category</option> -->
                   <option value="outerwear">Outer Wear</option>
                   <option value="lowerwear">Lower Wear</option>
                   <option value="upperwear">Upper Wear</option>
                   <option value="shoes">Shoes</option>
                 </select>
-                <hr>
+                <hr style="border: 1px solid var(--babyblue);">
                 <br />
 
                 Type:
-                <select ng-model="ctrl.editedType" ng-if="ctrl.editedCategory === 'outerwear'">
+                <select class="charcoal-border" ng-model="ctrl.editedType" ng-if="ctrl.editedCategory === 'outerwear'">
                   <option value="coat">Coat</option>
                   <option value="jacket">Jacket</option>
                   <option value="sweater">Sweater</option>
@@ -112,24 +85,25 @@
                   <option value="heels">Heels</option>
                   <option value="sneakers">Sneakers</option>
                 </select>
-
               </div>
+              <hr style="border: 1px solid var(--babyblue);">
 
               <!-- seasons dropdown -->
               Season:
               <div class="dropdown">
-                <select ng-model="ctrl.editedSeason" ng-if="ctrl.editedType">
+                <select class="charcoal-border" ng-model="ctrl.editedSeason" ng-if="ctrl.editedType">
                   <option value="spring">Spring</option>
                   <option value="summer">Summer</option>
                   <option value="fall">Fall</option>
                   <option value="winter">Winter</option>
                 </select>
               </div>
+              <hr style="border: 1px solid var(--babyblue);">
 
               <!-- occasion Dropdown  -->
               Occasion:
               <div class="dropdown">
-                <select ng-model="ctrl.editedOccasion" ng-if="ctrl.editedType">
+                <select class="charcoal-border" ng-model="ctrl.editedOccasion" ng-if="ctrl.editedType">
                   <option value="occasion">Occasion</option>
                   <option value="business-casual">Business Casual</option>
                   <option value="club">Club</option>
@@ -139,17 +113,19 @@
                   <option value="special-event">Special Event</option>
                   <option value="streetwear">StreetWear</option>
                 </select>
-              </div><br />
+              </div>
+              <hr style="border: 1px solid var(--babyblue);"><br />
 
               <!-- image input field -->
               Image:
               <input type="text" ng-model="ctrl.image" placeholder="image link">
               <input type="submit" value="Edit Look">
-            </div>
           </form>
-          <img class="width30 height30 cancel pointer" ng-src="assets/delete.png" alt="Delete" ng-click="ctrl.deleteOutfit(outfit)">
-
-        </div>
-
-
+          <!-- <img class="width30 height30 cancel pointer inline-icons" ng-src="assets/delete.png" alt="Delete" ng-click="ctrl.deleteOutfit(outfit)">
+        </div> -->
+      </div>
+    </div>
+</div>
+</div>
+</div>
 </div>
