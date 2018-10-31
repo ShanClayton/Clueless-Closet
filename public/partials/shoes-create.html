@@ -1,19 +1,47 @@
 <div class="shoes">
     <img src="{{ctrl.image}}" alt="">
   <form ng-submit="ctrl.newOutfit()">
-    <h4>Shoes</h4>
+    <h4 ng-model="ctrl.category">Shoes</h4>
     <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
     <div class="dropdown">
       <select name="shoes-type">
-        <option value="boots">Boots</option>
-        <option value="dress">Dress Shoes</option>
-        <option value="flats">Flats</option>
-        <option value="heels">Heels</option>
-        <option value="sandals">Sandals</option>
-        <option value="sneakers">Sneakers</option>
-        <option value="sports">Sports</option>
+        <option ng-model="ctrl.type" value="boots">Boots</option>
+        <option value="dress" ng-model="ctrl.type">Dress Shoes</option>
+        <option ng-model="ctrl.type" value="flats">Flats</option>
+        <option ng-model="ctrl.type" value="heels">Heels</option>
+        <option ng-model="ctrl.type" value="sandals">Sandals</option>
+        <option ng-model="ctrl.type" value="sneakers">Sneakers</option>
+        <option ng-model="ctrl.type" value="sports">Sports</option>
       </select>
     </div>
-    <input type="submit" value="Create New look" /><br>
+    <input ng-click="ctrl.changeInclude('show')" type="submit" value="Create New look" /><br>
   </form><br>
+
+  <!-- Seasons Dropdown Attempt 2 - standard -->
+  <div class="dropdown">
+    <select class="tag-seasons" name="seasons">
+      <option value="season">Season</option>
+      <option value="spring">Spring</option>
+      <option value="summer">Summer</option>
+      <option value="fall">Fall</option>
+      <option value="winter">Winter</option>
+    </select>
+  </div>
+
+  <!-- Occasion Dropdown  -->
+  <div class="dropdown">
+    <select class="tag-occasions" name="occasions">
+      <option value="occasion">Occasion</option>
+      <option value="business-casual">Business Casual</option>
+      <option value="club">Club</option>
+      <option value="date">Date</option>
+      <option value="dinner">Dinner</option>
+      <option value="interview">Interview</option>
+      <option value="special-event">Special Event</option>
+      <option value="streetwear">StreetWear</option>
+    </select>
+  </div>
+  <input type="submit" value="Create New look" /><br>
+</form><br>
+
 </div>

@@ -5,6 +5,7 @@
     <title>Clueless Closet</title>
     <link rel="stylesheet" href="/css/app.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <script src="/js/app.js" charset="utf-8"></script>
   </head>
   <body ng-controller="MyController as ctrl">
@@ -12,22 +13,9 @@
         <h1>Clueless Closet</h1>
     </div>
 
-    <nav ng-include="ctrl.includePath">
+    <nav ng-include="ctrl.navPath">
    </nav>
-
-      <div class="headerimg">
-        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bea145e75de8fd2251f2b6480bad06a2&auto=format&fit=crop&w=700&q=60" style="width: 100%; height:350px; object-fit: cover;" alt="clothing rack" />
-      </div>
-      <center>
-        <p>Testing</p>
-      </center>
-      <div class="flex-container">
-        <div><img src="https://images.unsplash.com/photo-1527180718958-1721e2518786?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b9f3f8d8e5b140b860a17e6f5fa43317&auto=format&fit=crop&w=700&q=60" class="bottom" alt="womens clothing layout one" /></div>
-
-        <div><img src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1225d4ab3aa16827e59cdcc7bb523ecb&auto=format&fit=crop&w=700&q=60" class="bottom" alt="mens clothing layout" /></div>
-
-        <div><img src="https://images.unsplash.com/photo-1516763296043-f676c1105999?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4217dd257e2020fa0fd82af67a35e4ad&auto=format&fit=crop&w=700&q=60" class="bottom" alt="womens clothing layout two" /></div>
-      </div>
-
+   <div ng-include="ctrl.includePath">
+   </div><br />
   </body>
 </html>

@@ -1,0 +1,90 @@
+<div class="edit">
+  <form ng-if="$index === ctrl.indexOfEditFormToShow" ng-submit="ctrl.editOutfit(outfit)">
+    <h4>Edit Outfit</h4>
+    <!-- <img src="{{ctrl.image}}" alt=""> -->
+    <!-- <input type="text" ng-model="ctrl.image" placeholder="Image" /><br> -->
+
+    <div class="dropdown-container">
+      <h3>Create a New Look</h3>
+      <div class="dropdown">
+        <br />
+        Category:
+        <select name="category" ng-model="ctrl.editedCategory">
+          <!-- <option value="category">Category</option> -->
+          <option value="outerwear">Outer Wear</option>
+          <option value="lowerwear">Lower Wear</option>
+          <option value="upperwear">Upper Wear</option>
+          <option value="shoes">Shoes</option>
+        </select>
+        <hr>
+        <br />
+
+        Type:
+        <select ng-model="ctrl.editedType" ng-if="ctrl.editedCategory === 'outerwear'">
+          <option value="coat">Coat</option>
+          <option value="jacket" ng-model="ctrl.type">Jacket</option>
+          <option value="sweater" ng-model="ctrl.type">Sweater</option>
+        </select>
+
+        <select ng-model="ctrl.editedType" ng-if="ctrl.editedCategory === 'lowerwear'">
+          <option value="casual">Casual</option>
+          <option value="dress" ng-model="ctrl.type">Dress Pants</option>
+          <option value="shorts" ng-model="ctrl.type">Shorts</option>
+          <option value="skirt" ng-model="ctrl.type">Skirt</option>
+          <option value="jeans" ng-model="ctrl.type">Jeans</option>
+        </select>
+
+        <select ng-model="ctrl.editedType" ng-if="ctrl.editedCategory === 'upperwear'">
+          <option value="casual">Casual</option>
+          <option value="dress">Dress</option>
+          <option value="dress-shirt">Dress Shirt</option>
+          <option value="longsleeve">Long Sleeve</option>
+          <option value="sleeveless">Sleeveless</option>
+          <option value="tee">Tee</option>
+          <option value="turtleneck">Turtleneck</option>
+        </select>
+
+        <select ng-model="ctrl.editedType" ng-if="ctrl.editedCategory === 'shoes'">
+          <option value="athletic">Athletic</option>
+          <option value="boots">Boots</option>
+          <option value="dress">Dress Shoes</option>
+          <option value="flats">Flats</option>
+          <option value="heels">Heels</option>
+          <option value="sneakers">Sneakers</option>
+        </select>
+
+      </div>
+
+      <!-- seasons dropdown -->
+      Season:
+      <div class="dropdown">
+        <select ng-model="ctrl.editedSeason" ng-if="ctrl.editedType">
+          <option value="spring">Spring</option>
+          <option value="summer">Summer</option>
+          <option value="fall">Fall</option>
+          <option value="winter">Winter</option>
+        </select>
+      </div>
+
+      <!-- occasion Dropdown  -->
+      Occasion:
+      <div class="dropdown">
+        <select ng-model="ctrl.editedOccasion" ng-if="ctrl.editedType">
+          <option value="occasion">Occasion</option>
+          <option value="business-casual">Business Casual</option>
+          <option value="club">Club</option>
+          <option value="date">Date</option>
+          <option value="dinner">Dinner</option>
+          <option value="interview">Interview</option>
+          <option value="special-event">Special Event</option>
+          <option value="streetwear">StreetWear</option>
+        </select>
+      </div><br />
+
+      <!-- image input field -->
+      Image:
+      <input type="text" ng-model="ctrl.image" placeholder="image link">
+      <input type="submit" value="Edit Look">
+    </div>
+  </form>
+</div>

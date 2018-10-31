@@ -36,6 +36,21 @@
   margin-top: 25px;
   height: 25px;
 } */
+.btncreate {
+  background-color: #EBC7BD;
+  color: var(--charcoal);
+  border-radius: 10px;
+  font-size: 15px;
+  /* font-weight: bold; */
+  padding: 10px 20px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  width: 50%;
+}
+.btncreate:hover {
+  background-color: var(--rustyrose);
+  color: var(--charcoal);
+}
 .btn-login {
   border-radius: 4px;
   cursor: pointer;
@@ -45,6 +60,42 @@
   margin: 5% 33%;
   padding: 5px;
   width: 80px;
+}
+.cancel-modal {
+  border: none;
+  height: 60px;
+  margin-top: -4%;
+  margin-right: 1.5%;
+  outline: none;
+  width: 45px;
+}
+
+/* FOOTER */
+footer {
+ background-color: var(--light-blue);
+ text-transform: uppercase;
+ color: white;
+ font-size: 14px;
+ font-weight: 500;
+ padding: 0 20px;
+ letter-spacing: .08em;
+ position: fixed;
+ width: 100%;
+ bottom: 0;
+}
+
+.copyright {
+ font-family: ‘Lato’, sans-serif;
+ float:left;
+}
+
+.clearfix:after {
+ visibility: hidden;
+ display: block;
+ content: ” “;
+ clear: both;
+ height: 0;
+ font-size: 0;
 }
 
 /*  HEADERS  */
@@ -61,12 +112,20 @@ h1 {
 .headerimg{
   /* width: 1200px;
   height: 350px; */
+   /* margin-top: -1px; */
+  /* padding-bottom: -30px; */ */
+  /* border-bottom: 2px solid var(--charcoal); */
   /* object-fit: */
   /* display: flex; */
   /* justify-content: */
   /* margin: 0 auto; */
   z-index: 0;
   background-repeat: repeat-y;
+}
+
+.headerborderbtm {
+  border-bottom: 2px solid var(--charcoal);
+  margin-bottom: -2px;
 }
 
 /* LANDING PAGE IMAGES */
@@ -81,8 +140,15 @@ h1 {
   height: 200px;
   width: 200px;
   border: 1px solid black;
-  margin: 10px;
-  padding: 5px;
+  margin: 25px;
+  padding: 10px;
+}
+/* MIDDLE TEXT */
+.middletext {
+  font-family: 'PT Mono', monospace;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 12px;
 }
 
 /*  COLORS  */
@@ -135,8 +201,50 @@ h1 {
 }
 
 /* COLOR OUTLINE */
+.babyblue-border {
+  border: 1.5px solid var(--babyblue);
+}
+.blue-border {
+  border: 1.5px solid var(--blue);
+}
+.charcoal-border {
+  border: 1.5px solid var(--charcoal);
+}
+.grey-border {
+  border: 1.5px solid lightgrey;
+}
 .rust-border {
   border: 1.5px solid var(--rust);
+}
+.radio-blue {
+  border: 1.5px solid var(--blue);
+}
+.radio-grey {
+  border: 1.5px solid var(--charcoal);
+}
+.radio-purple {
+  border: 1.5px solid var(--purple);
+}
+.radio-rust {
+  border: 1.5px solid var(--rust);
+}
+
+/* DROP DOWNS */
+.dropdown-container {
+  /* this property aligns items within the box in the center */
+  align-items: center;
+  /* background-color: lavender; */
+  /* border: 2px solid var(--charcoal); */
+  display: flex;
+  /* i added this property below to accommodate images living to the right of the dropdowns - anyone, feel free to change this property if needed */
+  flex-direction: row;
+  height: 450px;
+  justify-content: center;
+  max-width: 800px;
+}
+.main-dropdown-container {
+  display: flex;
+  justify-content: center;
 }
 
 /*  FONT SIZE  */
@@ -162,11 +270,18 @@ h1 {
   padding-top: 25px;
   padding-right: 25px;
 }
+.inline-icons {
+  display: inline;
+}
 
 /*  INPUT FIELDS  */
 .input-field-blue, .input-field-rose, .input-field-rust {
   border: 1.5px solid var(--blue);
   font-size: 17px;
+  margin: 3% 13%;
+}
+.input-field-blue-show {
+  border: 2.5px solid var(--blue);
   margin: 3% 13%;
 }
 .input-field-rose {
@@ -213,7 +328,7 @@ h1 {
   height: 100%;
   justify-content: center;
   /* jerrica */
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
@@ -236,11 +351,11 @@ h1 {
   /* this sets the margin % (of the page) from the top of the page */
   margin-top: 7%;
   /* this property prevents modal from spanning the entire page vertically */
-  overflow: auto;
-  position: fixed;
+  overflow: hidden;
+  position: absolute;
   /* set modal width to cover 60% of viewport */
   width: 60%;
-  z-index: 1;
+  z-index: 9;
 }
 
 /* create sidebar foundation as a class  */
@@ -252,21 +367,25 @@ h1 {
   border-right: 2px solid slategrey;
   /* round the container edges */
   border-radius: 10px;
-  /* initial test */
-  /* make height 100% of its parent container */
-  height: 50vw;
-  object-fit: contain;
+  max-height: 50vw;
+  object-fit: fill;
   object-position: center;
+  /* stops scrolling */
+  /* overflow: hidden; */
   /* show only one iteration of the image */
   repeat: no-repeat;
   /* ensure image covers the set span */
   /* size: cover; */
   /* make width 40% of its parent container */
-  width: 45vw;
+  max-width: 50vw;
   /* test flexbox properties */
   display: flex;
   flex-direction: column;
 }
+/* selects all imgs with class sidebar */
+/* img.sidebar {
+  max-width: 45vw;
+} */
 
 /* create registration form foundation as a class */
 .registration {
@@ -283,7 +402,7 @@ h1 {
   /* ensure form covers set span */
   /* size: cover; */
   /* make width remaining 60% of parent container */
-  width: 55vw;
+  width: 50vw;
   /* test flexbox properties */
   display: flex;
   flex-direction: column;
@@ -300,6 +419,16 @@ h1 {
 .sidebar-registration {
   /* background: url('/assets/signup-clothing.jpg'); */
   flex: 3 3 auto;
+}
+
+/* create a close modal scenario */
+.close-modal {
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px;
+  position: absolute;
+  right: 5px;
+  top: 3px;
 }
 
 /*  NAVIGATION  */
@@ -341,6 +470,8 @@ a.rust:hover {
 .navbar {
   height: 100px;
 }
+
+
 
 /*  TEXT DECORATION  */
 .none {

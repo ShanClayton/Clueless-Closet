@@ -1,10 +1,157 @@
+<div class="show-container">
+  <div class="create" style="text-align:center;">
+    <h2 class="middletext" style="margin-top:2%;">Create a New Look</h2>
+      <img style="margin-top:-26px;" ng-click="ctrl.changeInclude('create')" class="cancel pointer" style="height: 33px; width: 33px;" ng-src="assets/hanger.png" alt="Create">
+      <!-- <img ng-click="ctrl.changeInclude('create')" class="cancel pointer" style="height: 33px; width: 33px;" ng-src="assets/hanger.png" alt="Create"> -->
+  </div>
 
-<div class="">
-  hello
+  <div class="input-field-blue-show">
+  <div style="text-align:center;">
+    <h3 style="color:var(--charcoal);">SEARCH BY CATEGORY, SEASON, OCCASION OR TYPE </h3>
+    <input type="text" class="babyblue-border" ng-model="ctrl.searchQuery" placeholder="START TYPING THE CATEGORY, SEASON, OCCASION OR TYPE" />
+    <div>
+      <br />
+      <input type="radio" class="radio-rust" name="order" value="category" ng-model='order' id="category" />
+      <label for="category">Category</label>
+      <input type="radio" class="radio-purple" name="order" value="type" ng-model='order' id="type" />
+      <label for="type">Type</label>
+      <input type="radio" class="radio-blue" name="order" value="season" ng-model='order' id="season" />
+      <label for="season">Season</label>
+      <input type="radio" class="radio-grey" name="order" value="occasion" ng-model='order' id="occasion" />
+      <label for="occasion">Occasion</label>
+      <br>
+      <br>
+      <hr style="border-top: 1.5px solid var(--babyblue);">
+    </div>
+  </div>
 
-<div class="show">
+<div>
   <ul>
-    <li ng-repeat="outfit in ctrl.outfits"><img src="{{outfit.image}}" alt=""> </li>
+    <li class="none" style="display:inline-block; margin-left:15px;" ng-repeat="outfit in ctrl.outfits | orderBy: order | filter: ctrl.searchQuery" ><img src=" {{outfit.image}}" alt=" {{outfit.type}}" style=" height: 150px; width: 150px; border: 1px solid var(--charcoal);">
+      <h3 style="font-size:1.2rem;">Category: {{outfit.category}}</h3>
+      <h3 style="font-size:1.2rem;">Type: {{outfit.type}}</h3>
+      <h3 style="font-size:1.2rem;">Season: {{outfit.season}}</h3>
+      <h3 style="font-size:1.2rem;">Occasion: {{outfit.occasion}}</h3>
+
+        <div class="edit">
+
+          <div style="display:flex;">
+            <div class="outfit-edit" ng-click="ctrl.indexOfEditFormToShow = $index">
+              <img class="width30 height30 cancel pointer" ng-src="assets/edit-thin.png" alt="Edit">
+            </div>
+            <div>
+              <img class="width30 height30 cancel pointer" ng-src="assets/delete.png" alt="Delete" ng-click="ctrl.deleteOutfit(outfit)">
+            </div>
+          </div>
+    </li>
   </ul>
 
+
+            <div class="dropdown-container-edit" style="text-align:left;">
+
+            <!-- this ng-if controls initial form load -->
+            <div ng-if="$index === ctrl.indexOfEditFormToShow">
+
+              <button class="cancel-modal" style="float:right;" ng-click="ctrl.test()"><img class="width30 height30 cancel pointer" ng-src="assets/cancel.png"></button>
+
+          <form style="text-align:center; font-size: 1.5rem;" ng-submit="ctrl.editOutfit(outfit)">
+
+                <br style="line-height:10px;"/>
+              <!-- <form style="margin-top: 30px; padding-left:40px; max-height:45vw; max-width: 55vw;" ng-submit="ctrl.newOutfit($event)"> -->
+              <h3>Edit Your Look</h3>
+              <div class="dropdown">
+                <p style="font-size:1.3rem; display: inline;">Category: </p>
+                <select style="font-size:1rem;" class="charcoal-border" name="category" ng-model="ctrl.editedCategory">
+                  <!-- <option value="category">Category</option> -->
+                  <option value="outerwear">Outer Wear</option>
+                  <option value="lowerwear">Lower Wear</option>
+                  <option value="upperwear">Upper Wear</option>
+                  <option value="shoes">Shoes</option>
+                </select>
+                <hr style="border: 1px solid var(--babyblue);">
+
+                <p style="font-size:1.3rem; display: inline;">Type: </p>
+
+                <select style="font-size:1rem;" class="charcoal-border" name="type" ng-model="ctrl.editedType" ng-if="ctrl.editedCategory === 'outerwear'">
+                  <option value="coat">Coat</option>
+                  <option value="jacket">Jacket</option>
+                  <option value="sweater">Sweater</option>
+                </select>
+
+                <select style="font-size:1rem;" ng-model="ctrl.editedType" ng-if="ctrl.editedCategory === 'lowerwear'">
+                  <option value="casual">Casual</option>
+                  <option value="dress">Dress Pants</option>
+                  <option value="shorts">Shorts</option>
+                  <option value="skirt">Skirt</option>
+                  <option value="jeans">Jeans</option>
+                </select>
+
+                <select style="font-size:1rem;" ng-model="ctrl.editedType" ng-if="ctrl.editedCategory === 'upperwear'">
+                  <option value="casual">Casual</option>
+                  <option value="dress">Dress</option>
+                  <option value="dress-shirt">Dress Shirt</option>
+                  <option value="longsleeve">Long Sleeve</option>
+                  <option value="sleeveless">Sleeveless</option>
+                  <option value="tee">Tee</option>
+                  <option value="turtleneck">Turtleneck</option>
+                </select>
+
+                <select style="font-size:1rem;" ng-model="ctrl.editedType" ng-if="ctrl.editedCategory === 'shoes'">
+                  <option value="athletic">Athletic</option>
+                  <option value="boots">Boots</option>
+                  <option value="dress">Dress Shoes</option>
+                  <option value="flats">Flats</option>
+                  <option value="heels">Heels</option>
+                  <option value="sneakers">Sneakers</option>
+                </select>
+              </div>
+              <hr style="border: 1px solid var(--babyblue);">
+
+              <!-- seasons dropdown -->
+              <p style="font-size:1.3rem; display: inline;">Season: </p>
+              <div class="dropdown">
+                <select style="font-size:1rem;" class="charcoal-border" ng-model="ctrl.editedSeason" ng-if="ctrl.editedType">
+                  <option value="spring">Spring</option>
+                  <option value="summer">Summer</option>
+                  <option value="fall">Fall</option>
+                  <option value="winter">Winter</option>
+                </select>
+              </div>
+              <hr style="border: 1px solid var(--babyblue);">
+
+              <!-- occasion Dropdown  -->
+              <p style="font-size:1.3rem; display: inline;">Occasion: </p>
+              <div class="dropdown">
+                <select style="font-size:1rem;" class="charcoal-border" ng-model="ctrl.editedOccasion" ng-if="ctrl.editedType">
+                  <option value="occasion">Occasion</option>
+                  <option value="business-casual">Business Casual</option>
+                  <option value="club">Club</option>
+                  <option value="date">Date</option>
+                  <option value="dinner">Dinner</option>
+                  <option value="interview">Interview</option>
+                  <option value="special-event">Special Event</option>
+                  <option value="streetwear">StreetWear</option>
+                </select>
+              </div>
+              <hr style="border: 1px solid var(--babyblue);">
+
+              <!-- image input field -->
+              <p style="font-size:1.3rem; display: inline;">Image: </p>
+
+                <input style="font-size:1rem; border:1.5px solid grey; border-radius:4px;" type="text" ng-model="ctrl.image" placeholder="image link">
+
+                <hr style="border: 1px solid var(--babyblue);">
+
+                <input style="font-size:1.4rem; font-weight:bold; margin:auto; background-color:var(--blue); color:white; border-radius:4px; height:55px; width:120px; margin-top:30px;" class="btnlogin" type="submit" value="EDIT LOOK">
+              <!-- this was previously above on the create page: add ng-click feature to edit button?
+              ng-click="ctrl.changeInclude('show')"> -->
+          </form>
+        </div>
+          <!-- <img class="width30 height30 cancel pointer inline-icons" ng-src="assets/delete.png" alt="Delete" ng-click="ctrl.deleteOutfit(outfit)">
+        </div> -->
+      </div>
+</div>
+</div>
+</div>
+</div>
 </div>

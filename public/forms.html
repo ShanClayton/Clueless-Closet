@@ -1,0 +1,53 @@
+<!-- forms button test code -->
+<!-- use a drop down list of items
+the first li is the "button" or form name
+the next li is the form -->
+<!-- <ul>
+  <li ng-click="ctrl.toggleShowForm"> -->
+
+<!-- make a button
+when the button is clicked
+the form slides down/appears -->
+<button class="form-label" ng-click="ctrl.toggleShowForm">Outerwear</button>
+<div class="outer">
+  <form ng-submit="ctrl.newOutfit()">
+    <h4 ng-model="ctrl.category">OuterWear</h4>
+    <img src="{{ctrl.image}}" alt="">
+    <input type="text" ng-model="ctrl.image" placeholder="Image" /><br>
+    <div class="dropdown">
+      <select name="outwear-type">
+        <option value="type">Type</option>
+        <option value="coat">Coat</option>
+        <option value="jacket">Jacket</option>
+        <option value="sweater">Sweater</option>
+      </select>
+    </div>
+
+  <!-- Seasons Dropdown Attempt 2 - standard -->
+  <div class="dropdown">
+    <select class="tag-seasons" name="seasons">
+      <option value="season">Season</option>
+      <option value="spring">Spring</option>
+      <option value="summer">Summer</option>
+      <option value="fall">Fall</option>
+      <option value="winter">Winter</option>
+    </select>
+  </div>
+
+  <!-- Occasion Dropdown  -->
+  <div class="dropdown">
+    <select class="tag-occasions" name="occasions">
+      <option value="occasion">Occasion</option>
+      <option value="business-casual">Business Casual</option>
+      <option value="club">Club</option>
+      <option value="date">Date</option>
+      <option value="dinner">Dinner</option>
+      <option value="interview">Interview</option>
+      <option value="special-event">Special Event</option>
+      <option value="streetwear">StreetWear</option>
+    </select>
+  </div>
+  <input type="submit" value="Create New look" /><br>
+</form><br>
+
+</div>
