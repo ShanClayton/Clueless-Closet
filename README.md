@@ -44,6 +44,7 @@ Front End:
 * Image Selection
 * Create Page Styling
 * Font Selection
+* Landing Page Layout
 
 ### Krystal Williams
 Front End:
