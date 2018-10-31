@@ -54,6 +54,7 @@ Once users add a clothing item via the create form, they are taken to the "show"
 
 ### Modals
 <img src="https://user-images.githubusercontent.com/25889133/47767314-4ec90b80-dc90-11e8-996a-81ea8bad72c7.png" width="500">
+<img src="https://user-images.githubusercontent.com/40532253/47769439-2560ad80-dc99-11e8-9804-0bd694fe2593.png" width="500">
 
 
 ## Getting Started
