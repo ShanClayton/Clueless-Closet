@@ -48,8 +48,8 @@ Once users add a clothing item via the create form, they are taken to the "show"
 <img src ="https://user-images.githubusercontent.com/25889133/47766783-d2352d80-dc8d-11e8-8339-8508a51ddfc3.png" width="400">
 
 ### Modals
-<img src="https://user-images.githubusercontent.com/25889133/47767314-4ec90b80-dc90-11e8-996a-81ea8bad72c7.png" width="400">
 <img src="https://user-images.githubusercontent.com/40532253/47769439-2560ad80-dc99-11e8-9804-0bd694fe2593.png" width="400">
+<img src="https://user-images.githubusercontent.com/25889133/47767314-4ec90b80-dc90-11e8-996a-81ea8bad72c7.png" width="400">
 
 ### Create Page
 <img src="https://user-images.githubusercontent.com/25889133/47767428-d151cb00-dc90-11e8-899e-6015ce8122b9.png" width="400">
