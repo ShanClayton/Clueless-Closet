@@ -43,7 +43,7 @@ Once users add a clothing item via the create form, they are taken to the "show"
 
 ### Create Page
 
-<img src="https://user-images.githubusercontent.com/25889133/47767428-d151cb00-dc90-11e8-899e-6015ce8122b9.png" width="300">
+<img src="https://user-images.githubusercontent.com/25889133/47767428-d151cb00-dc90-11e8-899e-6015ce8122b9.png" width="350">
 
 ![localhost_3000_ 2](https://user-images.githubusercontent.com/25889133/47767314-4ec90b80-dc90-11e8-996a-81ea8bad72c7.png)
 
