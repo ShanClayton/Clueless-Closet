@@ -25,7 +25,7 @@ Once users add a clothing item via the create form, they are taken to the "show"
 
 ## Final Product
 
-![cluelesscloset](https://user-images.githubusercontent.com/25889133/47766783-d2352d80-dc8d-11e8-8339-8508a51ddfc3.png)
+![cluelesscloset](https://user-images.githubusercontent.com/25889133/47766783-d2352d80-dc8d-11e8-8339-8508a51ddfc3.png = 300x450)
 
 ## Getting Started
 
