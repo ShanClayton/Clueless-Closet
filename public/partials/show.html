@@ -193,15 +193,14 @@
        <div class="edit">
 
          <div style="display:flex;">
-           <div class="outfit-edit" ng-click="ctrl.indexOfEditFormToShow">
+           <div class="outfit-edit" ng-click="ctrl.showEditForm($index)">
              <img class="width30 height30 cancel pointer" ng-src="assets/edit-thin.png" alt="Edit">
            </div>
            <div>
              <img class="width30 height30 cancel pointer" ng-src="assets/delete.png" alt="Delete" ng-click="ctrl.deleteOutfit(outfit)">
            </div>
          </div>
-   </li>
- </ul>
+
 
 
            <div class="dropdown-container-edit" style="text-align:left;">
@@ -300,6 +299,8 @@
              ng-click="ctrl.changeInclude('show')"> -->
          </form>
        </div>
+     </li>
+   </ul>
          <!-- <img class="width30 height30 cancel pointer inline-icons" ng-src="assets/delete.png" alt="Delete" ng-click="ctrl.deleteOutfit(outfit)">
        </div> -->
      </div>
