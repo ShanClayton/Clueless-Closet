@@ -10,6 +10,10 @@ app.use(session({
     resave: false,
     saveUninitialized: false
 }));
+app.use(function(req, res, next) {
+  res.locals.currentUser = req.session.currentUser;
+  next();
+});
 app.use(express.urlencoded({extended:false}));
 
 
