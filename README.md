@@ -47,6 +47,9 @@ Once users add a clothing item via the create form, they are taken to the "show"
 ### Show Page - Original Concept
 <img src="https://user-images.githubusercontent.com/40532253/47767740-3659f080-dc92-11e8-866c-f31e5d9fdc25.png" width="400">
 
+## Overview of Tasks
+
+<img src="https://user-images.githubusercontent.com/40532253/47788461-0977fe80-dccf-11e8-8650-70e79aa4557c.jpg" wdith="400">
 
 ## Final Product
 
