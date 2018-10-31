@@ -28,6 +28,8 @@ Once users add a clothing item via the create form, they are taken to the "show"
 
 ![zoom_in_profile_page](https://user-images.githubusercontent.com/40532253/47767062-2987cd80-dc8f-11e8-8b3e-2fba4589719e.jpg)
 
+![image_path](https://user-images.githubusercontent.com/40532253/47767104-59cf6c00-dc8f-11e8-8f04-177ee9e84803.jpg)
+
 
 ## Final Product
 
