@@ -30,15 +30,12 @@ Once users add a clothing item via the create form, they are taken to the "show"
 
 ![image_path](https://user-images.githubusercontent.com/40532253/47767104-59cf6c00-dc8f-11e8-8f04-177ee9e84803.jpg)
 
-## Mockups
-
-[Clueless_Closet__LandingPage.pdf](https://github.com/DiamondB88/Clueless_Closet/files/2532768/Clueless_Closet__LandingPage.pdf)
-
-
 
 ## Final Product
 
 ![cluelesscloset](https://user-images.githubusercontent.com/25889133/47766783-d2352d80-dc8d-11e8-8339-8508a51ddfc3.png)
+
+![localhost_3000_ 3](https://user-images.githubusercontent.com/25889133/47767428-d151cb00-dc90-11e8-899e-6015ce8122b9.png)
 
 ![localhost_3000_ 2](https://user-images.githubusercontent.com/25889133/47767314-4ec90b80-dc90-11e8-996a-81ea8bad72c7.png)
 
