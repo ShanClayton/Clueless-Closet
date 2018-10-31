@@ -172,6 +172,13 @@ this.displayHide = () => {
   this.showModal = !this.showModal;
 }
 
+this.test = () => {
+  console.log('running');
+  console.log(this.indexOfEditFormToShow); //0
+  this.indexOfEditFormToShow = undefined;
+  console.log(this.indexOfEditFormToShow); //undefined
+}
+
 // NOTES FOR SHOW PAGE SCROLLING DROPDOWN
   // var app = angular.module("demo", []);
     //
