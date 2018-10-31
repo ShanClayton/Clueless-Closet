@@ -56,6 +56,9 @@ Once users add a clothing item via the create form, they are taken to the "show"
 <img src="https://user-images.githubusercontent.com/25889133/47767314-4ec90b80-dc90-11e8-996a-81ea8bad72c7.png" width="500">
 <img src="https://user-images.githubusercontent.com/40532253/47769439-2560ad80-dc99-11e8-9804-0bd694fe2593.png" width="500">
 
+### Show Page
+<img src="https://user-images.githubusercontent.com/40532253/47769633-bfc0f100-dc99-11e8-819c-4fbcf7a39872.png" width="500">
+
 
 ## Getting Started
 
