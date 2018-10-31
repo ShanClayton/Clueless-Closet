@@ -80,6 +80,20 @@ Supporting technologies include [GitHub Pages](https://pages.github.com/), text 
 
 All site images are included courtesy [Unsplash](https://unsplash.com/), mockups were designed with [Sketch](https://www.sketchapp.com/), and icons were created using [Flaticon](https://www.flaticon.com/).
 
+## Developer Story
+
+### Design
+On Day 1, we agreed upon a bold design that featured saturated colors, reminiscent of much American design from the 1980s. We began styling with hot pink, deep purple, bold aquamarine, and neon text effects.
+
+On Day 2, while selecting images, we decided to redesign our brand to reflect a more clean and minimal feel, featuring pops of color in images and muted colors in accents like hover-over text, buttons,and icons.
+
+A win for our team was that we were able to quickly adjust to this style overhaul and successfully apply a cohesive design style throughout.
+
+### Functionality and Workflow
+One team member contributed backend design, working diligently throughout the first 2 days to achieve most of the backend setup, leaving ample time for the other team members to begin styling. This workflow worked well for our team, as it gave the frontend developers time to plan, collect inspiration, and adjust.
+
+A win for our team was that backend issues arose and were handled efficiently, allowing our team to establish a fluid workflow between backend and frontend development.
+
 ## Collaborator Contributions
 
 ### Shanaun Clayton
