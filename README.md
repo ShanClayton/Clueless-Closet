@@ -1,13 +1,13 @@
 # Clueless_Closet
 
-***Clueless_Closet*** is a group project created for the Web Development Remote Immersive at General Assembly ('WDIR').
+***Clueless Closet*** is a group project created for the Web Development Remote Immersive at General Assembly ('WDIR').
 
 Collaborators on this project:
 - Shanaun Clayton
 - Krystal Williams
 - Stevie Burnette
 
-# Clueless_Closet
+# Clueless Closet
 
 
 ## Project Concept
