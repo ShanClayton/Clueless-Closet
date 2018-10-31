@@ -8,13 +8,13 @@ Collaborators on this project:
 - Stevie Burnette
 
 Support Team and Honorable Mentions:
-- Jerrica Bobadilla, WDIR Instructor
-- Dan Lawrence, WDIR TA
+- Jerrica Bobadilla, WDIR Instructor - instructional support
+- Dan Lawrence, WDIR TA - instructional support
 
 
 ## Project Concept
 
-This app is a collaborative effort to offer users a fun and easily accessible way to style and edit outfits, based on the clothes currently in their closet or their desired styles. Our aim is to offer users a colorful and aesthetic interactive experience, which we achieved through images and icons set on a minimalistic background.
+This app is a collaborative effort to offer users a fun and easily accessible way to style and edit outfits, based on either the clothes currently in their closet or their desired styles. Our aim is to offer users a colorful and aesthetic interactive experience, which we achieved through images and icons set on a minimalistic background.
 
 Once users sign up by creating an account with a username and password, they can then login and begin "creating a closet" by styling outfits. 
 
@@ -61,7 +61,7 @@ Once users add a clothing item via the create form, they are taken to the "show"
 ## Getting Started
 
 ***Clueless Closet*** is an app currently hosted via Heroku at https://clueless-closet-group.herokuapp.com/.
-In order to access the app, simply visit the link above and click 'Sign Up' to create a username and password. No additional installations or programs are required to access this app.
+In order to access the app, users simply visit the link above and click 'Sign Up' to create a username and password. No additional installations or programs are required to access this app.
 
 
 ## Technologies Implemented
@@ -70,7 +70,7 @@ This app was developed using the MEAN stack - Mongoose, Express, Angular, and No
 
 Supporting technologies include [GitHub Pages](https://pages.github.com/), text editor [Atom](https://atom.io/), and project management tool [waffle.io](https://waffle.io/). 
 
-All site images are included courtesy [Unsplash](https://unsplash.com/) and the icons were created using [Flaticon](https://www.flaticon.com/).
+All site images are included courtesy [Unsplash](https://unsplash.com/), mockups were designed with [Sketch](https://www.sketchapp.com/), and icons were created using [Flaticon](https://www.flaticon.com/).
 
 ## Collaborator Contributions
 
@@ -86,14 +86,15 @@ Front End:
 * Navigation Bar Styling
 * Login and Sign Up Modals
 * Image Selection
+* Dropdown Menus
 * Show Page Styling
-* Edit and Delete Icons
+* Icons
 
 ### Stevie Burnette
 Back End:
-  - Models
-  - Controllers
-  - Sessions
+* Models
+* Controllers
+* Sessions
 * Angular
 * App.js  
 * Partials
@@ -138,10 +139,10 @@ Back End:
 
 ### Unsolved Issues
 
-After we attempted to push to Heroku, our edit form buttons became dysfunctional and we are not currently able to correctly display our edit route.
+After we attempted to push to Heroku, our edit form and its buttons became dysfunctional and we are not currently able to correctly display our edit route.
 
-We discovered this issue after instructor, TA, and classmate help was no longer available to us. After attempting to resolve the issue amongst ourselves, we sent a detailed message to our instructional lead apprising them of the situation and requesting assistance prior to our presentation at their earliest convenience. 
+We discovered this issue after instructor, TA, and classmate help was no longer available to us. After attempting to resolve the issue amongst ourselves, we sent a detailed message to our instructional lead apprising them of the situation and requesting assistance prior to our presentation. 
 
 ## Future Optimizations
 
-Initially, we had planned for the "show" page to take the entered items and create a collage containing those items, thereby displaying an entire outfit as a cohesive whole.
+Initially, we had planned for the "show" page to take the entered items and create a collage containing those items, thereby displaying an entire outfit as a cohesive whole. A future optimization could integrate this feature for enhanced user experience.
