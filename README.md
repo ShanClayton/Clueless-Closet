@@ -9,7 +9,7 @@ Collaborators on this project:
 
 Support Team and Honorable Mentions:  
 
-*Thank You ~*  
+*Thank You* ~  
    
 - Jerrica Bobadilla, WDIR Instructor - instructional support
 - Dan Lawrence, WDIR TA - instructional support
