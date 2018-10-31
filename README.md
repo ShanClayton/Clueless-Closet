@@ -23,6 +23,9 @@ Upon login, users are directed to the "create" page where they have the opportun
 Once users add a clothing item via the create form, they are taken to the "show" page where they can view their items individually and edit or delete them. 
 
 
+## Final Product
+
+
 ## Getting Started
 
 ***Clueless Closet*** is an app currently hosted via Heroku at https://clueless-closet-group.herokuapp.com/.
