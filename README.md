@@ -22,6 +22,10 @@ Upon login, users are directed to the "create" page where they have the opportun
 
 Once users add a clothing item via the create form, they are taken to the "show" page where they can view their items individually and edit or delete them. 
 
+## Wireframes
+
+![overview](https://user-images.githubusercontent.com/40532253/47767019-f0e7f400-dc8e-11e8-8677-a2de9d9ea37a.jpg)
+
 
 ## Final Product
 
