@@ -7,6 +7,10 @@ Collaborators on this project:
 - Krystal Williams
 - Stevie Burnette
 
+Support Team and Honorable Mentions:
+- Jerrica Bobadilla, WDIR Instructor
+- Dan Lawrence, WDIR TA
+
 # Clueless Closet
 
 
@@ -101,6 +105,8 @@ Back End:
 ### Unsolved Issues
 
 After we attempted to push to Heroku, our edit form buttons became dysfunctional and we are not currently able to correctly display our edit route.
+
+We discovered this issue after instructor, TA, and classmate help was no longer available to us and, after attempting to resolve the issue amongst ourselves, we sent a detailed message to our instructional lead apprising them of the situation and requesting assistance prior to our presentation at their earliest convenience. 
 
 ## Future Optimizations
 
