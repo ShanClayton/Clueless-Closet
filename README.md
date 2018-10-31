@@ -7,7 +7,7 @@ Collaborators on this project:
 - Krystal Williams
 - Stevie Burnette
 
-Support Team and Honorable Mentions:
+Support Team and Honorable Mentions:  
 *Thank You*
 - Jerrica Bobadilla, WDIR Instructor - instructional support
 - Dan Lawrence, WDIR TA - instructional support
