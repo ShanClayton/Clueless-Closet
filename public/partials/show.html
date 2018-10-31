@@ -36,7 +36,7 @@
         <div class="edit">
 
           <div style="display:flex;">
-            <div class="outfit-edit" ng-click="ctrl.indexOfEditFormToShow = $index">
+            <div class="outfit-edit" ng-click="ctrl.indexOfEditFormToShow">
               <img class="width30 height30 cancel pointer" ng-src="assets/edit-thin.png" alt="Edit">
             </div>
             <div>
@@ -52,7 +52,7 @@
             <!-- this ng-if controls initial form load -->
             <div ng-if="$index === ctrl.indexOfEditFormToShow">
 
-              <button class="cancel-modal" style="float:right;" ng-click="ctrl.test()"><img class="width30 height30 cancel pointer" ng-src="assets/cancel.png"></button>
+              <button class="cancel-modal" style="float:right;" ng-click="ctrl.indexOfEditFormToShow = -1"><img class="width30 height30 cancel pointer" ng-src="assets/cancel.png"></button>
 
           <form style="text-align:center; font-size: 1.5rem;" ng-submit="ctrl.editOutfit(outfit)">
 
