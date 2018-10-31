@@ -1,5 +1,5 @@
 # Clueless_Closet
-# Clueless_Closet
+
 ***Clueless_Closet*** is a group project created for the Web Development Remote Immersive at General Assembly ('WDIR').
 
 Collaborators on this project:
