@@ -11,8 +11,6 @@ Support Team and Honorable Mentions:
 - Jerrica Bobadilla, WDIR Instructor
 - Dan Lawrence, WDIR TA
 
-# Clueless Closet
-
 
 ## Project Concept
 
