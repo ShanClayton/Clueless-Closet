@@ -26,44 +26,44 @@ Once users add a clothing item via the create form, they are taken to the "show"
 #### Day 1
 
 ### Landing Page
-<img src="https://user-images.githubusercontent.com/40532253/47767019-f0e7f400-dc8e-11e8-8677-a2de9d9ea37a.jpg" width="400">
+<img src="https://user-images.githubusercontent.com/40532253/47767019-f0e7f400-dc8e-11e8-8677-a2de9d9ea37a.jpg" width="360">
 
 ### Create Page
-<img src="https://user-images.githubusercontent.com/40532253/47767062-2987cd80-dc8f-11e8-8b3e-2fba4589719e.jpg" width="400">
+<img src="https://user-images.githubusercontent.com/40532253/47767062-2987cd80-dc8f-11e8-8b3e-2fba4589719e.jpg" width="360">
 
 ### Show Page
-<img src="https://user-images.githubusercontent.com/40532253/47767104-59cf6c00-dc8f-11e8-8f04-177ee9e84803.jpg" width="400">
+<img src="https://user-images.githubusercontent.com/40532253/47767104-59cf6c00-dc8f-11e8-8f04-177ee9e84803.jpg" width="360">
 
 ## Mockups
 
 #### Days 2 and 3
 
 ### Landing Page - Original Concept
-<img src ="https://user-images.githubusercontent.com/40532253/47767495-1ece3800-dc91-11e8-8eb4-9a230eee16fd.png" width="400">
+<img src ="https://user-images.githubusercontent.com/40532253/47767495-1ece3800-dc91-11e8-8eb4-9a230eee16fd.png" width="360">
 
 ### Create Page - Original Concept
-<img src="https://user-images.githubusercontent.com/40532253/47769246-77ed9a00-dc98-11e8-88bb-7b7def723052.png" width="400">
+<img src="https://user-images.githubusercontent.com/40532253/47769246-77ed9a00-dc98-11e8-88bb-7b7def723052.png" width="360">
 
 ### Show Page - Original Concept
-<img src="https://user-images.githubusercontent.com/40532253/47767740-3659f080-dc92-11e8-866c-f31e5d9fdc25.png" width="400">
+<img src="https://user-images.githubusercontent.com/40532253/47767740-3659f080-dc92-11e8-866c-f31e5d9fdc25.png" width="360">
 
 ## Overview of Tasks
-<img src="https://user-images.githubusercontent.com/40532253/47788881-3ed11c00-dcd0-11e8-827f-f342914eebb9.jpg" width="350" height="350">
+<img src="https://user-images.githubusercontent.com/40532253/47788881-3ed11c00-dcd0-11e8-827f-f342914eebb9.jpg" width="360" height="360">
 
 ## Final Product
 
 ### Landing Page
-<img src ="https://user-images.githubusercontent.com/25889133/47766783-d2352d80-dc8d-11e8-8339-8508a51ddfc3.png" width="350">
+<img src ="https://user-images.githubusercontent.com/25889133/47766783-d2352d80-dc8d-11e8-8339-8508a51ddfc3.png" width="360">
 
 ### Modals
-<img src="https://user-images.githubusercontent.com/40532253/47769439-2560ad80-dc99-11e8-9804-0bd694fe2593.png" width="350">
-<img src="https://user-images.githubusercontent.com/25889133/47767314-4ec90b80-dc90-11e8-996a-81ea8bad72c7.png" width="350">
+<img src="https://user-images.githubusercontent.com/40532253/47769439-2560ad80-dc99-11e8-9804-0bd694fe2593.png" width="360">
+<img src="https://user-images.githubusercontent.com/25889133/47767314-4ec90b80-dc90-11e8-996a-81ea8bad72c7.png" width="360">
 
 ### Create Page
-<img src="https://user-images.githubusercontent.com/25889133/47767428-d151cb00-dc90-11e8-899e-6015ce8122b9.png" width="350">
+<img src="https://user-images.githubusercontent.com/25889133/47767428-d151cb00-dc90-11e8-899e-6015ce8122b9.png" width="360">
 
 ### Show Page
-<img src="https://user-images.githubusercontent.com/40532253/47769633-bfc0f100-dc99-11e8-819c-4fbcf7a39872.png" width="350">
+<img src="https://user-images.githubusercontent.com/40532253/47769633-bfc0f100-dc99-11e8-819c-4fbcf7a39872.png" width="360" height="360">
 
 
 ## Getting Started
