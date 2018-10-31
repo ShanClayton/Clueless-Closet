@@ -71,7 +71,7 @@
 }
 
 /* FOOTER */
-footer {
+/* footer {
  background-color: var(--light-blue);
  text-transform: uppercase;
  color: white;
@@ -96,7 +96,7 @@ footer {
  clear: both;
  height: 0;
  font-size: 0;
-}
+} */
 
 /*  HEADERS  */
 h1 {
