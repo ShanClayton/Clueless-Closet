@@ -37,6 +37,8 @@ Once users add a clothing item via the create form, they are taken to the "show"
 
 ## Final Product
 
+### Landing Page
+
 <img src ="https://user-images.githubusercontent.com/25889133/47766783-d2352d80-dc8d-11e8-8339-8508a51ddfc3.png" width="300"> 
 
 <img src="https://user-images.githubusercontent.com/25889133/47767428-d151cb00-dc90-11e8-899e-6015ce8122b9.png" width="300">
