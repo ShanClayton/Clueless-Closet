@@ -26,10 +26,12 @@ Once users add a clothing item via the create form, they are taken to the "show"
 
 ![overview](https://user-images.githubusercontent.com/40532253/47767019-f0e7f400-dc8e-11e8-8677-a2de9d9ea37a.jpg)
 
+![zoom_in_profile_page](https://user-images.githubusercontent.com/40532253/47767062-2987cd80-dc8f-11e8-8b3e-2fba4589719e.jpg)
+
 
 ## Final Product
 
-![cluelesscloset](https://user-images.githubusercontent.com/25889133/47766783-d2352d80-dc8d-11e8-8339-8508a51ddfc3.png | width=100)
+![cluelesscloset](https://user-images.githubusercontent.com/25889133/47766783-d2352d80-dc8d-11e8-8339-8508a51ddfc3.png)
 
 ## Getting Started
 
