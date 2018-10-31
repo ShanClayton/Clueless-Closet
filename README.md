@@ -35,6 +35,9 @@ Once users add a clothing item via the create form, they are taken to the "show"
 
 ![cluelesscloset](https://user-images.githubusercontent.com/25889133/47766783-d2352d80-dc8d-11e8-8339-8508a51ddfc3.png)
 
+![localhost_3000_ 1](https://user-images.githubusercontent.com/25889133/47767160-97cc9000-dc8f-11e8-9e8c-ed7b8074d7f9.png)
+
+
 ## Getting Started
 
 ***Clueless Closet*** is an app currently hosted via Heroku at https://clueless-closet-group.herokuapp.com/.
