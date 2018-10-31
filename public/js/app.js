@@ -175,7 +175,7 @@ this.displayHide = () => {
 this.test = () => {
   console.log('running');
   console.log(this.indexOfEditFormToShow); //0
-  this.indexOfEditFormToShow = undefined;
+  this.indexOfEditFormToShow;
   console.log(this.indexOfEditFormToShow); //undefined
 }
 

@@ -43,16 +43,13 @@
               <img class="width30 height30 cancel pointer" ng-src="assets/delete.png" alt="Delete" ng-click="ctrl.deleteOutfit(outfit)">
             </div>
           </div>
-    </li>
-  </ul>
-
 
             <div class="dropdown-container-edit" style="text-align:left;">
 
             <!-- this ng-if controls initial form load -->
-            <div ng-if="$index === ctrl.indexOfEditFormToShow">
+            <div ng-show="$index === ctrl.indexOfEditFormToShow">
 
-              <button class="cancel-modal" style="float:right;" ng-click="ctrl.indexOfEditFormToShow = -1"><img class="width30 height30 cancel pointer" ng-src="assets/cancel.png"></button>
+              <button class="cancel-modal" style="float:right;" ng-click="ctrl.test()"><img class="width30 height30 cancel pointer" ng-src="assets/cancel.png"></button>
 
           <form style="text-align:center; font-size: 1.5rem;" ng-submit="ctrl.editOutfit(outfit)">
 
@@ -147,6 +144,8 @@
               ng-click="ctrl.changeInclude('show')"> -->
           </form>
         </div>
+      </li>
+    </ul>
           <!-- <img class="width30 height30 cancel pointer inline-icons" ng-src="assets/delete.png" alt="Delete" ng-click="ctrl.deleteOutfit(outfit)">
         </div> -->
       </div>
@@ -154,4 +153,4 @@
 </div>
 </div>
 </div>
-</div>
+<!-- </div> -->
