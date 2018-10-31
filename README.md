@@ -2,12 +2,12 @@
 
 ***Clueless Closet*** is a group project created for the Web Development Immersive Remote at General Assembly ('WDIR').
 
-Collaborators on this project:
+**Collaborators on this project**:
 - Shanaun Clayton
 - Krystal Williams
 - Stevie Burnette
 
-Support Team and Honorable Mentions:  
+**Support Team and Honorable Mentions**:  
 
 *Thank You* ~  
    
