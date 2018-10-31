@@ -5,13 +5,12 @@
 <div class="main-dropdown-container">
   <img src="/assets/orange-clothes.jpg" class="sidebar">
   <div class="dropdown-container">
-
-    <form style="margin-top: 30px; padding-left:40px; max-height:45vw; max-width: 55vw;" ng-submit="ctrl.newOutfit($event)">
-    <h2 class="middletext">Create a New Look</h2>
+    <form style="margin-top: 140px; padding-left:40px; max-height:65vw; max-width: 55vw; overflow:hidden;" ng-submit="ctrl.newOutfit($event)">
+    <h2 style="margin-top:32px;" class="middletext">Create a New Look</h2>
     <div class="dropdown">
       <br />
-      Category:
-      <select name="category" ng-model="ctrl.category">
+      <p style="font-size:1.3rem; display: inline;">Category:</p>
+      <select style="font-size:1rem;" name="category" ng-model="ctrl.category">
         <!-- <option value="category">Category</option> -->
         <option value="outerwear">Outer Wear</option>
         <option value="lowerwear">Lower Wear</option>
@@ -21,15 +20,15 @@
       <hr style="border: 1px solid var(--rustyrose);">
       <br />
 
-      Type:
+      <p style="font-size:1.3rem; display: inline;">Type:</p>
       <br />
-      <select ng-model="ctrl.type" ng-if="ctrl.category === 'outerwear'">
+      <select style="font-size:1rem;" ng-model="ctrl.type" ng-if="ctrl.category === 'outerwear'">
         <option value="coat">Coat</option>
         <option value="jacket">Jacket</option>
         <option value="sweater">Sweater</option>
       </select>
 
-      <select ng-model="ctrl.type" ng-if="ctrl.category === 'lowerwear'">
+      <select style="font-size:1rem;" ng-model="ctrl.type" ng-if="ctrl.category === 'lowerwear'">
         <option value="casual">Casual</option>
         <option value="dress">Dress Pants</option>
         <option value="shorts">Shorts</option>
@@ -37,7 +36,7 @@
         <option value="jeans">Jeans</option>
       </select>
 
-      <select ng-model="ctrl.type" ng-if="ctrl.category === 'upperwear'">
+      <select style="font-size:1rem;" ng-model="ctrl.type" ng-if="ctrl.category === 'upperwear'">
         <option value="casual">Casual</option>
         <option value="dress">Dress</option>
         <option value="dress-shirt">Dress Shirt</option>
@@ -47,7 +46,7 @@
         <option value="turtleneck">Turtleneck</option>
       </select>
 
-      <select ng-model="ctrl.type" ng-if="ctrl.category === 'shoes'">
+      <select style="font-size:1rem;" ng-model="ctrl.type" ng-if="ctrl.category === 'shoes'">
         <option value="athletic">Athletic</option>
         <option value="boots">Boots</option>
         <option value="dress">Dress Shoes</option>
@@ -59,9 +58,9 @@
     </div>
 
     <!-- seasons dropdown -->
-    Season:
-    <div class="dropdown">
-      <select ng-model="ctrl.season" ng-if="ctrl.type">
+    <p style="font-size:1.3rem; display: inline;">Season:</p>
+    <div class="dropdown" style="font-size:1.5rem;">
+      <select style="font-size:1rem;" ng-model="ctrl.season" ng-if="ctrl.type">
         <option value="spring">Spring</option>
         <option value="summer">Summer</option>
         <option value="fall">Fall</option>
@@ -71,9 +70,9 @@
     </div>
 
     <!-- occasion Dropdown  -->
-    Occasion:
-    <div class="dropdown">
-      <select ng-model="ctrl.occasion" ng-if="ctrl.type">
+    <p style="font-size:1.3rem; display: inline;">Occasion:</p>
+    <div class="dropdown" style="font-size:1.5rem;">
+      <select style="font-size:1rem;" ng-model="ctrl.occasion" ng-if="ctrl.type">
         <option value="occasion">Occasion</option>
         <option value="business-casual">Business Casual</option>
         <option value="club">Club</option>
@@ -85,12 +84,9 @@
       </select>
       <hr style="border: 1px solid var(--rustyrose);">
     </div><br />
-    Image:
-    <input type="text" ng-model="ctrl.image" placeholder="image link"><br /><br />
-
-    <input class="btncreate" type="submit" value="Create a New Look" ng-click="ctrl.changeInclude('show')">
-
-
+    <p style="font-size:1.3rem; display: inline;">Image: </p>
+    <input type="text" style="font-size:1rem;" ng-model="ctrl.image" placeholder="image link" style="font-size:1.5rem;"><br /><br /><br />
+    <input style="font-size:1.4rem; margin-left: 125px;" class="btncreate" type="submit" value="Create a New Look">
   </div>
   </form>
 </div>
