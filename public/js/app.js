@@ -178,7 +178,9 @@ this.test = () => {
   this.indexOfEditFormToShow = undefined;
   console.log(this.indexOfEditFormToShow); //undefined
 }
-
+ this.showEditForm = (index) => {
+   this.indexOfEditFormToShow =index
+ }
 // NOTES FOR SHOW PAGE SCROLLING DROPDOWN
   // var app = angular.module("demo", []);
     //
