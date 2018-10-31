@@ -7,9 +7,11 @@ Collaborators on this project:
 - Krystal Williams
 - Stevie Burnette
 
-Support Team and Honorable Mentions:
+Support Team and Honorable Mentions
+*Thank You*
 - Jerrica Bobadilla, WDIR Instructor - instructional support
 - Dan Lawrence, WDIR TA - instructional support
+- Ashwanth A R, WDIR Colleague - willingess to share CSS techniques in a prior project that considerably contributed to front development efficiency
 
 
 ## Project Concept
@@ -90,7 +92,7 @@ On Day 2, while selecting images, we decided to redesign our brand to reflect a 
 A win for our team was that we were able to quickly adjust to this style overhaul and successfully apply a cohesive design style throughout.
 
 ### Functionality and Workflow
-One team member contributed backend design, working diligently throughout the first 2 days to achieve most of the backend setup, leaving ample time for the other team members to begin styling. This workflow worked well for our team, as it gave the frontend developers time to plan, collect inspiration, and adjust.
+One team member contributed backend design, working diligently throughout the first 2 days to set the foundation for the backend setup, leaving ample time for the other team members to begin styling. This workflow worked well for our team, as it gave the frontend developers time to plan, collect inspiration, and adjust.
 
 A win for our team was that backend issues arose and were handled efficiently, allowing our team to establish a fluid workflow between backend and frontend development.
 
