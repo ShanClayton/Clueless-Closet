@@ -48,22 +48,22 @@ Once users add a clothing item via the create form, they are taken to the "show"
 <img src="https://user-images.githubusercontent.com/40532253/47767740-3659f080-dc92-11e8-866c-f31e5d9fdc25.png" width="400">
 
 ## Overview of Tasks
-<img src="https://user-images.githubusercontent.com/40532253/47788881-3ed11c00-dcd0-11e8-827f-f342914eebb9.jpg" width="400" height="300">
+<img src="https://user-images.githubusercontent.com/40532253/47788881-3ed11c00-dcd0-11e8-827f-f342914eebb9.jpg" width="350" height="350">
 
 ## Final Product
 
 ### Landing Page
-<img src ="https://user-images.githubusercontent.com/25889133/47766783-d2352d80-dc8d-11e8-8339-8508a51ddfc3.png" width="400">
+<img src ="https://user-images.githubusercontent.com/25889133/47766783-d2352d80-dc8d-11e8-8339-8508a51ddfc3.png" width="350">
 
 ### Modals
-<img src="https://user-images.githubusercontent.com/40532253/47769439-2560ad80-dc99-11e8-9804-0bd694fe2593.png" width="400">
-<img src="https://user-images.githubusercontent.com/25889133/47767314-4ec90b80-dc90-11e8-996a-81ea8bad72c7.png" width="400">
+<img src="https://user-images.githubusercontent.com/40532253/47769439-2560ad80-dc99-11e8-9804-0bd694fe2593.png" width="350">
+<img src="https://user-images.githubusercontent.com/25889133/47767314-4ec90b80-dc90-11e8-996a-81ea8bad72c7.png" width="350">
 
 ### Create Page
-<img src="https://user-images.githubusercontent.com/25889133/47767428-d151cb00-dc90-11e8-899e-6015ce8122b9.png" width="400">
+<img src="https://user-images.githubusercontent.com/25889133/47767428-d151cb00-dc90-11e8-899e-6015ce8122b9.png" width="350">
 
 ### Show Page
-<img src="https://user-images.githubusercontent.com/40532253/47769633-bfc0f100-dc99-11e8-819c-4fbcf7a39872.png" width="400">
+<img src="https://user-images.githubusercontent.com/40532253/47769633-bfc0f100-dc99-11e8-819c-4fbcf7a39872.png" width="350">
 
 
 ## Getting Started
