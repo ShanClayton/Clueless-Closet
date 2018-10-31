@@ -1,6 +1,6 @@
 # Clueless Closet
 
-***Clueless Closet*** is a group project created for the Web Development Remote Immersive at General Assembly ('WDIR').
+***Clueless Closet*** is a group project created for the Web Development Immersive Remote at General Assembly ('WDIR').
 
 Collaborators on this project:
 - Shanaun Clayton
