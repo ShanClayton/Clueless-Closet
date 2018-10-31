@@ -23,6 +23,7 @@ Upon login, users are directed to the "create" page where they have the opportun
 Once users add a clothing item via the create form, they are taken to the "show" page where they can view their items individually and edit or delete them. 
 
 ## Wireframes
+### Day 1
 
 <img src="https://user-images.githubusercontent.com/40532253/47767019-f0e7f400-dc8e-11e8-8677-a2de9d9ea37a.jpg" width="400">
 
@@ -32,13 +33,15 @@ Once users add a clothing item via the create form, they are taken to the "show"
 
 ## Mockups
 
-### Landing Page - Original Concept
+### Days 2 and 3
+
+#### Landing Page - Original Concept
 <img src ="https://user-images.githubusercontent.com/40532253/47767495-1ece3800-dc91-11e8-8eb4-9a230eee16fd.png" width="400">
 
-### Create Page - Original Concept
+#### Create Page - Original Concept
 <img src="https://user-images.githubusercontent.com/40532253/47769246-77ed9a00-dc98-11e8-88bb-7b7def723052.png" width="400">
 
-### Show Page - Original Concept
+#### Show Page - Original Concept
 <img src="https://user-images.githubusercontent.com/40532253/47767740-3659f080-dc92-11e8-866c-f31e5d9fdc25.png" width="400">
 
 
