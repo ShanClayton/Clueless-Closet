@@ -25,7 +25,7 @@ Once users add a clothing item via the create form, they are taken to the "show"
 
 ## Getting Started
 
-Clueless Closet is an app currently hosted via Heroku at https://clueless-closet-group.herokuapp.com/.
+***Clueless Closet*** is an app currently hosted via Heroku at https://clueless-closet-group.herokuapp.com/.
 In order to access the app, simply visit the link above and click 'Sign Up' to create a username and password. No additional installations or programs are required to access this app.
 
 
