@@ -1,4 +1,4 @@
-# Clueless_Closet
+# Clueless Closet
 
 ***Clueless Closet*** is a group project created for the Web Development Remote Immersive at General Assembly ('WDIR').
 
