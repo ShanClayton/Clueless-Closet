@@ -17,13 +17,13 @@
 
 ## Project Concept
 
-This app is a collaborative effort to offer users a fun and easily accessible way to style and edit outfits, based on either the clothes currently in their closet or their desired styles. Our aim is to offer users a colorful and aesthetic interactive experience, which we achieved through images and icons set on a minimalistic background.
+This app is a collaborative effort to offer users a fun and accessible way to style and edit outfits, based on either their current closet or their desired styles. Our aim is to offer users a colorful and aesthetic interface, which we achieved through both interactive forms and images and icons set on a minimalistic background.
 
-Once users sign up by creating an account with a username and password, they can then login and begin "creating a closet" by styling outfits. 
+* Once users sign up by creating an account with a username and password, they can then login and begin "creating a closet" by styling outfits. 
 
-Upon login, users are directed to the "create" page where they have the opportunity to input information about their clothing item into various fields and upload an image.
+* Upon login, users are directed to the "create" page where they have the opportunity to input information about their clothing item into various fields and upload an image.
 
-Once users add a clothing item via the create form, they are taken to the "show" page where they can view their items individually and edit or delete them. 
+* Once users add a clothing item via the create form, they are taken to the "show" page where they can view their items individually and edit or delete them. 
 
 ## Wireframes
 #### Day 1
@@ -88,7 +88,7 @@ All site images are included courtesy [Unsplash](https://unsplash.com/), mockups
 ### Design
 On Day 1, we agreed upon a bold design that featured saturated colors, reminiscent of much American design from the 1980s. We began styling with hot pink, deep purple, bold aquamarine, and neon text effects.
 
-On Day 2, while selecting images, we decided to redesign our brand to reflect a more clean and minimal feel, featuring pops of color in images and muted colors in accents like hover-over text, buttons,and icons.
+On Day 2, while selecting images, we decided to redesign our brand to reflect a more clean and minimal feel, featuring pops of color in images and muted colors in accents like hover-over text, buttons, and icons.
 
 A win for our team was that we were able to quickly adjust to this style overhaul and successfully apply a cohesive design style throughout.
 
