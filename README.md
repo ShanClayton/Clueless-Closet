@@ -8,12 +8,13 @@ Collaborators on this project:
 - Stevie Burnette
 
 Support Team and Honorable Mentions:  
+
+*Thank You!*  
+
+Support Team and Honorable Mentions:    
 - Jerrica Bobadilla, WDIR Instructor - instructional support
 - Dan Lawrence, WDIR TA - instructional support
 - Ashwanth A R, WDIR Colleague - willingess to share CSS techniques in a prior project that considerably contributed to front development efficiency. 
-
-*Thank You*
-
 
 ## Project Concept
 
