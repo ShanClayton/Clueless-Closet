@@ -32,6 +32,7 @@ Once users add a clothing item via the create form, they are taken to the "show"
 
 ## Mockups
 
+### Landing Page
 <img src ="https://user-images.githubusercontent.com/40532253/47767495-1ece3800-dc91-11e8-8eb4-9a230eee16fd.png" width="500">
 
 
