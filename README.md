@@ -30,6 +30,10 @@ Once users add a clothing item via the create form, they are taken to the "show"
 
 ![image_path](https://user-images.githubusercontent.com/40532253/47767104-59cf6c00-dc8f-11e8-8f04-177ee9e84803.jpg)
 
+## Mockups
+
+![showpage](https://user-images.githubusercontent.com/40532253/47767495-1ece3800-dc91-11e8-8eb4-9a230eee16fd.png)
+
 
 ## Final Product
 
