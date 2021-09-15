@@ -1,0 +1,264 @@
+<div class="container">
+  <!-- <div class="input-field-blue-show">
+    <div style="text-align:center;">
+      <h6>search by name or city </h6>
+      <input type="text" class="babyblue-border" ng-model="ctrl.searchQuery" placeholder="filter by city" />
+
+    </div>
+  </div> -->
+
+     <button ng-click="ctrl.deleteEvent(event)">Delete</button>
+      <ul ng-repeat="events in ctrl.events">
+        <h2>{{events.name}}</h2>
+        <img src="{{events.image}}" />
+        <h5>{{events.address}}</h5>
+        <h5>{{events.description}}</h5>
+   </ul>
+
+  <!-- <form ng-submit="ctrl.createEvent()">
+         Name: <input type="text" ng-model="ctrl.name" placeholder="Name" /><br />
+         Address: <input type="text" ng-model="ctrl.address" placeholder="address" /><br />
+         Image: <input text="text" ng-model="ctrl.image" placeholder="image" /><br />
+         Description: <input text="text" ng-model="ctrl.description" placeholder="add description" /><br />
+         <input type="submit" value="Add Event"  />
+         </form> -->
+
+
+         $sg-diamond : #BCE3FF;
+         $sg-black  : #515358;
+         $sg-white  : #FCFCFC;
+         $sg-cornflower-blue : #549BF2;
+         $sg-fuzzy-wuzzy    : #D9636C;
+         $sg-dark-sea-green : #81C78B;
+         $sg-pastel-yellow : #F7F39E;
+
+         img {
+           width: 100px;
+         }
+
+
+         //GOOGLE FONTS
+         @import url(https://fonts.googleapis.com/css?family=Josefin+Sans|Noto+Sans+TC|Robot);
+
+         //FONT VARIABLES
+         $josefin-sans: 'Josefin Sans', sans-serif;
+         $noto-sans-tc:  'Noto Sans TC', sans-serif;
+         $roboto: 'Roboto', sans-serif;
+
+         <!-- Main Para -->
+               <div class="row">
+                 <div class="heading_dots hide-for-small"><h1 class="heading_supersize"><span class="heading_center_bg">What we do?</span></h1></div>
+                 <div class="twelve columns">
+                   <p class="welcome_text">
+                     Autism spectrum disorder (ASD) is a complex developmental disability,
+                     typically appearing during childhood and affecting a person's
+                     ability to communicate and interact with others.<br/><
+                     Autism Parents Connect provides support, information, and practical help for children  with autism, as well as their families.
+                     We walk alongside you and continues to provide information and support through the life changes.
+                   </p>
+                 </div>
+               </div>
+
+               <!-- Services -->
+               <div class="row">
+                 <div class="heading_dots hide-for-small" style="margin-bottom:25px"><h1 class="heading_supersize"><span class="heading_center_bg">Our Services</span></h1></div>
+                 <div class="four columns">
+                   <div class="small-banner">
+                     <img src="assets/images/sophiahands.png" alt="desc" />
+                   </div>
+                    <h3>Connect With Others</h3>
+                   <p><em>Gets informations and answers to you question by connecting with other parents and experts in our networks  </em></p>
+                   <p style="text-align:center"><a href="blog.html" class="button large round">Connect &raquo;</a> </p>
+                 </div>
+
+                 <div class="four columns">
+                   <div class="small-banner">
+                     <img src="assets/images/sophiahearts.png" alt="sophia hearts" />
+                   </div>
+                    <h3>Shop Solutions</h3>
+                   <p><em>Shop our online store for educational toys, flashcards and sensory products for autism and special needs kids and adults.</em></p>
+                   <p style="text-align:center"><a href="#" class="button large round">Shop Now &raquo;</a> </p>
+                 </div>
+
+                 <div class="four columns">
+                   <div class="small-banner">
+                     <img src="assets/images/marone.png" alt="marshonna balloons" />
+                   </div>
+
+                    <h3>Events</h3>
+                    <p><em>We conduct autism-friendly activities and events by partnering with more than 30 support groups across TriState Area</em></p>
+                    <p style="text-align:center"><a href="galleries.html" class="button large round">View Event Gallery</a> </p>
+                 </div>
+               </div><!-- end services -->
+
+
+               //app.js
+               const app = angular.module('AutismApp', []);
+app.controller('AutismCtrl', ['$http', function($http){
+  //----------Partials
+  this.includePath = './partials/blog.html';
+  this.changeInclude = (path) => {
+  this.includePath = './partials/'+ path +'.html';
+  }
+  //----------
+  const controller = this;
+  this.heading= "";
+  this.image= "";
+  this.posted_by= "";
+  this.post_body= "";
+  this.event_title= "";
+  this.event_image= "";
+  this.event_details= "";
+  /*********    Show route      ********/
+  this.getBlogs = function(){
+    $http({
+      method:'GET',
+      url: '/blogs'
+    }).then(function(response){
+    //  console.log(response.data);
+      controller.blogs = response.data
+    }, error=>{
+            console.log(error);
+        })
+    };
+
+    this.getEvents = function(){
+      $http({
+        method:'GET',
+        url: '/events'
+      }).then(function(response){
+      //  console.log(response.data);
+        controller.events = response.data
+      }, error=>{
+              console.log(error);
+          })
+      };
+  /*********    Create route      ********/
+  this.createBlog = function(){
+    if(this.posted_by==''){
+      this.posted_by = "Anonymous"
+    }
+    if(this.image==''){
+      this.image = "images/question.jpg"
+    }
+    $http({
+        method:'POST',
+        url: '/blogs',
+        data: {
+          heading: this.heading,
+          image: this.image,
+          posted_by: this.posted_by,
+          post_body: this.post_body,
+        }
+    }).then(function(response){
+        controller.heading= "";
+        controller.image= "";
+        controller.posted_by= "";
+        controller.post_body= "";
+        controller.includePath = './partials/blog.html';
+        controller.getBlogs();
+    }, function(){
+        console.log('error');
+    });
+  }
+
+  this.createEvent = function(){
+    $http({
+        method:'POST',
+        url: '/events',
+        data: {
+          event_title: this.event_title,
+          event_image: this.event_image,
+          event_details: this.event_details
+        }
+    }).then(function(response){
+        controller.event_title= "";
+        controller.event_image= "";
+        controller.event_details= "";
+        controller.getEvents();
+    }, function(){
+        console.log('error');
+    });
+  }
+  /*********    Show blog route      ********/
+  this.getBlog = function(blog){
+    $http({
+      method:'GET',
+      url: '/blogs/' + blog._id,
+    }).then(function(response){
+      //console.log(response.data);
+      controller.blog = response.data,
+      controller.includePath = './partials/blog_single.html';
+    }, error=>{
+            console.log(error);
+    })
+  };
+  /*********    Edit route      ********/
+  this.editBlog = function(blog){
+    let index = blog._id;
+    let arr = blog.comments;
+    console.log(arr);
+    arr.push(this.newComment);
+    console.log(arr);
+
+    console.log(index);
+    $http({
+      method:'PUT',
+      url: '/blogs/' + index,
+      data: {
+        comments: arr,
+      }
+    }).then(function(response){
+      controller.newComment= "";
+      controller.getBlog();
+
+    }).catch(angular.noop);
+  }
+  /*********    Delete route      ********/
+  this.deleteBlog = function(blog){
+    $http({
+      method:'DELETE',
+      url:'/blogs/'+ blog._id
+    }).then(function(response){
+      controller.getBlogs();
+    })
+  }
+
+  this.deleteEvent = function(event){
+    $http({
+      method:'DELETE',
+      url:'/events/'+ event._id
+    }).then(function(response){
+      controller.getEvents();
+    })
+  }
+
+this.getBlogs();
+this.getEvents();
+
+}]);
+
+{
+      name: "BJ\'s Restaurant and Brewhouse",
+      image:"http://beerpulse.com/wp-content/uploads/2011/09/BJs-Brewhouse-e1348075743399-200x200.png",
+      address:"22920 Centerpoint Drive, Moreno Valley, CA 92553",
+      phone: "951-571-9370"
+    },
+    {
+      name: "Hero\'s Restaurant and Brewery",
+      image: "http://heroesrestaurantandbrewery.com/wp-content/uploads/2014/09/heroes-logo-drop-320.png",
+      address:"3397 Mission Inn Avenue, Riverside, CA 92501",
+      phone: "951-248-0722"
+    },
+    {
+      name:"The Old Spaghetti Factory",
+      image:"https://www.logolynx.com/images/logolynx/s_08/087c08d85e04aa4c0797b47c1dfdedd6.png",
+      address: "3191 Misson Inn Avenue, Riverside, CA 92507",
+      phone: "951-784-4417"
+    },
+    {
+      name:"Sizzler",
+      image: "https://media-cdn.tripadvisor.com/media/photo-s/0f/16/e5/22/sizzler-logo.jpg",
+      address: "91 W Nuevo Rd, Perris, CA 92570",
+      phone: "951-940-4021‎"
+    }

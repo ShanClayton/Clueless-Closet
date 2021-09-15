@@ -1,17 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&effect=3d-float');
 @import url('https://fonts.googleapis.com/css?family=Courgette');
-/* @import url('https://fonts.googleapis.com/css?family=Rajdhani'); */
-/* @import url('https://fonts.googleapis.com/css?family=Kodchasan'); */
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
-
-/* @import url('https://fonts.googleapis.com/css?family=PT+Mono'); */
-/* @import url('https://fonts.googleapis.com/css?family=PT+Sans'); */
-/*
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400'); */
-/* FONT EFFECT OPTIONS - neon, stonewash, 3d-float */
-
-* {
+FONT EFFECT OPTIONS - neon,
+stonewash,
+3d-float */ * {
   background-color: ghostwhite;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -31,11 +24,6 @@
   cursor: pointer;
 }
 
-/* BUTTONS */
-/* .btn-nav {
-  margin-top: 25px;
-  height: 25px;
-} */
 .btncreate {
   background-color: #EBC7BD;
   color: var(--charcoal);
@@ -47,10 +35,12 @@
   transition-duration: 0.4s;
   width: 50%;
 }
+
 .btncreate:hover {
   background-color: var(--rustyrose);
   color: var(--charcoal);
 }
+
 .btn-login {
   border-radius: 4px;
   cursor: pointer;
@@ -61,6 +51,7 @@
   padding: 5px;
   width: 80px;
 }
+
 .cancel-modal {
   border: none;
   height: 60px;
@@ -71,54 +62,34 @@
 }
 
 /* FOOTER */
-/* footer {
- background-color: var(--light-blue);
- text-transform: uppercase;
- color: white;
- font-size: 14px;
- font-weight: 500;
- padding: 0 20px;
- letter-spacing: .08em;
- position: fixed;
- width: 100%;
- bottom: 0;
-}
 
 .copyright {
- font-family: ‘Lato’, sans-serif;
- float:left;
+  font-family: ‘Lato’, sans-serif;
+  float: left;
 }
 
 .clearfix:after {
- visibility: hidden;
- display: block;
- content: ” “;
- clear: both;
- height: 0;
- font-size: 0;
-} */
+  visibility: hidden;
+  display: block;
+  content: ” “;
+  clear: both;
+  height: 0;
+  font-size: 0;
+}
+
+*/
 
 /*  HEADERS  */
 h1 {
   color: black;
   font-family: 'Courgette', cursive;
   font-size: 3rem;
-  /* margin-top: 20px; */
   padding: 0;
   text-align: center;
 }
 
 /* IMAGES */
-.headerimg{
-  /* width: 1200px;
-  height: 350px; */
-   /* margin-top: -1px; */
-  /* padding-bottom: -30px; */ */
-  /* border-bottom: 2px solid var(--charcoal); */
-  /* object-fit: */
-  /* display: flex; */
-  /* justify-content: */
-  /* margin: 0 auto; */
+.headerimg {
   z-index: 0;
   background-repeat: repeat-y;
 }
@@ -136,6 +107,7 @@ h1 {
   justify-content: center;
   /* display: inline-block; */
 }
+
 .bottom {
   height: 200px;
   width: 200px;
@@ -143,6 +115,7 @@ h1 {
   margin: 25px;
   padding: 10px;
 }
+
 /* MIDDLE TEXT */
 .middletext {
   font-family: 'PT Mono', monospace;
@@ -155,33 +128,43 @@ h1 {
 .babyblue {
   color: var(--babyblue);
 }
+
 .black {
   color: black;
 }
+
 .charcoal {
   color: var(--charcoal);
 }
+
 .dimgrey {
   color: dimgrey;
 }
+
 .gainsboro {
   color: gainsboro;
 }
+
 .ghostwhite {
   color: ghostwhite;
 }
+
 .lightgrey {
   color: lightgrey;
 }
+
 .lightslategrey {
   color: lightslategrey;
 }
+
 .mediumaquamarine {
   color: mediumaquamarine;
 }
+
 .rustyrose {
   color: var(--rustyrose);
 }
+
 .white {
   color: white;
 }
@@ -190,12 +173,15 @@ h1 {
 .blue {
   background-color: var(--blue);
 }
+
 .purple {
   background-color: var(--purple);
 }
+
 .rose {
   background-color: var(--rustyrose);
 }
+
 .rust {
   background-color: var(--rust);
 }
@@ -204,27 +190,35 @@ h1 {
 .babyblue-border {
   border: 1.5px solid var(--babyblue);
 }
+
 .blue-border {
   border: 1.5px solid var(--blue);
 }
+
 .charcoal-border {
   border: 1.5px solid var(--charcoal);
 }
+
 .grey-border {
   border: 1.5px solid lightgrey;
 }
+
 .rust-border {
   border: 1.5px solid var(--rust);
 }
+
 .radio-blue {
   border: 1.5px solid var(--blue);
 }
+
 .radio-grey {
   border: 1.5px solid var(--charcoal);
 }
+
 .radio-purple {
   border: 1.5px solid var(--purple);
 }
+
 .radio-rust {
   border: 1.5px solid var(--rust);
 }
@@ -242,6 +236,7 @@ h1 {
   justify-content: center;
   max-width: 800px;
 }
+
 .main-dropdown-container {
   display: flex;
   justify-content: center;
@@ -251,15 +246,19 @@ h1 {
 .f1 {
   font-size: 1rem;
 }
+
 .f14 {
   font-size: 1.4rem;
 }
+
 .f15 {
   font-size: 1.5rem;
 }
+
 .f16 {
   font-size: 1.6rem;
 }
+
 .f2 {
   font-size: 2rem;
 }
@@ -270,47 +269,51 @@ h1 {
   padding-top: 25px;
   padding-right: 25px;
 }
+
 .inline-icons {
   display: inline;
 }
 
 /*  INPUT FIELDS  */
-.input-field-blue, .input-field-rose, .input-field-rust {
+.input-field-blue,
+.input-field-rose,
+.input-field-rust {
   border: 1.5px solid var(--blue);
   font-size: 17px;
   margin: 3% 13%;
 }
+
 .input-field-blue-show {
   border: 2.5px solid var(--blue);
   margin: 3% 13%;
 }
+
 .input-field-rose {
   border: 1.5px solid var(--rustyrose);
 }
+
 .input-field-rust {
   border: 1.5px solid var(--rust);
 }
+
 .height30 {
   height: 30px;
 }
+
 .width180 {
   width: 180px;
 }
 
 /* LOGIN */
 
-/* a:hover > modal-login {
-  background-color: white;
-  border: 2px solid var(--blue);
-  color: var(--blue);
-  cursor: pointer;
-} */
 .height36 {
   height: 36px;
 }
+
 .padding5 {
   padding: 5px;
 }
+
 .width36 {
   width: 36px;
 }
@@ -319,11 +322,13 @@ h1 {
 .height30 {
   height: 30px;
 }
+
 .width30 {
   width: 30px;
 }
+
 .modal-container {
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   height: 100%;
   justify-content: center;
@@ -335,9 +340,10 @@ h1 {
   overflow: auto;
   width: 100%;
 }
+
 /* create the modal foundation as a class */
 .modal {
-  background-color: rgba(248,248,254);
+  background-color: rgba(248, 248, 254);
   border: 2px inset slategrey;
   /* test flexbox properties */
   /* this property centers items within the modal */
@@ -360,7 +366,7 @@ h1 {
 
 /* create sidebar foundation as a class  */
 .sidebar {
-  background-color: rgb(242,242,245);
+  background-color: rgb(242, 242, 245);
   /* ensure straight edges when sidebar image meets registration form */
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
@@ -382,6 +388,7 @@ h1 {
   display: flex;
   flex-direction: column;
 }
+
 /* selects all imgs with class sidebar */
 /* img.sidebar {
   max-width: 45vw;
@@ -394,13 +401,6 @@ h1 {
   border-radius: 20px;
   /* initial test */
   color: black;
-  /* make height 100% of its parent container  */
-  /* this removed the cancel button */
-  /* height: 20vw; */
-  /* margin-top: -70px; */
-  /* padding-left: 10px; */
-  /* ensure form covers set span */
-  /* size: cover; */
   /* make width remaining 60% of parent container */
   width: 50vw;
   /* test flexbox properties */
@@ -411,13 +411,11 @@ h1 {
 
 /* create the login sidebar as a class */
 .sidebar-login {
-  /* background: url('assets/login-clothing.jpg'); */
   flex: 2 2 auto;
 }
 
 /* create the login registration form as a class */
 .sidebar-registration {
-  /* background: url('/assets/signup-clothing.jpg'); */
   flex: 3 3 auto;
 }
 
@@ -437,29 +435,30 @@ a:hover {
   cursor: pointer;
   text-decoration: none;
 }
+
 a.dropblue:hover {
   background-color: white;
   color: blue;
 }
+
 a.purple:hover {
   color: var(--purple);
 }
+
 a.rose:hover {
   color: var(--rustyrose);
 }
+
 a.rust:hover {
   color: var(--rust);
 }
-/* .height45 {
-  height: 45px;
-} */
-.li, a {
-  /* align-content: space-evenly; */
-  /* align-items: center; */
+
+.li,
+a {
   font-weight: bold;
 }
+
 .main-nav {
-  /* background-color: var(--rustyrose); */
   border-bottom: 2px solid var(--charcoal);
   border-top: 2px solid var(--charcoal);
   display: flex;
@@ -467,6 +466,7 @@ a.rust:hover {
   padding-top: 1px;
   padding-bottom: 1px;
 }
+
 .navbar {
   height: 100px;
 }

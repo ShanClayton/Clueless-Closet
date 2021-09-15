@@ -1,11 +1,7 @@
 const app = angular.module('ClosetApp', []);
 
 app.controller('MyController', ['$http', function($http){
-  // this.category = null;
-  // this.type = null;
-  // this.image = null;
-  // this.season = null;
-  // this.occasion = null;
+
 
   this.includePath = 'partials/main.html';
   this.navPath = 'partials/nav.html'
@@ -91,7 +87,6 @@ console.log(this.changeNavPath);
         controller.image = null;
         controller.editedSeason = null;
         controller.editedOccasion = null;
-          // this.editOutfit.image = null;
         controller.getOutfit();
         console.log(response)
       },function(){
@@ -234,3 +229,171 @@ this.test = () => {
     //       }
     //     });
 }])
+
+LIkes and diskikes
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+const confession = Schema({
+category:{
+  type:String,
+  required: true
+},
+confession:{
+  type: String,
+  required: true
+},
+likes:{
+  type:Number,
+  default: 0
+},
+dislikes:{
+  type: Number,
+  default: 0
+}
+});
+
+const Confession = mongoose.model('Confession', confession);
+
+module.exports = Confession;
+
+
+<div class="container">
+  <div class="confess-box" ng-repeat="confession in ctrl.confessions">
+    <div ng-class="confession.category" class="confess-category card-header">
+      {{confession.category}}
+    </div>
+    <div>
+      <p>{{confession.confession}}</p>
+      <span class="lnr lnr-pencil" ng-click="ctrl.changeInclude('edit'); ctrl.testConfession(confession)"></span>
+      <span class="lnr lnr-cross" ng-click="ctrl.deleteConfession(confession)"></span>
+      <span class="lnr lnr-thumbs-up" ng-click="ctrl.increaseLikes(confession)">{{confession.likes}}</span>
+      <span class="lnr lnr-thumbs-down" ng-click="ctrl.decreaseLikes(confession)">{{confession.dislikes}}</span>
+  </div>
+</div>
+
+
+const app = angular.module('MyApp', []);
+
+app.controller('MyController', ['$http', function($http){
+
+  this.includePath = 'partials/home.html';
+  this.navPath = 'partials/nav.html'
+
+  this.changeInclude = (path) => {
+    this.includePath = 'partials/'+ path +'.html';
+    console.log(this.changeInclude);
+  };
+
+  this.changeNavPath = (path) => {
+    this.navPath = 'partials/'+ path
++ '.html';
+console.log(this.changeNavPath);
+};
+
+    const controller = this;
+    const confession = null;
+
+
+
+this.showModal = true;
+
+this.displayHide = () => {
+  this.showModal = !this.showModal;
+}
+
+this.confess= function(){
+    $http({
+      method: 'POST',
+      url: '/confessions',
+      data: {
+        category: this.category,
+        confession: this.confession
+      }
+    }).then(response=>{
+      controller.getConfession();
+      controller.changeInclude('home')
+      controller.category = null;
+      controller.confession = null;
+    }, function(error){
+        console.log(error);
+      });
+  };
+
+this.getConfession = function(){
+  $http({
+      method: 'GET',
+      url: '/confessions',
+    }).then(response=>{
+      controller.confessions = response.data
+      console.log(response.data);
+    }, function(error){
+        console.log(error);
+      });
+}
+
+this.deleteConfession = function(confession){
+  $http({
+    method: 'DELETE',
+    url: '/confessions/' + confession._id
+  }).then(response=>{
+    controller.getConfession();
+  }, function() {
+          console.log('error');
+        });
+};
+
+this.editConfession = function(){
+  $http({
+    method: 'PUT',
+    url: '/confessions/' + this.confession._id,
+    data: {
+      category: this.editedCategory,
+      confession: this.editedConfession
+    }
+  }).then(function(response){
+    controller.editedCategory = null;
+    controller.editedConfession = null;
+    controller.getConfession();
+    console.log(response);
+  },function(){
+        console.log('error');
+      });
+};
+
+  this.increaseLikes = function(confession){
+    confession.likes += 1
+    $http({
+      method: 'PUT',
+      url: '/confessions/' + confession._id,
+      data: {likes: confession.likes}
+    }).then(function(response){
+    }, function(error){
+        console.log(error);
+      })
+  }
+
+  this.decreaseLikes = function(confession){
+    confession.dislikes -= 1
+    $http({
+      method: 'PUT',
+      url: '/confessions/' + confession._id,
+      data: {dislikes: confession.dislikes}
+    }).then(function(response){
+    }, function(error){
+        console.log(error);
+      })
+  }
+
+
+this.showEditForm = (index) => {
+   this.indexOfEditFormToShow =index
+ }
+ this.testConfession = function (confession){
+   this.confession = confession
+   console.log(confession);
+ }
+
+
+this.getConfession();
+}]);
