@@ -2,14 +2,25 @@ const express = require('express')
 const app = express();
 const mongoose = require('mongoose')
 const session = require('express-session')
+const MongoStore = require('connect-mongo')(session)
+
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/' + 'Clueless_Closet';
 
 app.use(express.json());
 app.use(express.static("public"));
 app.use(session({
+    store: new MongoStore({
+      url: MONGODB_URI,
+      ttl: 1200000
+    }),
     secret:'feedmeseymour',
     resave: false,
     saveUninitialized: false
 }));
+app.use(function(req, res, next) {
+  res.locals.currentUser = req.session.currentUser;
+  next();
+});
 app.use(express.urlencoded({extended:false}));
 
 
@@ -27,7 +38,7 @@ const db = mongoose.connection;
 
 const PORT = process.env.PORT || 3000;
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/' + 'Clueless_Closet';
+
 
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true
@@ -62,6 +73,6 @@ app.get('/app', (req, res)=>{
 //     console.log('connected to mongo');
 // })
 
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
   console.log('listening....')
 })
